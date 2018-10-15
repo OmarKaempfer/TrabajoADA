@@ -1,0 +1,73 @@
+V "GNAT Lib v2018"
+M P W=b
+A -x
+A ada
+A -gnatA
+A -gnatc
+P GP FX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U teststring%b		teststring.adb		ddf5981b OO SU
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W assertions%s		assertions.adb		assertions.ali
+W stringextraction%s	stringextraction.adb	stringextraction.ali
+Z system%s		system.ads		system.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
+D a-textio.ads		20180524051738 881db35a ada.text_io%s
+D assertions.ads	20180927103850 0573aace assertions%s
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
+D stringextraction.ads	20181015102632 d96dbe2c stringextraction%s
+D system.ads		20180524051738 32a08138 system%s
+D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
+D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
+D teststring.adb	20181011110728 89f63fa3 teststring%b
+X 1 ada.ads
+16K9*Ada 20e8 14|1r6 1r23
+X 4 a-textio.ads
+49K13*Text_IO 471e16 14|1w10 1r27
+263U14*Put_Line 14|30s10 32s10 48s10 50s10 54s4
+X 5 assertions.ads
+1K9*Assertions 15e15 14|2w6 2r23
+2X4*Assertion_Error 14|29r12 47r12
+10U14*Assert_True 14|21s7 22s7 23s7 24s7 25s7 26s7 27s7 39s7 40s7 41s7 42s7
+. 43s7 44s7 45s7
+X 8 stringextraction.ads
+1K9*StringExtraction 40e25 14|3w6 3r33
+7V13*Extract_Vowels{string} 14|21s20 22s20 23s20 24s20 25s20 26s20 27s20
+19V13*Extract_Consonants{string} 14|39s20 40s20 41s20 42s20 43s20 44s20 45s20
+X 14 teststring.adb
+5U11*TestString 5b11 57l5 57t15
+6a4 Msg1{string} 30r20 32r20
+7a4 Msg2{string} 48r20 50r20
+8a4 Msg3{string}
+9a4 S0{string} 21r35 39r39
+10a4 S1{string} 22r35 40r39
+11a4 S2{string} 23r35 25r40 41r39 43r44
+12a4 S3{string} 24r35 25r35 42r39 43r39
+13a4 S4{string} 26r35 44r39
+14a4 S5{string} 27r35 45r39
+19U14 Test_1 33l8 33t14 55s4
+37U14 Test_2 51l8 51t14 56s4
+
+QQ SPARKVERSION 2018 (20180523)
+GG EK_DIRECT_CALLS teststring__test_1 0
+GG EK_GLOBALS teststring__test_1 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 3 ada__text_io__put_line__2 assertions__assert_true__2 stringextraction__extract_vowels local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS teststring__test_2 0
+GG EK_GLOBALS teststring__test_2 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 3 ada__text_io__put_line__2 assertions__assert_true__2 stringextraction__extract_consonants local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS teststring 0
+GG EK_GLOBALS teststring local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 4 ada__text_io__put_line__2 assertions__assert_true__2 stringextraction__extract_vowels stringextraction__extract_consonants local_var 0 FALSE TRUE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_END_MARKER

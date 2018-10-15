@@ -1,0 +1,61 @@
+{
+  "spark": [
+    {
+      "name": "Assertions.Assert_True",
+      "sloc": [
+        {
+          "file": "assertions.ads",
+          "line": 4
+        }
+      ],
+      "spark": "no"
+    },
+    {
+      "name": "Assertions.Assert_False",
+      "sloc": [
+        {
+          "file": "assertions.ads",
+          "line": 7
+        }
+      ],
+      "spark": "no"
+    },
+    {
+      "name": "Assertions.Assert_True",
+      "sloc": [
+        {
+          "file": "assertions.ads",
+          "line": 10
+        }
+      ],
+      "spark": "no"
+    },
+    {
+      "name": "Assertions.Assert_False",
+      "sloc": [
+        {
+          "file": "assertions.ads",
+          "line": 13
+        }
+      ],
+      "spark": "no"
+    }
+  ],
+  "flow": [
+  ],
+  "proof": [
+  ],
+  "assumptions": [
+  ],
+  "timings": {
+    "marking": 1.95498508401215E-03,
+    "globals (basic)": 1.54931060969830E-02,
+    "globals/properties (advanced)": 3.09047214686871E-02,
+    "flow analysis": 1.60853000124916E-04,
+    "codepeer results": 5.97300004301360E-06,
+    "init_why_sections": 5.17972977831960E-04,
+    "translation of standard": 7.21151381731033E-03,
+    "translation of compilation unit": 7.07579106092453E-02,
+    "proof": 3.83999986297567E-06
+  }
+}

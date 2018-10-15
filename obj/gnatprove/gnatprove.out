@@ -1,0 +1,39 @@
+Summary of SPARK analysis
+=========================
+
+----------------------------------------------------------------------------------------------------------
+SPARK Analysis results        Total        Flow   Interval   CodePeer      Provers   Justified    Unproved
+----------------------------------------------------------------------------------------------------------
+Data Dependencies                 .           .          .          .            .           .           .
+Flow Dependencies                 .           .          .          .            .           .           .
+Initialization                   30          30          .          .            .           .           .
+Non-Aliasing                      .           .          .          .            .           .           .
+Run-time Checks                  40           .          .          .    32 (CVC4)           .           8
+Assertions                       20           .          .          .    18 (CVC4)           .           2
+Functional Contracts             13           .          .          .    10 (CVC4)           .           3
+LSP Verification                  .           .          .          .            .           .           .
+----------------------------------------------------------------------------------------------------------
+Total                           103    30 (29%)          .          .     60 (58%)           .    13 (13%)
+
+
+Analyzed 6 units
+in unit assertions, 0 subprograms and packages out of 4 analyzed
+  Assertions.Assert_False at assertions.ads:7 skipped
+  Assertions.Assert_False at assertions.ads:13 skipped
+  Assertions.Assert_True at assertions.ads:4 skipped
+  Assertions.Assert_True at assertions.ads:10 skipped
+in unit main, 0 subprograms and packages out of 1 analyzed
+  Main at main.adb:9 skipped
+in unit stringextraction, 4 subprograms and packages out of 4 analyzed
+  StringExtraction at stringextraction.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  StringExtraction.Contains at stringextraction.ads:30 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (5 checks)
+  StringExtraction.Extract_Consonants at stringextraction.ads:18 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 19 checks out of 20 proved
+  StringExtraction.Extract_Vowels at stringextraction.ads:7 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 24 checks out of 26 proved
+in unit teststring, 0 subprograms and packages out of 1 analyzed
+  TestString at teststring.adb:5 skipped
+in unit testvector, 0 subprograms and packages out of 1 analyzed
+  TestVector at testvector.adb:5 skipped
+in unit vectormultiplication, 3 subprograms and packages out of 3 analyzed
+  VectorMultiplication at vectormultiplication.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  VectorMultiplication.Constant_Product at vectormultiplication.ads:14 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 11 checks out of 18 proved
+  VectorMultiplication.Scalar_Product at vectormultiplication.ads:5 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 1 checks out of 4 proved

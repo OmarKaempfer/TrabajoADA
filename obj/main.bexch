@@ -1,0 +1,24 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+F:\University\PR3\TrabajoADA\trabajoada.gpr
+20181006102304
+[BOUND OBJECT FILES]
+F:\University\PR3\TrabajoADA\obj\assertions.o
+F:\University\PR3\TrabajoADA\obj\StringExtraction.o
+F:\University\PR3\TrabajoADA\obj\TestString.o
+F:\University\PR3\TrabajoADA\obj\VectorMultiplication.o
+F:\University\PR3\TrabajoADA\obj\TestVector.o
+F:\University\PR3\TrabajoADA\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LF:\University\PR3\TrabajoADA\obj\
+-LF:\University\PR3\TrabajoADA\obj\
+-LC:/gnat/2018/lib/gcc/x86_64-pc-mingw32/7.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2018/lib/gcc/x86_64-pc-mingw32/7.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000
