@@ -1,19 +1,19 @@
 Summary of SPARK analysis
 =========================
 
-----------------------------------------------------------------------------------------------------------
-SPARK Analysis results        Total        Flow   Interval   CodePeer      Provers   Justified    Unproved
-----------------------------------------------------------------------------------------------------------
-Data Dependencies                 .           .          .          .            .           .           .
-Flow Dependencies                 .           .          .          .            .           .           .
-Initialization                   30          30          .          .            .           .           .
-Non-Aliasing                      .           .          .          .            .           .           .
-Run-time Checks                  40           .          .          .    32 (CVC4)           .           8
-Assertions                       20           .          .          .    18 (CVC4)           .           2
-Functional Contracts             13           .          .          .    10 (CVC4)           .           3
-LSP Verification                  .           .          .          .            .           .           .
-----------------------------------------------------------------------------------------------------------
-Total                           103    30 (29%)          .          .     60 (58%)           .    13 (13%)
+--------------------------------------------------------------------------------------------------------
+SPARK Analysis results        Total       Flow   Interval   CodePeer     Provers   Justified    Unproved
+--------------------------------------------------------------------------------------------------------
+Data Dependencies                 .          .          .          .           .           .           .
+Flow Dependencies                 .          .          .          .           .           .           .
+Initialization                    9          9          .          .           .           .           .
+Non-Aliasing                      .          .          .          .           .           .           .
+Run-time Checks                  16          .          .          .    8 (CVC4)           .           8
+Assertions                        4          .          .          .    3 (CVC4)           .           1
+Functional Contracts              2          .          .          .    1 (CVC4)           .           1
+LSP Verification                  .          .          .          .           .           .           .
+--------------------------------------------------------------------------------------------------------
+Total                            31    9 (29%)          .          .    12 (39%)           .    10 (32%)
 
 
 Analyzed 6 units
@@ -24,11 +24,11 @@ in unit assertions, 0 subprograms and packages out of 4 analyzed
   Assertions.Assert_True at assertions.ads:10 skipped
 in unit main, 0 subprograms and packages out of 1 analyzed
   Main at main.adb:9 skipped
-in unit stringextraction, 4 subprograms and packages out of 4 analyzed
-  StringExtraction at stringextraction.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  StringExtraction.Contains at stringextraction.ads:30 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (5 checks)
-  StringExtraction.Extract_Consonants at stringextraction.ads:18 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 19 checks out of 20 proved
-  StringExtraction.Extract_Vowels at stringextraction.ads:7 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 24 checks out of 26 proved
+in unit stringextraction, 0 subprograms and packages out of 4 analyzed
+  StringExtraction at stringextraction.ads:1 skipped
+  StringExtraction.Contains at stringextraction.ads:38 skipped
+  StringExtraction.Extract_Consonants at stringextraction.ads:22 skipped
+  StringExtraction.Extract_Vowels at stringextraction.ads:7 skipped
 in unit teststring, 0 subprograms and packages out of 1 analyzed
   TestString at teststring.adb:5 skipped
 in unit testvector, 0 subprograms and packages out of 1 analyzed

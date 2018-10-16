@@ -37,7 +37,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#efdd7c2a#;
+   u00001 : constant Version_32 := 16#eb5583ca#;
    pragma Export (C, u00001, "mainB");
    u00002 : constant Version_32 := 16#050ff2f0#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -263,30 +263,46 @@ package ada_main is
    pragma Export (C, u00112, "system__finalization_rootS");
    u00113 : constant Version_32 := 16#cf3f1b90#;
    pragma Export (C, u00113, "system__file_control_blockS");
-   u00114 : constant Version_32 := 16#62527af7#;
+   u00114 : constant Version_32 := 16#581077a5#;
    pragma Export (C, u00114, "stringextractionB");
-   u00115 : constant Version_32 := 16#ff598cda#;
+   u00115 : constant Version_32 := 16#ee1590c1#;
    pragma Export (C, u00115, "stringextractionS");
-   u00116 : constant Version_32 := 16#7268f812#;
-   pragma Export (C, u00116, "system__img_boolB");
-   u00117 : constant Version_32 := 16#c779f0d3#;
-   pragma Export (C, u00117, "system__img_boolS");
-   u00118 : constant Version_32 := 16#fbc1aaed#;
-   pragma Export (C, u00118, "teststringB");
-   u00119 : constant Version_32 := 16#dd66044c#;
-   pragma Export (C, u00119, "assertionsB");
-   u00120 : constant Version_32 := 16#0573aace#;
-   pragma Export (C, u00120, "assertionsS");
-   u00121 : constant Version_32 := 16#a3d40535#;
-   pragma Export (C, u00121, "testvectorB");
-   u00122 : constant Version_32 := 16#b5a7e4f2#;
-   pragma Export (C, u00122, "vectormultiplicationB");
-   u00123 : constant Version_32 := 16#a2fd98ca#;
-   pragma Export (C, u00123, "vectormultiplicationS");
-   u00124 : constant Version_32 := 16#5dc07a5a#;
-   pragma Export (C, u00124, "system__memoryB");
-   u00125 : constant Version_32 := 16#6bdde70c#;
-   pragma Export (C, u00125, "system__memoryS");
+   u00116 : constant Version_32 := 16#fd83e873#;
+   pragma Export (C, u00116, "system__concat_2B");
+   u00117 : constant Version_32 := 16#300056e8#;
+   pragma Export (C, u00117, "system__concat_2S");
+   u00118 : constant Version_32 := 16#608e2cd1#;
+   pragma Export (C, u00118, "system__concat_5B");
+   u00119 : constant Version_32 := 16#b5fec216#;
+   pragma Export (C, u00119, "system__concat_5S");
+   u00120 : constant Version_32 := 16#932a4690#;
+   pragma Export (C, u00120, "system__concat_4B");
+   u00121 : constant Version_32 := 16#4cc4aa18#;
+   pragma Export (C, u00121, "system__concat_4S");
+   u00122 : constant Version_32 := 16#2b70b149#;
+   pragma Export (C, u00122, "system__concat_3B");
+   u00123 : constant Version_32 := 16#39d0dd9d#;
+   pragma Export (C, u00123, "system__concat_3S");
+   u00124 : constant Version_32 := 16#2b93a046#;
+   pragma Export (C, u00124, "system__img_charB");
+   u00125 : constant Version_32 := 16#ae94d9df#;
+   pragma Export (C, u00125, "system__img_charS");
+   u00126 : constant Version_32 := 16#ea8db6f6#;
+   pragma Export (C, u00126, "teststringB");
+   u00127 : constant Version_32 := 16#dd66044c#;
+   pragma Export (C, u00127, "assertionsB");
+   u00128 : constant Version_32 := 16#0573aace#;
+   pragma Export (C, u00128, "assertionsS");
+   u00129 : constant Version_32 := 16#a3d40535#;
+   pragma Export (C, u00129, "testvectorB");
+   u00130 : constant Version_32 := 16#b5a7e4f2#;
+   pragma Export (C, u00130, "vectormultiplicationB");
+   u00131 : constant Version_32 := 16#a2fd98ca#;
+   pragma Export (C, u00131, "vectormultiplicationS");
+   u00132 : constant Version_32 := 16#5dc07a5a#;
+   pragma Export (C, u00132, "system__memoryB");
+   u00133 : constant Version_32 := 16#6bdde70c#;
+   pragma Export (C, u00133, "system__memoryS");
 
    --  BEGIN ELABORATION ORDER
    --  ada%s
@@ -294,8 +310,8 @@ package ada_main is
    --  ada.characters.latin_1%s
    --  interfaces%s
    --  system%s
-   --  system.img_bool%s
-   --  system.img_bool%b
+   --  system.img_char%s
+   --  system.img_char%b
    --  system.img_int%s
    --  system.img_int%b
    --  system.io%s
@@ -326,6 +342,14 @@ package ada_main is
    --  system.wch_jis%b
    --  system.wch_cnv%s
    --  system.wch_cnv%b
+   --  system.concat_2%s
+   --  system.concat_2%b
+   --  system.concat_3%s
+   --  system.concat_3%b
+   --  system.concat_4%s
+   --  system.concat_4%b
+   --  system.concat_5%s
+   --  system.concat_5%b
    --  system.traceback%s
    --  system.traceback%b
    --  system.case_util%s

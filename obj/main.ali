@@ -7,14 +7,20 @@ P ZX
 
 RN
 RV NO_IO
+RV NO_SECONDARY_STACK
+RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U main%b		main.adb		efdd7c2a NE OO SU
+U main%b		main.adb		eb5583ca NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W stringextraction%s	stringextraction.adb	stringextraction.ali
-Z system.img_bool%s	s-imgboo.adb		s-imgboo.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.concat_5%s	s-conca5.adb		s-conca5.ali
+Z system.img_char%s	s-imgcha.adb		s-imgcha.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 W teststring%b		teststring.adb		teststring.ali
 W testvector%b		testvector.adb		testvector.ali
 W vectormultiplication%s  vectormultiplication.adb  vectormultiplication.ali
@@ -29,13 +35,16 @@ D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
 D assertions.ads	20180927103850 0573aace assertions%s
 D interfac.ads		20180524051736 5ab55268 interfaces%s
 D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
-D main.adb		20181015110650 c08cec72 main%b
-D stringextraction.ads	20181015104436 ff598cda stringextraction%s
+D main.adb		20181016171906 c4041392 main%b
+D stringextraction.ads	20181016174446 ee1590c1 stringextraction%s
 D system.ads		20180524051738 32a08138 system%s
+D s-conca2.ads		20180524051736 02a0d7d0 system.concat_2%s
+D s-conca5.ads		20180524051736 875e432e system.concat_5%s
 D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
 D s-exctab.ads		20180524051738 54135002 system.exception_table%s
 D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
-D s-imgboo.ads		20180524051736 f5d971eb system.img_bool%s
+D s-imgcha.ads		20180524051736 9c3458e7 system.img_char%s
+D s-imgint.ads		20180524051736 02dbe0c2 system.img_int%s
 D s-parame.ads		20180524051738 48ec542b system.parameters%s
 D s-secsta.ads		20180524051738 20bbe636 system.secondary_stack%s
 D s-soflin.ads		20180524051736 a7318a92 system.soft_links%s
@@ -49,21 +58,20 @@ D teststring.adb	20181011110728 89f63fa3 teststring%b
 D testvector.adb	20181006125542 8c47846b testvector%b
 D vectormultiplication.ads  20181009092440 a2fd98ca vectormultiplication%s
 X 1 ada.ads
-16K9*Ada 20e8 11|5r6 5r23 12r4
+16K9*Ada 20e8 11|5r6 5r23 13r4 16r4 17r4 20r4
 X 6 a-textio.ads
-49K13*Text_IO 471e16 11|5w10 5r27 12r8
-263U14*Put_Line 11|12s16
+49K13*Text_IO 471e16 11|5w10 5r27 13r8 16r8 17r8 20r8
+263U14*Put_Line 11|13s16 16s16 17s16 20s16
 X 11 main.adb
-9U11*Main 9b11 16l5 16t9
-10a4 stringprueba{string}
+9U11*Main 9b11 22l5 22t9
+10a4 stringprueba{string} 13r39 14r47 15r47 20r49
 X 12 stringextraction.ads
-1K9*StringExtraction 11|4w6 4r28 7w6 7r33 12|40e25
-4a4*vowels{string} 11|12r48
-30V13*Contains{boolean} 11|12s39
-X 27 teststring.adb
-5U11*TestString 11|2w6 14s4
-X 28 testvector.adb
+1K9*StringExtraction 11|4w6 4r28 7w6 7r33 12|48e25
+7V13*Extract_Vowels{string} 11|16s39
+X 30 teststring.adb
+5U11*TestString 11|2w6 19s4
+X 31 testvector.adb
 5U11*TestVector 11|1w6
-X 29 vectormultiplication.ads
-1K9*VectorMultiplication 11|3w6 3r32 29|25e25
+X 32 vectormultiplication.ads
+1K9*VectorMultiplication 11|3w6 3r32 32|25e25
 

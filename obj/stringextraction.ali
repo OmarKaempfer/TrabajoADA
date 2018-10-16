@@ -11,50 +11,65 @@ RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U stringextraction%b	stringextraction.adb	62527af7 NE OO PK
+U stringextraction%b	stringextraction.adb	581077a5 NE OO PK
 Z interfaces%s		interfac.ads		interfac.ali
 Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 
-U stringextraction%s	stringextraction.ads	ff598cda EE NE OO PK
+U stringextraction%s	stringextraction.ads	ee1590c1 EE NE OO PK
 
 D interfac.ads		20180524051736 5ab55268 interfaces%s
-D stringextraction.ads	20181015104436 ff598cda stringextraction%s
-D stringextraction.adb	20181015105618 9d0bf62d stringextraction%b
+D stringextraction.ads	20181016174446 ee1590c1 stringextraction%s
+D stringextraction.adb	20181016174144 b605e764 stringextraction%b
 D system.ads		20180524051738 32a08138 system%s
 D s-parame.ads		20180524051738 48ec542b system.parameters%s
 D s-secsta.ads		20180524051738 20bbe636 system.secondary_stack%s
 D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
 X 2 stringextraction.ads
-1K9*StringExtraction 40l9 40e25 3|1b14 74l5 74t21
-3N4*Max_String_Length 9r38 21r38 32r38
-4a4*vowels{string} 14r33 3|11r22 23r43 25r47
-5a4*consonants{string} 26r33 3|42r22 53r32
-7V13*Extract_Vowels{string} 7>29 12r16 15r38 16r28 3|5b13 32l8 32t22
-7a29 Given_string{string} 9r15 10r17 11r19 12r48 13r31 14r41 16r55 3|5b29
-. 6r29 9r16 11r30 14r40 24r45 25r55 26r85
-13i26 J{integer} 14r54 16r68
-15i33 K{integer} 16r50
-18V13*Extract_Consonants{string} 18>33 24r16 27r38 28r28 3|36b13 58l8 58t26
-18a33 Given_string{string} 21r15 22r17 23r19 24r52 25r31 26r45 28r59 3|36b33
-. 37r29 40r16 42r34 45r40
-25i26 J{integer} 26r58 28r72
-27i33 K{integer} 28r54
-30V13*Contains{boolean} 14s24 26s24 30>23 30>48 36r21 38r21 3|11s13 23s34
-. 25s38 26s38 42s13 53s23 62b13 72l8 72t16
-30a23 Given_String{string} 32r15 33r35 34r27 3|62b22 64r16 65r13 68r26 69r15
-30e48 char{character} 34r45 3|62b47 65r31 69r34
-33i30 J{integer} 34r40
+1K9*StringExtraction 48l9 48e25 3|1b14 87l5 87t21
+3N4*Max_String_Length 9r38 24r38 40r38
+4a4*vowels{string} 14r39 15r28 19r35 20r23 30r28 3|11r22 18r43 20r54 21r41
+. 31r19
+5a4*consonants{string} 29r39 34r35 35r23 3|46r22 53r43 55r54 56r41 66r19
+7V13*Extract_Vowels{string} 7>29 12r16 16r38 17r28 18r31 20r35 3|5b13 36l8
+. 36t22
+7a29 Given_string{string} 9r15 10r17 11r19 12r48 13r31 15r40 17r55 3|5b29
+. 6r24 6r46 7r34 9r16 11r30 12r37 19r45 21r53 24r55
+13i26 J{integer} 15r53 17r68
+14i34 K{integer} 15r35
+16i33 K{integer} 17r50
+18i26 J{integer} 20r57
+19i30 K{integer} 20r30
+22V13*Extract_Consonants{string} 22>33 27r16 31r38 32r28 33r31 35r39 3|40b13
+. 71l8 71t26
+22a33 Given_string{string} 24r15 25r17 26r19 27r52 28r31 30r40 32r59 3|40b33
+. 41r24 41r46 42r34 44r16 46r34 47r37 54r45 56r57 59r55
+28i26 J{integer} 30r53 32r72
+29i34 K{integer} 30r35
+31i33 K{integer} 32r54
+33i26 J{integer} 35r65
+34i30 K{integer} 35r34
+38V13*Contains{boolean} 38>23 38>48 44r21 46r21 3|11s13 18s34 31s10 46s13
+. 53s34 66s10 75b13 85l8 85t16
+38a23 Given_String{string} 40r15 41r35 42r27 3|75b22 77r16 78r13 81r26 82r15
+38e48 char{character} 42r45 3|75b47 78r31 82r34
+41i30 J{integer} 42r40
 X 3 stringextraction.adb
-6a7 result{string} 12r31 14m16 20r53 22r45 23r51 26r47 26r54 30r14 30r21
-7i7 result_index{natural} 12r16 13m16 13r32 14r23 20r32 21r32 22r61 26r70
-. 30r37
-9i11 J{integer} 11r43 14r53 21r48 24r67
-22i40 K{integer} 23r58
-24i40 K{integer} 25r68 26r98
-37a7 result{string} 43r31 45m16 50r53 52r45 53r44 56r14 56r21
-38i7 result_index{natural} 43r16 44m16 44r32 45r23 50r32 51r32 52r61 56r37
-40i11 J{integer} 42r47 45r53 51r48
-52i40 K{integer} 53r51
-64i11 J{integer} 65r26 68r48
-68i21 K{integer} 69r28
+6a7 result{string} 12m13 16r48 17r45 18r51 23r53 24r43 27r10 31r27 31r34
+. 32r17 34r17 34r24
+7i7 result_index{positive} 12r20 13m13 13r29 16r32 34r40
+9i11 J{integer} 11r43 12r50 19r67
+17i40 K{integer} 18r58
+19i40 K{integer} 21r66 24r68
+20i49 L{integer} 21r48
+23i48 M{integer} 24r50
+41a7 result{string} 47m13 51r48 52r45 53r55 58r53 59r43 62r10 66r31 66r38
+. 67r17 69r17 69r24
+42i7 result_index{positive} 47r20 48m13 48r29 51r32 69r40
+44i11 J{integer} 46r47 47r50 54r67
+52i40 K{integer} 53r62
+54i40 K{integer} 56r70 59r68
+55i49 L{integer} 56r52
+58i48 M{integer} 59r50
+77i11 J{integer} 78r26 81r48
+81i21 K{integer} 82r28
 

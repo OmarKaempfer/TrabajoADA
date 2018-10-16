@@ -1,60 +1,73 @@
-package body StringExtraction with SPARK_Mode => On is
+package body StringExtraction with SPARK_Mode => Off is
 
 
 
    function Extract_Vowels (Given_string : in String) return String is
-      result : String (1 .. Given_string'Length) := (others => Character'Val(0));
-      result_index : Natural := 0;
+      result : String (Given_string'First .. Given_string'Last) := (others => Character'Val(0));
+      result_index : Positive := Given_string'First;
    begin
       for J in Given_string'Range loop
 
-         if Contains(vowels, Given_String(J)) = True then
-            if result_index < result'Last then
-               result_index := result_index + 1;
-               result(result_index) := Given_String(J);
-
-            end if;
-
+         if Contains(vowels, Given_String(J)) then
+            result(result_index) := Given_string(J);
+            result_index := result_index + 1;
          end if;
 
-         pragma Loop_Invariant(result_index in 0 .. result'Last);
-         pragma Loop_Invariant(result_index <= J);
-         pragma Loop_Invariant(for all K in result'First .. result_index =>
+         pragma Loop_Invariant(result_index <= result'Last + 1);
+         pragma Loop_Invariant(for all K in result'Range =>
                                  Contains(vowels, result(K)) = True);
          pragma Loop_Invariant(for all K in Given_string'First .. J =>
-                                 (if Contains(vowels, Given_string(K)) = True then
-                                     (Contains(result, Given_string(K)) = True)));
-
+                                  (if (for some L in vowels'Range =>
+                                        vowels(L) = Given_string(K))
+                                  then
+                                     (for some M in result'Range =>
+                                          result(M) = Given_string(K))));
       end loop;
 
-      return result(result'First .. result_index);
+      if result'Length = 0 then
+         return "";
+      end if;
 
+      if Contains(vowels, result(result'Last)) then
+         return result;
+      else
+         return result(result'First .. result_index - 1);
+      end if;
    end Extract_Vowels;
 
 
 
    function Extract_Consonants (Given_string : in String) return String is
-      result : String (1 .. Given_string'Length) := (others => Character'Val(0));
-      result_index : Natural := 0;
+      result : String (Given_string'First .. Given_string'Last) := (others => Character'Val(0));
+      result_index : Positive := Given_string'First;
    begin
       for J in Given_string'Range loop
 
          if Contains(consonants, Given_String(J)) then
-            if result_index < result'Last then
-               result_index := result_index + 1;
-               result(result_index) := Given_String(J);
-            end if;
-
+            result(result_index) := Given_string(J);
+            result_index := result_index + 1;
          end if;
 
-         pragma Loop_Invariant(result_index in 0 .. result'Last);
-         pragma Loop_Invariant(result_index <= J);
-         pragma Loop_Invariant(for all K in result'First .. result_index =>
-                      Contains(consonants, result(K)) = True);
+         pragma Loop_Invariant(result_index <= result'Last + 1);
+         pragma Loop_Invariant(for all K in result'Range =>
+                                 Contains(consonants, result(K)));
+         pragma Loop_Invariant(for all K in Given_string'First .. J =>
+                                  (if (for some L in consonants'Range =>
+                                        consonants(L) = Given_string(K))
+                                  then
+                                     (for some M in result'Range =>
+                                          result(M) = Given_string(K))));
       end loop;
 
-      return result(result'First .. result_index);
+      if result'Length = 0 then
+         return "";
+      end if;
 
+      if Contains(consonants, result(result'Last)) then
+         return result;
+      else
+         return result(result'First .. result_index - 1);
+      end if;
    end Extract_Consonants;
 
 
