@@ -11,6 +11,16 @@
       "spark": "spec"
     },
     {
+      "name": "StringExtraction.Is_Contained",
+      "sloc": [
+        {
+          "file": "stringextraction.ads",
+          "line": 42
+        }
+      ],
+      "spark": "all"
+    },
+    {
       "name": "StringExtraction.Extract_Vowels",
       "sloc": [
         {
@@ -25,7 +35,7 @@
       "sloc": [
         {
           "file": "stringextraction.ads",
-          "line": 22
+          "line": 19
         }
       ],
       "spark": "spec"
@@ -35,7 +45,7 @@
       "sloc": [
         {
           "file": "stringextraction.ads",
-          "line": 38
+          "line": 32
         }
       ],
       "spark": "spec"
@@ -44,18 +54,213 @@
   "flow": [
   ],
   "proof": [
+    {
+      "file": "stringextraction.ads",
+      "line": 43,
+      "col": 64,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "StringExtraction.Is_Contained",
+        "sloc": [
+          {
+            "file": "stringextraction.ads",
+            "line": 42
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "stringextraction.ads",
+      "check_line": 43,
+      "check_col": 64,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    }
   ],
   "assumptions": [
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "StringExtraction",
+          "sloc": [
+            {
+              "file": "stringextraction.ads",
+              "line": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "StringExtraction.Contains",
+          "sloc": [
+            {
+              "file": "stringextraction.ads",
+              "line": 32
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "StringExtraction.Is_Contained",
+          "sloc": [
+            {
+              "file": "stringextraction.ads",
+              "line": 42
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "StringExtraction.Is_Contained",
+          "sloc": [
+            {
+              "file": "stringextraction.ads",
+              "line": 42
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "StringExtraction.Contains",
+          "sloc": [
+            {
+              "file": "stringextraction.ads",
+              "line": 32
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "StringExtraction.Extract_Consonants",
+          "sloc": [
+            {
+              "file": "stringextraction.ads",
+              "line": 19
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "StringExtraction.Extract_Consonants",
+          "sloc": [
+            {
+              "file": "stringextraction.ads",
+              "line": 19
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "StringExtraction.Extract_Vowels",
+          "sloc": [
+            {
+              "file": "stringextraction.ads",
+              "line": 7
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "StringExtraction.Extract_Vowels",
+          "sloc": [
+            {
+              "file": "stringextraction.ads",
+              "line": 7
+            }
+          ]
+        }
+      }
+    }
   ],
   "timings": {
-    "marking": 4.06186009058729E-04,
-    "globals (basic)": 2.37653002841398E-04,
-    "globals/properties (advanced)": 7.23199977073818E-04,
-    "flow analysis": 1.82015798054636E-03,
+    "marking": 3.89546010410413E-04,
+    "globals (basic)": 2.48747004661709E-04,
+    "globals/properties (advanced)": 1.10591901466250E-03,
+    "flow analysis": 3.29173007048666E-03,
     "codepeer results": 7.67999972595135E-06,
-    "init_why_sections": 3.89546999940649E-04,
-    "translation of standard": 5.09012909606099E-03,
-    "translation of compilation unit": 5.75018115341663E-03,
-    "proof": 3.41400004799652E-06
+    "init_why_sections": 4.36906004324555E-04,
+    "translation of standard": 4.68991603702307E-03,
+    "translation of compilation unit": 3.98591719567776E-03,
+    "proof": 7.43734836578369E-01
   }
 }

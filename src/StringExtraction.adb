@@ -8,31 +8,22 @@ package body StringExtraction with SPARK_Mode => Off is
    begin
       for J in Given_string'Range loop
 
-         if Contains(vowels, Given_String(J)) then
+         if Is_Contained(Given_String(J), vowels) then
             result(result_index) := Given_string(J);
             result_index := result_index + 1;
          end if;
 
          pragma Loop_Invariant(result_index <= result'Last + 1);
          pragma Loop_Invariant(for all K in result'Range =>
-                                 Contains(vowels, result(K)) = True);
+                                 Is_Contained(result(K), vowels));
          pragma Loop_Invariant(for all K in Given_string'First .. J =>
-                                  (if (for some L in vowels'Range =>
-                                        vowels(L) = Given_string(K))
-                                  then
-                                     (for some M in result'Range =>
-                                          result(M) = Given_string(K))));
+                                  (if Is_Contained(Given_string(K), vowels)
+                                   then
+                                     Is_Contained(Given_string(K), result)));
       end loop;
 
-      if result'Length = 0 then
-         return "";
-      end if;
+      return result(result'First .. result_index - 1);
 
-      if Contains(vowels, result(result'Last)) then
-         return result;
-      else
-         return result(result'First .. result_index - 1);
-      end if;
    end Extract_Vowels;
 
 
@@ -43,31 +34,22 @@ package body StringExtraction with SPARK_Mode => Off is
    begin
       for J in Given_string'Range loop
 
-         if Contains(consonants, Given_String(J)) then
+         if Is_Contained(Given_String(J), consonants) then
             result(result_index) := Given_string(J);
             result_index := result_index + 1;
          end if;
 
          pragma Loop_Invariant(result_index <= result'Last + 1);
          pragma Loop_Invariant(for all K in result'Range =>
-                                 Contains(consonants, result(K)));
+                                 Is_Contained(result(K), consonants));
          pragma Loop_Invariant(for all K in Given_string'First .. J =>
-                                  (if (for some L in consonants'Range =>
-                                        consonants(L) = Given_string(K))
-                                  then
-                                     (for some M in result'Range =>
-                                          result(M) = Given_string(K))));
+                                  (if Is_Contained(Given_string(K), consonants)
+                                   then
+                                     Is_Contained(Given_string(K), result)));
       end loop;
 
-      if result'Length = 0 then
-         return "";
-      end if;
+      return result(result'First .. result_index - 1);
 
-      if Contains(consonants, result(result'Last)) then
-         return result;
-      else
-         return result(result'First .. result_index - 1);
-      end if;
    end Extract_Consonants;
 
 

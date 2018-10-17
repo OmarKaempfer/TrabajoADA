@@ -10,9 +10,7 @@ procedure Main is
    stringprueba : String := "";
 begin
 
-   Ada.Text_IO.Put_Line(Integer'Image(stringprueba'First)
-                        & " " & Integer'Image(stringprueba'Last)
-                        & " " & Integer'Image(stringprueba'Length));
+
    Ada.Text_IO.Put_Line(Integer'Image(Extract_Vowels("asasadediffofgggu")'Length));
    Ada.Text_IO.Put_Line(Character'Image(Character'Val(0)) & "sads");
    --TestVector;
