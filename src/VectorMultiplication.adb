@@ -18,7 +18,9 @@ package body VectorMultiplication with SPARK_Mode => On is
          count := count + 1;
          pragma Loop_Variant(Increases => count);
          pragma Loop_Variant(Decreases => Given_vector'Last - count);
-         pragma Loop_Invariant(Given_vector'First + Given_vector'First = Given_vector'Length);
+         pragma Loop_Invariant(for all K in result'First .. count - 1 =>
+                                    Given_vector(K) * Given_constant = result(K));
+         pragma Loop_Invariant(count in Given_vector'First .. Given_vector'Last + 1);
       end loop;
       return result;
    end Constant_Product;

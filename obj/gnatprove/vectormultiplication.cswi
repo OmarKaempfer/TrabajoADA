@@ -1,7 +1,12 @@
-20181015103610
+20181018121530
 -c
 -x
 ada
 -gnatA
+-gnato
+-g
+-gnata
+-fstack-check
+-gnat12
 -gnatc
 -gnates=F:\University\PR3\TrabajoADA\obj\gnatprove\a45950e4.tmp

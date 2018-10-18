@@ -1738,6 +1738,7 @@ module Vectormultiplication__int_vector
  use import "int".Int
  use        Standard__integer
  use        Standard__integer
+ use        Standard__positive
  use        Standard__integer__rep
  use        Array__Int__Standard__integer
 
@@ -1756,7 +1757,7 @@ module Vectormultiplication__int_vector
  function to_rep = Standard__integer__rep.to_rep, 
  function rep_to_int = index_1_id, 
  predicate in_range_base = Standard__integer.in_range, 
- predicate index_dynamic_property = Standard__integer.dynamic_property, 
+ predicate index_dynamic_property = Standard__positive.dynamic_property, 
  predicate index_rep_le = Int.(<=)
  
  type int_vector =
@@ -1796,7 +1797,7 @@ module Vectormultiplication__scalar_product__first_vector
  use import "_gnatprove_standard".Main
  use        Vectormultiplication__int_vector
 
- function first_vector #"vectormultiplication.ads" 5 0 0#"model_projected" "model_trace:2540" "name:First_vector" 
+ function first_vector #"vectormultiplication.ads" 5 0 0#"model_projected" "model_trace:2567" "name:First_vector" 
    : Vectormultiplication__int_vector.int_vector
  
  function attr__ATTRIBUTE_ADDRESS 
@@ -1816,7 +1817,7 @@ module Vectormultiplication__scalar_product__second_vector
  use import "_gnatprove_standard".Main
  use        Vectormultiplication__int_vector
 
- function second_vector #"vectormultiplication.ads" 5 0 0#"model_projected" "model_trace:2547" "name:Second_vector" 
+ function second_vector #"vectormultiplication.ads" 5 0 0#"model_projected" "model_trace:2574" "name:Second_vector" 
    : Vectormultiplication__int_vector.int_vector
  
  function attr__ATTRIBUTE_ADDRESS 
@@ -1849,7 +1850,7 @@ module Vectormultiplication__constant_product__given_vector
  use import "_gnatprove_standard".Main
  use        Vectormultiplication__int_vector
 
- function given_vector #"vectormultiplication.ads" 14 0 0#"model_projected" "model_trace:2609" "name:Given_vector" 
+ function given_vector #"vectormultiplication.ads" 14 0 0#"model_projected" "model_trace:2636" "name:Given_vector" 
    : Vectormultiplication__int_vector.int_vector
  
  function attr__ATTRIBUTE_ADDRESS 
@@ -1868,7 +1869,7 @@ end
 module Vectormultiplication__constant_product__given_constant
  use import "_gnatprove_standard".Main
 
- function given_constant #"vectormultiplication.ads" 14 0 0#"model" "model_trace:2618" "name:Given_constant" 
+ function given_constant #"vectormultiplication.ads" 14 0 0#"model" "model_trace:2645" "name:Given_constant" 
    : int
  
  function attr__ATTRIBUTE_ADDRESS 
@@ -1883,83 +1884,7 @@ module Vectormultiplication__constant_product__given_constant___axiom
 
 end
 
-(* Module for axiomatizing type "T8s" defined at vectormultiplication.ads:17, created in Gnat2Why.Types.Translate_Type *)
-module Vectormultiplication__constant_product__L7s__T8s
- use import "_gnatprove_standard".Main
- use import "int".Int
- use        Standard__integer
- use        Standard__integer__rep
-
- type t8s =
-  Standard__integer.integer
- 
- predicate dynamic_property 
-   (first_int : int) (last_int : int) (x : int)  =
-  ( (first_int <= x) /\ (x <= last_int) )
- 
- clone export "ada__model".Dynamic_Discrete with
- type t = t8s, 
- type rep_type = int, 
- function base_to_rep = Standard__integer__rep.to_rep, 
- function base_of_rep = Standard__integer__rep.of_rep, 
- predicate dynamic_property = dynamic_property
- 
- type t8s__ref =
-  { mutable t8s__content "model_trace:" "name:" : t8s }
- 
- function t8s__ref___projection 
-   (a : t8s__ref) : t8s =
-  a.t8s__content
- 
- meta "model_projection" function t8s__ref___projection
- 
- meta "inline : no" function t8s__ref___projection
- 
- val t8s__havoc 
-   (x : t8s__ref) : unit
-  writes {x}
-
-end
-
-(* Module for axiomatizing type "T10s" defined at vectormultiplication.ads:19, created in Gnat2Why.Types.Translate_Type *)
-module Vectormultiplication__constant_product__L9s__T10s
- use import "_gnatprove_standard".Main
- use import "int".Int
- use        Standard__integer
- use        Standard__integer__rep
-
- type t10s =
-  Standard__integer.integer
- 
- predicate dynamic_property 
-   (first_int : int) (last_int : int) (x : int)  =
-  ( (first_int <= x) /\ (x <= last_int) )
- 
- clone export "ada__model".Dynamic_Discrete with
- type t = t10s, 
- type rep_type = int, 
- function base_to_rep = Standard__integer__rep.to_rep, 
- function base_of_rep = Standard__integer__rep.of_rep, 
- predicate dynamic_property = dynamic_property
- 
- type t10s__ref =
-  { mutable t10s__content "model_trace:" "name:" : t10s }
- 
- function t10s__ref___projection 
-   (a : t10s__ref) : t10s =
-  a.t10s__content
- 
- meta "model_projection" function t10s__ref___projection
- 
- meta "inline : no" function t10s__ref___projection
- 
- val t10s__havoc 
-   (x : t10s__ref) : unit
-  writes {x}
-
-end
-
-(* Module for axiomatizing type "T12s" defined at vectormultiplication.ads:21, created in Gnat2Why.Types.Translate_Type *)
+(* Module for axiomatizing type "T12s" defined at vectormultiplication.ads:20, created in Gnat2Why.Types.Translate_Type *)
 module Vectormultiplication__constant_product__L11s__T12s
  use import "_gnatprove_standard".Main
  use import "int".Int
@@ -1993,6 +1918,158 @@ module Vectormultiplication__constant_product__L11s__T12s
  
  val t12s__havoc 
    (x : t12s__ref) : unit
+  writes {x}
+
+end
+
+(* Module for axiomatizing type "T14s" defined at vectormultiplication.ads:19, created in Gnat2Why.Types.Translate_Type *)
+module Vectormultiplication__constant_product__L13s__T14s
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__integer
+ use        Standard__integer__rep
+
+ type t14s =
+  Standard__integer.integer
+ 
+ predicate dynamic_property 
+   (first_int : int) (last_int : int) (x : int)  =
+  ( (first_int <= x) /\ (x <= last_int) )
+ 
+ clone export "ada__model".Dynamic_Discrete with
+ type t = t14s, 
+ type rep_type = int, 
+ function base_to_rep = Standard__integer__rep.to_rep, 
+ function base_of_rep = Standard__integer__rep.of_rep, 
+ predicate dynamic_property = dynamic_property
+ 
+ type t14s__ref =
+  { mutable t14s__content "model_trace:" "name:" : t14s }
+ 
+ function t14s__ref___projection 
+   (a : t14s__ref) : t14s =
+  a.t14s__content
+ 
+ meta "model_projection" function t14s__ref___projection
+ 
+ meta "inline : no" function t14s__ref___projection
+ 
+ val t14s__havoc 
+   (x : t14s__ref) : unit
+  writes {x}
+
+end
+
+(* Module for axiomatizing type "T16s" defined at vectormultiplication.ads:21, created in Gnat2Why.Types.Translate_Type *)
+module Vectormultiplication__constant_product__L15s__T16s
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__integer
+ use        Standard__integer__rep
+
+ type t16s =
+  Standard__integer.integer
+ 
+ predicate dynamic_property 
+   (first_int : int) (last_int : int) (x : int)  =
+  ( (first_int <= x) /\ (x <= last_int) )
+ 
+ clone export "ada__model".Dynamic_Discrete with
+ type t = t16s, 
+ type rep_type = int, 
+ function base_to_rep = Standard__integer__rep.to_rep, 
+ function base_of_rep = Standard__integer__rep.of_rep, 
+ predicate dynamic_property = dynamic_property
+ 
+ type t16s__ref =
+  { mutable t16s__content "model_trace:" "name:" : t16s }
+ 
+ function t16s__ref___projection 
+   (a : t16s__ref) : t16s =
+  a.t16s__content
+ 
+ meta "model_projection" function t16s__ref___projection
+ 
+ meta "inline : no" function t16s__ref___projection
+ 
+ val t16s__havoc 
+   (x : t16s__ref) : unit
+  writes {x}
+
+end
+
+(* Module for axiomatizing type "T18s" defined at vectormultiplication.ads:23, created in Gnat2Why.Types.Translate_Type *)
+module Vectormultiplication__constant_product__L17s__T18s
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__integer
+ use        Standard__integer__rep
+
+ type t18s =
+  Standard__integer.integer
+ 
+ predicate dynamic_property 
+   (first_int : int) (last_int : int) (x : int)  =
+  ( (first_int <= x) /\ (x <= last_int) )
+ 
+ clone export "ada__model".Dynamic_Discrete with
+ type t = t18s, 
+ type rep_type = int, 
+ function base_to_rep = Standard__integer__rep.to_rep, 
+ function base_of_rep = Standard__integer__rep.of_rep, 
+ predicate dynamic_property = dynamic_property
+ 
+ type t18s__ref =
+  { mutable t18s__content "model_trace:" "name:" : t18s }
+ 
+ function t18s__ref___projection 
+   (a : t18s__ref) : t18s =
+  a.t18s__content
+ 
+ meta "model_projection" function t18s__ref___projection
+ 
+ meta "inline : no" function t18s__ref___projection
+ 
+ val t18s__havoc 
+   (x : t18s__ref) : unit
+  writes {x}
+
+end
+
+(* Module for axiomatizing type "T20s" defined at vectormultiplication.ads:25, created in Gnat2Why.Types.Translate_Type *)
+module Vectormultiplication__constant_product__L19s__T20s
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__integer
+ use        Standard__integer__rep
+
+ type t20s =
+  Standard__integer.integer
+ 
+ predicate dynamic_property 
+   (first_int : int) (last_int : int) (x : int)  =
+  ( (first_int <= x) /\ (x <= last_int) )
+ 
+ clone export "ada__model".Dynamic_Discrete with
+ type t = t20s, 
+ type rep_type = int, 
+ function base_to_rep = Standard__integer__rep.to_rep, 
+ function base_of_rep = Standard__integer__rep.of_rep, 
+ predicate dynamic_property = dynamic_property
+ 
+ type t20s__ref =
+  { mutable t20s__content "model_trace:" "name:" : t20s }
+ 
+ function t20s__ref___projection 
+   (a : t20s__ref) : t20s =
+  a.t20s__content
+ 
+ meta "model_projection" function t20s__ref___projection
+ 
+ meta "inline : no" function t20s__ref___projection
+ 
+ val t20s__havoc 
+   (x : t20s__ref) : unit
   writes {x}
 
 end
@@ -2338,6 +2415,82 @@ module Vectormultiplication__constant_product__S5b
  
  val s5b__havoc 
    (x : s5b__ref) : unit
+  writes {x}
+
+end
+
+(* Module for axiomatizing type "T9b" defined at vectormultiplication.adb:21, created in Gnat2Why.Types.Translate_Type *)
+module Vectormultiplication__constant_product__L_2__L8b__T9b
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__integer
+ use        Standard__integer__rep
+
+ type t9b =
+  Standard__integer.integer
+ 
+ predicate dynamic_property 
+   (first_int : int) (last_int : int) (x : int)  =
+  ( (first_int <= x) /\ (x <= last_int) )
+ 
+ clone export "ada__model".Dynamic_Discrete with
+ type t = t9b, 
+ type rep_type = int, 
+ function base_to_rep = Standard__integer__rep.to_rep, 
+ function base_of_rep = Standard__integer__rep.of_rep, 
+ predicate dynamic_property = dynamic_property
+ 
+ type t9b__ref =
+  { mutable t9b__content "model_trace:" "name:" : t9b }
+ 
+ function t9b__ref___projection 
+   (a : t9b__ref) : t9b =
+  a.t9b__content
+ 
+ meta "model_projection" function t9b__ref___projection
+ 
+ meta "inline : no" function t9b__ref___projection
+ 
+ val t9b__havoc 
+   (x : t9b__ref) : unit
+  writes {x}
+
+end
+
+(* Module for axiomatizing type "T7b" defined at vectormultiplication.adb:21, created in Gnat2Why.Types.Translate_Type *)
+module Vectormultiplication__constant_product__L_2__L6b__T7b
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__integer
+ use        Standard__integer__rep
+
+ type t7b =
+  Standard__integer.integer
+ 
+ predicate dynamic_property 
+   (first_int : int) (last_int : int) (x : int)  =
+  ( (first_int <= x) /\ (x <= last_int) )
+ 
+ clone export "ada__model".Dynamic_Discrete with
+ type t = t7b, 
+ type rep_type = int, 
+ function base_to_rep = Standard__integer__rep.to_rep, 
+ function base_of_rep = Standard__integer__rep.of_rep, 
+ predicate dynamic_property = dynamic_property
+ 
+ type t7b__ref =
+  { mutable t7b__content "model_trace:" "name:" : t7b }
+ 
+ function t7b__ref___projection 
+   (a : t7b__ref) : t7b =
+  a.t7b__content
+ 
+ meta "model_projection" function t7b__ref___projection
+ 
+ meta "inline : no" function t7b__ref___projection
+ 
+ val t7b__havoc 
+   (x : t7b__ref) : unit
   writes {x}
 
 end
@@ -2816,33 +2969,47 @@ end
 (* Module giving axioms for type "int_vector" defined at vectormultiplication.ads:3, created in Gnat2Why.Types.Generate_Type_Completion *)
 module Vectormultiplication__int_vector___axiom
  use import "_gnatprove_standard".Main
- use        Standard__integer
+ use        Standard__positive
  use        Vectormultiplication__int_vector
 
  predicate dynamic_invariant "inline" 
    (temp___expr_159 : Vectormultiplication__int_vector.int_vector) (temp___is_init_155 : bool) (temp___skip_constant_156 : bool) (temp___do_toplevel_157 : bool) (temp___do_typ_inv_158 : bool)  =
   (if (temp___skip_constant_156) then (
    true) else (
-   (Vectormultiplication__int_vector.dynamic_property Standard__integer.first Standard__integer.last (Vectormultiplication__int_vector.first temp___expr_159) (Vectormultiplication__int_vector.last temp___expr_159))))
+   (Vectormultiplication__int_vector.dynamic_property Standard__positive.first Standard__positive.last (Vectormultiplication__int_vector.first temp___expr_159) (Vectormultiplication__int_vector.last temp___expr_159))))
 
 end
 
-(* Module giving axioms for type "T8s" defined at vectormultiplication.ads:17, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Vectormultiplication__constant_product__L7s__T8s___axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module giving axioms for type "T10s" defined at vectormultiplication.ads:19, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Vectormultiplication__constant_product__L9s__T10s___axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module giving axioms for type "T12s" defined at vectormultiplication.ads:21, created in Gnat2Why.Types.Generate_Type_Completion *)
+(* Module giving axioms for type "T12s" defined at vectormultiplication.ads:20, created in Gnat2Why.Types.Generate_Type_Completion *)
 module Vectormultiplication__constant_product__L11s__T12s___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module giving axioms for type "T14s" defined at vectormultiplication.ads:19, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Vectormultiplication__constant_product__L13s__T14s___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module giving axioms for type "T16s" defined at vectormultiplication.ads:21, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Vectormultiplication__constant_product__L15s__T16s___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module giving axioms for type "T18s" defined at vectormultiplication.ads:23, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Vectormultiplication__constant_product__L17s__T18s___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module giving axioms for type "T20s" defined at vectormultiplication.ads:25, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Vectormultiplication__constant_product__L19s__T20s___axiom
  use import "_gnatprove_standard".Main
 
 
@@ -2932,6 +3099,20 @@ module Vectormultiplication__constant_product__S5b___axiom
   true
 
 end
+
+(* Module giving axioms for type "T9b" defined at vectormultiplication.adb:21, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Vectormultiplication__constant_product__L_2__L8b__T9b___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module giving axioms for type "T7b" defined at vectormultiplication.adb:21, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Vectormultiplication__constant_product__L_2__L6b__T7b___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
 (* Module for declaring a program function (and possibly an axiom) for "scalar_product" defined at vectormultiplication.ads:5, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
 module Vectormultiplication__scalar_product___axiom
  use import "_gnatprove_standard".Main
@@ -2960,6 +3141,7 @@ module Vectormultiplication__constant_product___axiom
  use import "_gnatprove_standard".Main
  use import "int".Int
  use        "_gnatprove_standard".Int_Division
+ use        "_gnatprove_standard".Int_Abs
  use        Standard__integer
  use        Standard__integer___axiom
  use        Standard__integer__rep
@@ -2975,24 +3157,36 @@ module Vectormultiplication__constant_product___axiom
  use        Array__Int__Standard__integer
  use        Array__Int__Standard__integer
  use        Array__Int__Standard__integer
+ use        Array__Int__Standard__integer
+ use        Array__Int__Standard__integer
+ use        Array__Int__Standard__integer
+ use        Array__Int__Standard__integer
 
  val constant_product 
    (given_vector : Vectormultiplication__int_vector.int_vector) (given_constant : int) : Vectormultiplication__int_vector.int_vector
-  requires {  ((Vectormultiplication__int_vector.length given_vector) <> 0) }
-  ensures {  ( ( (result = (Vectormultiplication__constant_product.constant_product given_vector given_constant)) /\ (Vectormultiplication__constant_product.constant_product__function_guard result given_vector given_constant) ) /\ ( (Vectormultiplication__int_vector___axiom.dynamic_invariant result True False True True) /\ ( ( ( (forall j   "model" "model_trace:2642" "name:J"  : int.
-   ( ( ((Vectormultiplication__int_vector.first result) <= j) /\ (j <= (Vectormultiplication__int_vector.last result)) ) -> ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array result) j)) <= 2147483647) )) /\ (forall j   "model" "name:J" "model_trace:2665"  : int.
-   ( ( ((Vectormultiplication__int_vector.first result) <= j) /\ (j <= (Vectormultiplication__int_vector.last result)) ) -> ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array result) j)) >= ( -2147483648 )) )) ) /\ (forall j   "model" "name:J" "model_trace:2688"  : int.
-   ( ( ((Vectormultiplication__int_vector.first result) <= j) /\ (j <= (Vectormultiplication__int_vector.last result)) ) -> ((Int_Division.div (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array result) j)) (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array given_vector) j))) = given_constant) )) ) /\ ((Vectormultiplication__int_vector.length given_vector) = (Vectormultiplication__int_vector.length result)) ) ) ) }
+  requires {  ( ((Vectormultiplication__int_vector.length given_vector) <> 0) /\ ( ((Vectormultiplication__int_vector.first given_vector) < (2147483647 - (Vectormultiplication__int_vector.length given_vector))) /\ ( (given_constant > ( -2147483648 )) /\ ( (forall l   "model" "model_trace:2686" "name:L"  : int.
+   ( ( ((Vectormultiplication__int_vector.first given_vector) <= l) /\ (l <= (Vectormultiplication__int_vector.last given_vector)) ) -> ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array given_vector) l)) > ( -2147483648 )) )) /\ (if ((given_constant <> 0)) then (
+   (forall k   "model" "model_trace:2708" "name:K"  : int.
+    ( ( ((Vectormultiplication__int_vector.first given_vector) <= k) /\ (k <= (Vectormultiplication__int_vector.last given_vector)) ) -> ((Int_Division.div 2147483647 (Int_Abs.abs given_constant)) >= (Int_Abs.abs (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array given_vector) k)))) ))) else (
+   true)) ) ) ) ) }
+  ensures {  ( ( (result = (Vectormultiplication__constant_product.constant_product given_vector given_constant)) /\ (Vectormultiplication__constant_product.constant_product__function_guard result given_vector given_constant) ) /\ ( (Vectormultiplication__int_vector___axiom.dynamic_invariant result True False True True) /\ ( ( ( (forall j   "model" "model_trace:2734" "name:J"  : int.
+   ( ( ((Vectormultiplication__int_vector.first result) <= j) /\ (j <= (Vectormultiplication__int_vector.last result)) ) -> ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array result) j)) <= 2147483647) )) /\ (forall j   "model" "name:J" "model_trace:2757"  : int.
+   ( ( ((Vectormultiplication__int_vector.first result) <= j) /\ (j <= (Vectormultiplication__int_vector.last result)) ) -> ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array result) j)) > ( -2147483648 )) )) ) /\ (forall j   "model" "name:J" "model_trace:2780"  : int.
+   ( ( ((Vectormultiplication__int_vector.first result) <= j) /\ (j <= (Vectormultiplication__int_vector.last result)) ) -> ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array result) j)) = (given_constant * (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array given_vector) ((Vectormultiplication__int_vector.first given_vector) + (j - (Vectormultiplication__int_vector.first result))))))) )) ) /\ ((Vectormultiplication__int_vector.length given_vector) = (Vectormultiplication__int_vector.length result)) ) ) ) }
  
  axiom constant_product__post_axiom :
   (forall given_vector   : Vectormultiplication__int_vector.int_vector.
   (forall given_constant   : int [(Vectormultiplication__constant_product.constant_product given_vector given_constant)].
-   ( ( ( (Vectormultiplication__int_vector___axiom.dynamic_invariant given_vector True True True True) /\ (Standard__integer___axiom.dynamic_invariant given_constant True True True True) ) /\ ((Vectormultiplication__int_vector.length given_vector) <> 0) ) -> (let result = (Vectormultiplication__constant_product.constant_product given_vector given_constant) in (
+   ( ( ( (Vectormultiplication__int_vector___axiom.dynamic_invariant given_vector True True True True) /\ (Standard__integer___axiom.dynamic_invariant given_constant True True True True) ) /\ ( ((Vectormultiplication__int_vector.length given_vector) <> 0) /\ ( ((Vectormultiplication__int_vector.first given_vector) < (2147483647 - (Vectormultiplication__int_vector.length given_vector))) /\ ( (given_constant > ( -2147483648 )) /\ ( (forall l   "model" "model_trace:2686" "name:L"  : int.
+    ( ( ((Vectormultiplication__int_vector.first given_vector) <= l) /\ (l <= (Vectormultiplication__int_vector.last given_vector)) ) -> ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array given_vector) l)) > ( -2147483648 )) )) /\ (if ((given_constant <> 0)) then (
+    (forall k   "model" "model_trace:2708" "name:K"  : int.
+     ( ( ((Vectormultiplication__int_vector.first given_vector) <= k) /\ (k <= (Vectormultiplication__int_vector.last given_vector)) ) -> ((Int_Division.div 2147483647 (Int_Abs.abs given_constant)) >= (Int_Abs.abs (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array given_vector) k)))) ))) else (
+    true)) ) ) ) ) ) -> (let result = (Vectormultiplication__constant_product.constant_product given_vector given_constant) in (
     (if ((Vectormultiplication__constant_product.constant_product__function_guard result given_vector given_constant)) then (
-     ( ( ( ( ( (forall j   "model" "model_trace:2642" "name:J"  : int.
-      ( ( ((Vectormultiplication__int_vector.first result) <= j) /\ (j <= (Vectormultiplication__int_vector.last result)) ) -> ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array result) j)) <= 2147483647) )) /\ (forall j   "model" "name:J" "model_trace:2665"  : int.
-      ( ( ((Vectormultiplication__int_vector.first result) <= j) /\ (j <= (Vectormultiplication__int_vector.last result)) ) -> ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array result) j)) >= ( -2147483648 )) )) ) /\ (forall j   "model" "name:J" "model_trace:2688"  : int.
-      ( ( ((Vectormultiplication__int_vector.first result) <= j) /\ (j <= (Vectormultiplication__int_vector.last result)) ) -> ((Int_Division.div (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array result) j)) (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array given_vector) j))) = given_constant) )) ) /\ ((Vectormultiplication__int_vector.length given_vector) = (Vectormultiplication__int_vector.length result)) ) /\ (Vectormultiplication__int_vector___axiom.dynamic_invariant result True False True True) ) /\ true )) else true)))
+     ( ( ( ( ( (forall j   "model" "model_trace:2734" "name:J"  : int.
+      ( ( ((Vectormultiplication__int_vector.first result) <= j) /\ (j <= (Vectormultiplication__int_vector.last result)) ) -> ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array result) j)) <= 2147483647) )) /\ (forall j   "model" "name:J" "model_trace:2757"  : int.
+      ( ( ((Vectormultiplication__int_vector.first result) <= j) /\ (j <= (Vectormultiplication__int_vector.last result)) ) -> ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array result) j)) > ( -2147483648 )) )) ) /\ (forall j   "model" "name:J" "model_trace:2780"  : int.
+      ( ( ((Vectormultiplication__int_vector.first result) <= j) /\ (j <= (Vectormultiplication__int_vector.last result)) ) -> ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array result) j)) = (given_constant * (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array given_vector) ((Vectormultiplication__int_vector.first given_vector) + (j - (Vectormultiplication__int_vector.first result))))))) )) ) /\ ((Vectormultiplication__int_vector.length given_vector) = (Vectormultiplication__int_vector.length result)) ) /\ (Vectormultiplication__int_vector___axiom.dynamic_invariant result True False True True) ) /\ true )) else true)))
     )))
 
 end
@@ -3012,7 +3206,11 @@ module Vectormultiplication__package_def
   (#"vectormultiplication.ads" 10 0 0# ());
   (#"vectormultiplication.ads" 7 0 0# ());
   (#"vectormultiplication.ads" 14 0 0# ());
+  (#"vectormultiplication.ads" 21 0 0# ());
+  (#"vectormultiplication.ads" 16 0 0# ());
   (#"vectormultiplication.ads" 17 0 0# ());
+  (#"vectormultiplication.ads" 18 0 0# ());
+  (#"vectormultiplication.ads" 19 0 0# ());
   (#"vectormultiplication.ads" 16 0 0# ());
   (#"vectormultiplication.ads" 16 0 0# ());
   (#"vectormultiplication.ads" 16 0 0# ());
@@ -3020,7 +3218,7 @@ module Vectormultiplication__package_def
   (#"vectormultiplication.adb" 1 0 0# ());
   (#"vectormultiplication.adb" 3 0 0# ());
   (#"vectormultiplication.adb" 12 0 0# ());
-  ( "GP_Sloc:vectormultiplication.adb:26:1" (#"vectormultiplication.adb" 26 0 0# ()) ) )
+  ( "GP_Sloc:vectormultiplication.adb:28:1" (#"vectormultiplication.adb" 28 0 0# ()) ) )
 end
 
 (* Module for checking contracts and absence of run-time errors in subprogram "scalar_product" defined at vectormultiplication.ads:5, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
@@ -3043,6 +3241,7 @@ module Vectormultiplication__scalar_product__subprogram_def
  use        Array__Int__Standard__integer
  use        Array__Int__Standard__integer
  use        Standard__integer___axiom
+ use        Standard__positive___axiom
  use        Standard__integer___axiom
  use        Vectormultiplication__scalar_product__result___axiom
  use        Vectormultiplication__scalar_product__L_1__i___axiom
@@ -3051,13 +3250,13 @@ module Vectormultiplication__scalar_product__subprogram_def
  use        Vectormultiplication__scalar_product__first_vector___axiom
  use        Vectormultiplication__scalar_product__second_vector___axiom
 
- val vectormultiplication__scalar_product__result "model_projected" "model_trace:2533@result" "name:Scalar_Product"  : int__ref 
+ val vectormultiplication__scalar_product__result "model_projected" "model_trace:2560@result" "name:Scalar_Product"  : int__ref 
  
  let def #"vectormultiplication.ads" 5 0 0#"W:diverges:N" "GP_Subp:vectormultiplication.ads:5" 
    (__void_param : unit)
   requires { #"vectormultiplication.ads" 5 0 0# true }
   ensures { #"vectormultiplication.ads" 5 0 0# (#"vectormultiplication.ads" 10 0 0# ( "model_vc_post" "keep_on_simp" "GP_Sloc:vectormultiplication.ads:10:16" "GP_Reason:VC_POSTCONDITION" "GP_Id:3" "comment:       Post => Scalar_Product'Result <= Integer'Last
-               ^ vectormultiplication.ads:10:16:VC_POSTCONDITION" "GP_Shape:pragargs__and" ( ( "GP_Pretty_Ada:2591" "GP_Sloc:vectormultiplication.ads:10:16" (vectormultiplication__scalar_product__result.int__content <= 2147483647) ) /\ ( "GP_Pretty_Ada:2599" "GP_Sloc:vectormultiplication.ads:11:12" (vectormultiplication__scalar_product__result.int__content >= ( -2147483648 )) ) ) )) }
+               ^ vectormultiplication.ads:10:16:VC_POSTCONDITION" "GP_Shape:pragargs__and" ( ( "GP_Pretty_Ada:2618" "GP_Sloc:vectormultiplication.ads:10:16" (vectormultiplication__scalar_product__result.int__content <= 2147483647) ) /\ ( "GP_Pretty_Ada:2626" "GP_Sloc:vectormultiplication.ads:11:12" (vectormultiplication__scalar_product__result.int__content >= ( -2147483648 )) ) ) )) }
    =
   ( () (* Assume dynamic invariants of inputs of the subprogram vectormultiplication.ads:5 *)
   ;
@@ -3160,11 +3359,13 @@ module Vectormultiplication__constant_product__subprogram_def
  use import "_gnatprove_standard".Main
  use import "int".Int
  use        "_gnatprove_standard".Int_Division
+ use        "_gnatprove_standard".Int_Abs
  use        "_gnatprove_standard".Boolean
  use        Standard__integer
  use        Standard__integer
  use        Standard__integer___axiom
  use        Standard__integer__rep
+ use        Standard__positive
  use        Standard__integer__rep
  use        Vectormultiplication__int_vector
  use        Array__Int__Standard__integer
@@ -3189,7 +3390,17 @@ module Vectormultiplication__constant_product__subprogram_def
  use        Array__Int__Standard__integer
  use        Array__Int__Standard__integer
  use        Array__Int__Standard__integer
+ use        Array__Int__Standard__integer
+ use        Array__Int__Standard__integer
+ use        Array__Int__Standard__integer
+ use        Array__Int__Standard__integer
+ use        Array__Int__Standard__integer
+ use        Array__Int__Standard__integer
+ use        Array__Int__Standard__integer
+ use        Array__Int__Standard__integer
+ use        Array__Int__Standard__integer
  use        Standard__integer___axiom
+ use        Standard__positive___axiom
  use        Standard__integer___axiom
  use        Vectormultiplication__constant_product__result___axiom
  use        Vectormultiplication__constant_product__count___axiom
@@ -3198,16 +3409,16 @@ module Vectormultiplication__constant_product__subprogram_def
  use        Vectormultiplication__constant_product__given_vector___axiom
  use        Vectormultiplication__constant_product__given_constant___axiom
 
- val vectormultiplication__constant_product__result "model_projected" "model_trace:2602@result" "name:Constant_Product"  : Vectormultiplication__int_vector.int_vector__ref 
+ val vectormultiplication__constant_product__result "model_projected" "model_trace:2629@result" "name:Constant_Product"  : Vectormultiplication__int_vector.int_vector__ref 
  
  let def #"vectormultiplication.ads" 14 0 0#"W:diverges:N" "GP_Subp:vectormultiplication.ads:14" 
    (__void_param : unit)
   requires { #"vectormultiplication.ads" 14 0 0# true }
-  ensures { #"vectormultiplication.ads" 14 0 0# (#"vectormultiplication.ads" 17 0 0# ( "model_vc_post" "keep_on_simp" "GP_Reason:VC_POSTCONDITION" "GP_Shape:pragargs__and" "GP_Sloc:vectormultiplication.ads:17:16" "GP_Id:20" "comment:       Post => (for all J in Constant_Product'Result'Range =>
-               ^ vectormultiplication.ads:17:16:VC_POSTCONDITION" ( ( ( (forall j #"vectormultiplication.ads" 17 0 0#  "model" "model_trace:2642" "name:J"  : int.
-   ( ( ((Vectormultiplication__int_vector.first vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content) <= j) /\ (j <= (Vectormultiplication__int_vector.last vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content)) ) -> ( "GP_Pretty_Ada:2660" "GP_Sloc:vectormultiplication.ads:18:19" ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content) j)) <= 2147483647) ) )) /\ (forall j #"vectormultiplication.ads" 17 0 0#  "model" "name:J" "model_trace:2665"  : int.
-   ( ( ((Vectormultiplication__int_vector.first vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content) <= j) /\ (j <= (Vectormultiplication__int_vector.last vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content)) ) -> ( "GP_Pretty_Ada:2683" "GP_Sloc:vectormultiplication.ads:20:15" ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content) j)) >= ( -2147483648 )) ) )) ) /\ (forall j #"vectormultiplication.ads" 17 0 0#  "model" "name:J" "model_trace:2688"  : int.
-   ( ( ((Vectormultiplication__int_vector.first vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content) <= j) /\ (j <= (Vectormultiplication__int_vector.last vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content)) ) -> ( "GP_Pretty_Ada:2710" "GP_Sloc:vectormultiplication.ads:22:15" ((Int_Division.div (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content) j)) (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array Vectormultiplication__constant_product__given_vector.given_vector) j))) = Vectormultiplication__constant_product__given_constant.given_constant) ) )) ) /\ ( "GP_Pretty_Ada:2716" "GP_Sloc:vectormultiplication.ads:23:12" ((Vectormultiplication__int_vector.length Vectormultiplication__constant_product__given_vector.given_vector) = (Vectormultiplication__int_vector.length vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content)) ) ) )) }
+  ensures { #"vectormultiplication.ads" 14 0 0# (#"vectormultiplication.ads" 21 0 0# ( "model_vc_post" "keep_on_simp" "GP_Reason:VC_POSTCONDITION" "GP_Shape:pragargs__and" "GP_Sloc:vectormultiplication.ads:21:16" "GP_Id:32" "comment:       Post => (for all J in Constant_Product'Result'Range =>
+               ^ vectormultiplication.ads:21:16:VC_POSTCONDITION" ( ( ( (forall j #"vectormultiplication.ads" 21 0 0#  "model" "model_trace:2734" "name:J"  : int.
+   ( ( ((Vectormultiplication__int_vector.first vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content) <= j) /\ (j <= (Vectormultiplication__int_vector.last vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content)) ) -> ( "GP_Pretty_Ada:2752" "GP_Sloc:vectormultiplication.ads:22:19" ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content) j)) <= 2147483647) ) )) /\ (forall j #"vectormultiplication.ads" 21 0 0#  "model" "name:J" "model_trace:2757"  : int.
+   ( ( ((Vectormultiplication__int_vector.first vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content) <= j) /\ (j <= (Vectormultiplication__int_vector.last vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content)) ) -> ( "GP_Pretty_Ada:2775" "GP_Sloc:vectormultiplication.ads:24:15" ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content) j)) > ( -2147483648 )) ) )) ) /\ (forall j #"vectormultiplication.ads" 21 0 0#  "model" "name:J" "model_trace:2780"  : int.
+   ( ( ((Vectormultiplication__int_vector.first vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content) <= j) /\ (j <= (Vectormultiplication__int_vector.last vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content)) ) -> ( "GP_Pretty_Ada:2798" "GP_Sloc:vectormultiplication.ads:26:15" ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content) j)) = (Vectormultiplication__constant_product__given_constant.given_constant * (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array Vectormultiplication__constant_product__given_vector.given_vector) ((Vectormultiplication__int_vector.first Vectormultiplication__constant_product__given_vector.given_vector) + (j - (Vectormultiplication__int_vector.first vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content))))))) ) )) ) /\ ( "GP_Pretty_Ada:2818" "GP_Sloc:vectormultiplication.ads:27:12" ((Vectormultiplication__int_vector.length Vectormultiplication__constant_product__given_vector.given_vector) = (Vectormultiplication__int_vector.length vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content)) ) ) )) }
    =
   ( () (* Assume dynamic invariants of inputs of the subprogram vectormultiplication.ads:14 *)
   ;
@@ -3218,15 +3429,70 @@ module Vectormultiplication__constant_product__subprogram_def
   ;
   () (* Check for RTE in the Pre of the subprogram vectormultiplication.ads:14 *)
   ;
-   abstract ensures {true}(let _ = ((  abstract ensures {true}(let _ = Vectormultiplication__constant_product__given_vector.given_vector in (
+   abstract ensures {true}(let _ = ( ((  abstract ensures {true}(let _ = Vectormultiplication__constant_product__given_vector.given_vector in (
    ()))
    end ;
-  (Vectormultiplication__int_vector.length(Vectormultiplication__constant_product__given_vector.given_vector)) ) <> 0) in (
+  (Vectormultiplication__int_vector.length(Vectormultiplication__constant_product__given_vector.given_vector)) ) <> 0) && ( ((  abstract ensures {true}(let _ = Vectormultiplication__constant_product__given_vector.given_vector in (
+   ()))
+   end ;
+  (Vectormultiplication__int_vector.first(Vectormultiplication__constant_product__given_vector.given_vector)) ) < (#"vectormultiplication.ads" 17 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:vectormultiplication.ads:17:51" "GP_Id:31" "comment:       and then Given_vector'First < Integer'Last - Given_vector'Length
+                                                  ^ vectormultiplication.ads:17:51:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__cmp__sub" (Standard__integer.range_check_((2147483647 - (#"vectormultiplication.ads" 17 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:vectormultiplication.ads:17:65" "GP_Reason:VC_RANGE_CHECK" "GP_Id:30" "comment:       and then Given_vector'First < Integer'Last - Given_vector'Length
+                                                                ^ vectormultiplication.ads:17:65:VC_RANGE_CHECK" "GP_Shape:pragargs__cmp__sub__typeconv__length_ref" (Standard__integer.range_check_(( #"vectormultiplication.ads" 17 0 0# abstract ensures {true}(let _ = Vectormultiplication__constant_product__given_vector.given_vector in (
+   ()))
+   end ;
+  (Vectormultiplication__int_vector.length(Vectormultiplication__constant_product__given_vector.given_vector)) ))) ))))) ))) && ( (Vectormultiplication__constant_product__given_constant.given_constant > ( -2147483648 )) && ( ( (let l =  (any int
+  ) in (
+   (if ((Boolean.andb(((  abstract ensures {true}(let _ = Vectormultiplication__constant_product__given_vector.given_vector in (
+    ()))
+    end ;
+   (Vectormultiplication__int_vector.first(Vectormultiplication__constant_product__given_vector.given_vector)) ) <= l)) ((l <= (  abstract ensures {true}(let _ = Vectormultiplication__constant_product__given_vector.given_vector in (
+    ()))
+    end ;
+   (Vectormultiplication__int_vector.last(Vectormultiplication__constant_product__given_vector.given_vector)) ))))) then (
+     abstract ensures {true}(let _ = ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Vectormultiplication__int_vector.to_array(Vectormultiplication__constant_product__given_vector.given_vector))) ((  assert {  (#"vectormultiplication.ads" 19 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:vectormultiplication.ads:19:66" "GP_Id:29" "comment:       and then (for all L in Given_vector'Range => Given_vector(L) > Integer'First)
+                                                                 ^ vectormultiplication.ads:19:66:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__cmp__ixdcomp" ( ((Vectormultiplication__int_vector.first Vectormultiplication__constant_product__given_vector.given_vector) <= l) /\ (l <= (Vectormultiplication__int_vector.last Vectormultiplication__constant_product__given_vector.given_vector)) ) )) };
+    l ))))) > ( -2147483648 )) in (
+     ()))
+     end ))))
+  ;
+   (any bool
+  requires { true} 
+  ensures { ( (result = True) <-> (forall l   "model" "model_trace:2686" "name:L"  : int.
+   ( ( ((Vectormultiplication__int_vector.first Vectormultiplication__constant_product__given_vector.given_vector) <= l) /\ (l <= (Vectormultiplication__int_vector.last Vectormultiplication__constant_product__given_vector.given_vector)) ) -> ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array Vectormultiplication__constant_product__given_vector.given_vector) l)) > ( -2147483648 )) )) )} 
+  ) ) && (if ((Vectormultiplication__constant_product__given_constant.given_constant <> 0)) then (
+   ( (let k =  (any int
+   ) in (
+    (if ((Boolean.andb(((  abstract ensures {true}(let _ = Vectormultiplication__constant_product__given_vector.given_vector in (
+     ()))
+     end ;
+    (Vectormultiplication__int_vector.first(Vectormultiplication__constant_product__given_vector.given_vector)) ) <= k)) ((k <= (  abstract ensures {true}(let _ = Vectormultiplication__constant_product__given_vector.given_vector in (
+     ()))
+     end ;
+    (Vectormultiplication__int_vector.last(Vectormultiplication__constant_product__given_vector.given_vector)) ))))) then (
+      abstract ensures {true}(let _ = ((#"vectormultiplication.ads" 20 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:vectormultiplication.ads:20:94" "GP_Reason:VC_DIVISION_CHECK" "GP_Id:26" "comment:       and then (if Given_constant /= 0 then (for all K in Given_vector'Range => Integer'Last/abs Given_constant >= abs Given_vector(K))),
+                                                                                             ^ vectormultiplication.ads:20:94:VC_DIVISION_CHECK" "GP_Shape:pragargs__if__forall__cmp__div" (Int_Division.div_(2147483647) ((#"vectormultiplication.ads" 20 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:vectormultiplication.ads:20:95" "GP_Id:25" "comment:       and then (if Given_constant /= 0 then (for all K in Given_vector'Range => Integer'Last/abs Given_constant >= abs Given_vector(K))),
+                                                                                              ^ vectormultiplication.ads:20:95:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__if__forall__cmp__div__abs" (Standard__integer.range_check_((Int_Abs.abs(Vectormultiplication__constant_product__given_constant.given_constant)))) )))) )) >= (#"vectormultiplication.ads" 20 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:vectormultiplication.ads:20:117" "GP_Id:28" "comment:       and then (if Given_constant /= 0 then (for all K in Given_vector'Range => Integer'Last/abs Given_constant >= abs Given_vector(K))),
+                                                                                                                    ^ vectormultiplication.ads:20:117:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__if__forall__cmp__abs" (Standard__integer.range_check_((Int_Abs.abs((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Vectormultiplication__int_vector.to_array(Vectormultiplication__constant_product__given_vector.given_vector))) (( #"vectormultiplication.ads" 20 0 0# assert { #"vectormultiplication.ads" 20 0 0# (#"vectormultiplication.ads" 20 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:vectormultiplication.ads:20:134" "GP_Id:27" "comment:       and then (if Given_constant /= 0 then (for all K in Given_vector'Range => Integer'Last/abs Given_constant >= abs Given_vector(K))),
+                                                                                                                                     ^ vectormultiplication.ads:20:134:VC_INDEX_CHECK" "GP_Shape:pragargs__if__forall__cmp__abs__ixdcomp" ( ((Vectormultiplication__int_vector.first Vectormultiplication__constant_product__given_vector.given_vector) <= k) /\ (k <= (Vectormultiplication__int_vector.last Vectormultiplication__constant_product__given_vector.given_vector)) ) )) };
+     k ))))))))) ))) in (
+      ()))
+      end ))))
+   ;
+    (any bool
+   requires { true} 
+   ensures { ( (result = True) <-> (forall k   "model" "model_trace:2708" "name:K"  : int.
+    ( ( ((Vectormultiplication__int_vector.first Vectormultiplication__constant_product__given_vector.given_vector) <= k) /\ (k <= (Vectormultiplication__int_vector.last Vectormultiplication__constant_product__given_vector.given_vector)) ) -> ((Int_Division.div 2147483647 (Int_Abs.abs Vectormultiplication__constant_product__given_constant.given_constant)) >= (Int_Abs.abs (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array Vectormultiplication__constant_product__given_vector.given_vector) k)))) )) )} 
+   ) )) else (
+   (Boolean.of_int(1)))) ) ) ) ) in (
    ()))
    end ;
   () (* Assume Pre of the subprogram vectormultiplication.ads:14 *)
   ;
-   assume {  ((Vectormultiplication__int_vector.length Vectormultiplication__constant_product__given_vector.given_vector) <> 0) };
+   assume {  ( ((Vectormultiplication__int_vector.length Vectormultiplication__constant_product__given_vector.given_vector) <> 0) /\ ( ((Vectormultiplication__int_vector.first Vectormultiplication__constant_product__given_vector.given_vector) < (2147483647 - (Vectormultiplication__int_vector.length Vectormultiplication__constant_product__given_vector.given_vector))) /\ ( (Vectormultiplication__constant_product__given_constant.given_constant > ( -2147483648 )) /\ ( (forall l   "model" "model_trace:2686" "name:L"  : int.
+   ( ( ((Vectormultiplication__int_vector.first Vectormultiplication__constant_product__given_vector.given_vector) <= l) /\ (l <= (Vectormultiplication__int_vector.last Vectormultiplication__constant_product__given_vector.given_vector)) ) -> ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array Vectormultiplication__constant_product__given_vector.given_vector) l)) > ( -2147483648 )) )) /\ (if ((Vectormultiplication__constant_product__given_constant.given_constant <> 0)) then (
+   (forall k   "model" "model_trace:2708" "name:K"  : int.
+    ( ( ((Vectormultiplication__int_vector.first Vectormultiplication__constant_product__given_vector.given_vector) <= k) /\ (k <= (Vectormultiplication__int_vector.last Vectormultiplication__constant_product__given_vector.given_vector)) ) -> ((Int_Division.div 2147483647 (Int_Abs.abs Vectormultiplication__constant_product__given_constant.given_constant)) >= (Int_Abs.abs (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array Vectormultiplication__constant_product__given_vector.given_vector) k)))) ))) else (
+   true)) ) ) ) ) };
    try
    ( (#"vectormultiplication.adb" 12 0 0# ());
    (#"vectormultiplication.adb" 13 0 0# ( (let vectormultiplication__constant_product__result__assume = Vectormultiplication__constant_product__given_vector.given_vector in (
@@ -3236,7 +3502,7 @@ module Vectormultiplication__constant_product__subprogram_def
    ;
    #"vectormultiplication.adb" 13 0 0# assume { #"vectormultiplication.adb" 13 0 0# (if (False) then (
     true) else (
-    (Vectormultiplication__int_vector.dynamic_property Standard__integer.first Standard__integer.last (Standard__integer__rep.to_rep Vectormultiplication__constant_product__result.result____first) (Standard__integer__rep.to_rep Vectormultiplication__constant_product__result.result____last)))) } ));
+    (Vectormultiplication__int_vector.dynamic_property Standard__positive.first Standard__positive.last (Standard__integer__rep.to_rep Vectormultiplication__constant_product__result.result____first) (Standard__integer__rep.to_rep Vectormultiplication__constant_product__result.result____last)))) } ));
    (#"vectormultiplication.adb" 14 0 0# ( #"vectormultiplication.adb" 14 0 0# Vectormultiplication__constant_product__count.count.int__content <- ( ( #"vectormultiplication.adb" 14 0 0# abstract ensures {true}(let _ = Vectormultiplication__constant_product__given_vector.given_vector in (
     ()))
     end ;
@@ -3283,28 +3549,52 @@ module Vectormultiplication__constant_product__subprogram_def
         ;
          while True do
          invariant { 
-          (#"vectormultiplication.adb" 21 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:vectormultiplication.adb:21:32" "GP_Reason:VC_LOOP_INVARIANT" "GP_Id:10" "comment:         pragma Loop_Invariant(Given_vector'First + Given_vector'First = Given_vector'Length);
-                               ^ vectormultiplication.adb:21:32:VC_LOOP_INVARIANT" "GP_Shape:L_2_while__pragargs__cmp" ( "GP_Pretty_Ada:2476" "GP_Sloc:vectormultiplication.adb:21:32" (((Vectormultiplication__int_vector.first Vectormultiplication__constant_product__given_vector.given_vector) + (Vectormultiplication__int_vector.first Vectormultiplication__constant_product__given_vector.given_vector)) = (Vectormultiplication__int_vector.length Vectormultiplication__constant_product__given_vector.given_vector)) ) ))
+          (#"vectormultiplication.adb" 21 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:vectormultiplication.adb:21:32" "GP_Reason:VC_LOOP_INVARIANT" "GP_Id:12" "comment:         pragma Loop_Invariant(for all K in result'First .. count - 1 =>
+                               ^ vectormultiplication.adb:21:32:VC_LOOP_INVARIANT" "GP_Shape:L_2_while__pragargs__forall" (forall k #"vectormultiplication.adb" 21 0 0#  "model" "name:K" "model_trace:2468"  : int.
+           ( ( ((Standard__integer__rep.to_rep Vectormultiplication__constant_product__result.result____first) <= k) /\ (k <= (Vectormultiplication__constant_product__count.count.int__content - 1)) ) -> ( "GP_Pretty_Ada:2489" "GP_Sloc:vectormultiplication.adb:22:37" (((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array Vectormultiplication__constant_product__given_vector.given_vector) k)) * Vectormultiplication__constant_product__given_constant.given_constant) = (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get Vectormultiplication__constant_product__result.result__.Array__Int__Standard__integer.map__content k))) ) )) ))
+          }
+         invariant { 
+          (#"vectormultiplication.adb" 23 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_LOOP_INVARIANT" "GP_Sloc:vectormultiplication.adb:23:32" "GP_Id:14" "comment:         pragma Loop_Invariant(count in Given_vector'First .. Given_vector'Last + 1);
+                               ^ vectormultiplication.adb:23:32:VC_LOOP_INVARIANT" "GP_Shape:L_2_while__pragargs__in" ( "GP_Pretty_Ada:2497" "GP_Sloc:vectormultiplication.adb:23:32" ( ((Vectormultiplication__int_vector.first Vectormultiplication__constant_product__given_vector.given_vector) <= Vectormultiplication__constant_product__count.count.int__content) /\ (Vectormultiplication__constant_product__count.count.int__content <= ((Vectormultiplication__int_vector.last Vectormultiplication__constant_product__given_vector.given_vector) + 1)) ) ) ))
           }
          ( () (* Assume implicit invariants from the loop vectormultiplication.adb:16 *)
          ;
           assume {  ( ( ( ( true /\ (if (True) then (
           true) else (
-          (Vectormultiplication__int_vector.dynamic_property Standard__integer.first Standard__integer.last (Standard__integer__rep.to_rep Vectormultiplication__constant_product__result.result____first) (Standard__integer__rep.to_rep Vectormultiplication__constant_product__result.result____last)))) ) /\ true ) /\ (Standard__integer___axiom.dynamic_invariant Vectormultiplication__constant_product__count.count.int__content False True True True) ) /\ true ) };
+          (Vectormultiplication__int_vector.dynamic_property Standard__positive.first Standard__positive.last (Standard__integer__rep.to_rep Vectormultiplication__constant_product__result.result____first) (Standard__integer__rep.to_rep Vectormultiplication__constant_product__result.result____last)))) ) /\ true ) /\ (Standard__integer___axiom.dynamic_invariant Vectormultiplication__constant_product__count.count.int__content False True True True) ) /\ true ) };
          () (* Check for absence of RTE in the invariant of loop vectormultiplication.adb:16 *)
          ;
-          abstract ensures {true}(let _ = ((#"vectormultiplication.adb" 21 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:vectormultiplication.adb:21:51" "GP_Id:8" "comment:         pragma Loop_Invariant(Given_vector'First + Given_vector'First = Given_vector'Length);
-                                                  ^ vectormultiplication.adb:21:51:VC_OVERFLOW_CHECK" "GP_Shape:L_2_while__pragargs__cmp__add" (Standard__integer.range_check_((( #"vectormultiplication.adb" 21 0 0# abstract ensures {true}(let _ = Vectormultiplication__constant_product__given_vector.given_vector in (
+          abstract ensures {true}(let _ = ( (let k =  (any int
+         ) in (
+          (if ((Boolean.andb(((Standard__integer__rep.to_rep((  abstract ensures {true}(let _ = Vectormultiplication__constant_product__result.result__.Array__Int__Standard__integer.map__content in (
+           ()))
+           end ;
+          Vectormultiplication__constant_product__result.result____first ))) <= k)) ((k <= (#"vectormultiplication.adb" 21 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:vectormultiplication.adb:21:67" "GP_Id:8" "comment:         pragma Loop_Invariant(for all K in result'First .. count - 1 =>
+                                                                  ^ vectormultiplication.adb:21:67:VC_OVERFLOW_CHECK" "GP_Shape:L_2_while__pragargs__forall__range__sub" (Standard__integer.range_check_((Vectormultiplication__constant_product__count.count.int__content - 1))) )))))) then (
+            abstract ensures {true}(let _ = ((#"vectormultiplication.adb" 22 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:vectormultiplication.adb:22:53" "GP_Id:10" "comment:                                    Given_vector(K) * Given_constant = result(K));
+                                                    ^ vectormultiplication.adb:22:53:VC_OVERFLOW_CHECK" "GP_Shape:L_2_while__pragargs__forall__cmp__mult" (Standard__integer.range_check_(((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Vectormultiplication__int_vector.to_array(Vectormultiplication__constant_product__given_vector.given_vector))) (( #"vectormultiplication.adb" 22 0 0# assert { #"vectormultiplication.adb" 22 0 0# (#"vectormultiplication.adb" 22 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:vectormultiplication.adb:22:50" "GP_Id:9" "comment:                                    Given_vector(K) * Given_constant = result(K));
+                                                 ^ vectormultiplication.adb:22:50:VC_INDEX_CHECK" "GP_Shape:L_2_while__pragargs__forall__cmp__mult__ixdcomp" ( ((Vectormultiplication__int_vector.first Vectormultiplication__constant_product__given_vector.given_vector) <= k) /\ (k <= (Vectormultiplication__int_vector.last Vectormultiplication__constant_product__given_vector.given_vector)) ) )) };
+           k ))))) * Vectormultiplication__constant_product__given_constant.given_constant))) )) = (Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(Vectormultiplication__constant_product__result.result__.Array__Int__Standard__integer.map__content) ((  assert {  (#"vectormultiplication.adb" 22 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:vectormultiplication.adb:22:79" "GP_Id:11" "comment:                                    Given_vector(K) * Given_constant = result(K));
+                                                                              ^ vectormultiplication.adb:22:79:VC_INDEX_CHECK" "GP_Shape:L_2_while__pragargs__forall__cmp__ixdcomp" ( ((Standard__integer__rep.to_rep Vectormultiplication__constant_product__result.result____first) <= k) /\ (k <= (Standard__integer__rep.to_rep Vectormultiplication__constant_product__result.result____last)) ) )) };
+           k )))))) in (
+            ()))
+            end ))))
+         ;
+          (any bool
+         requires { true} 
+         ensures { ( (result = True) <-> (forall k   "model" "name:K" "model_trace:2468"  : int.
+          ( ( ((Standard__integer__rep.to_rep Vectormultiplication__constant_product__result.result____first) <= k) /\ (k <= (Vectormultiplication__constant_product__count.count.int__content - 1)) ) -> (((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array Vectormultiplication__constant_product__given_vector.given_vector) k)) * Vectormultiplication__constant_product__given_constant.given_constant) = (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get Vectormultiplication__constant_product__result.result__.Array__Int__Standard__integer.map__content k))) )) )} 
+         ) ) in (
           ()))
           end ;
-         (Vectormultiplication__int_vector.first(Vectormultiplication__constant_product__given_vector.given_vector)) ) + ( #"vectormultiplication.adb" 21 0 0# abstract ensures {true}(let _ = Vectormultiplication__constant_product__given_vector.given_vector in (
+          abstract ensures {true}(let _ = (Boolean.andb(((  abstract ensures {true}(let _ = Vectormultiplication__constant_product__given_vector.given_vector in (
           ()))
           end ;
-         (Vectormultiplication__int_vector.first(Vectormultiplication__constant_product__given_vector.given_vector)) )))) )) = (#"vectormultiplication.adb" 21 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:vectormultiplication.adb:21:86" "GP_Reason:VC_RANGE_CHECK" "GP_Id:9" "comment:         pragma Loop_Invariant(Given_vector'First + Given_vector'First = Given_vector'Length);
-                                                                                     ^ vectormultiplication.adb:21:86:VC_RANGE_CHECK" "GP_Shape:L_2_while__pragargs__cmp__typeconv__length_ref" (Standard__integer.range_check_(( #"vectormultiplication.adb" 21 0 0# abstract ensures {true}(let _ = Vectormultiplication__constant_product__given_vector.given_vector in (
+         (Vectormultiplication__int_vector.first(Vectormultiplication__constant_product__given_vector.given_vector)) ) <= Vectormultiplication__constant_product__count.count.int__content)) ((Vectormultiplication__constant_product__count.count.int__content <= (#"vectormultiplication.adb" 23 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:vectormultiplication.adb:23:81" "GP_Id:13" "comment:         pragma Loop_Invariant(count in Given_vector'First .. Given_vector'Last + 1);
+                                                                                ^ vectormultiplication.adb:23:81:VC_OVERFLOW_CHECK" "GP_Shape:L_2_while__pragargs__in__range__add" (Standard__integer.range_check_((( #"vectormultiplication.adb" 23 0 0# abstract ensures {true}(let _ = Vectormultiplication__constant_product__given_vector.given_vector in (
           ()))
           end ;
-         (Vectormultiplication__int_vector.length(Vectormultiplication__constant_product__given_vector.given_vector)) ))) ))) in (
+         (Vectormultiplication__int_vector.last(Vectormultiplication__constant_product__given_vector.given_vector)) ) + 1))) ))))) in (
           ()))
           end ;
           temp___209.int__content <- ( Vectormultiplication__constant_product__count.count.int__content );
@@ -3336,9 +3626,9 @@ module Vectormultiplication__constant_product__subprogram_def
           end  in (
           ()))
           end ;
-          check {  (#"vectormultiplication.adb" 19 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:vectormultiplication.adb:19:10" "GP_Reason:VC_LOOP_VARIANT" "GP_Id:11" "comment:         pragma Loop_Variant(Increases => count);
+          check {  (#"vectormultiplication.adb" 19 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:vectormultiplication.adb:19:10" "GP_Reason:VC_LOOP_VARIANT" "GP_Id:15" "comment:         pragma Loop_Variant(Increases => count);
          ^ vectormultiplication.adb:19:10:VC_LOOP_VARIANT" "GP_Shape:L_2_while" (Vectormultiplication__constant_product__count.count.int__content > temp___209.int__content) )) };
-          abstract ensures {true}(let _ =  abstract ensures {true}(let _ = (#"vectormultiplication.adb" 20 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:vectormultiplication.adb:20:61" "GP_Id:12" "comment:         pragma Loop_Variant(Decreases => Given_vector'Last - count);
+          abstract ensures {true}(let _ =  abstract ensures {true}(let _ = (#"vectormultiplication.adb" 20 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:vectormultiplication.adb:20:61" "GP_Id:16" "comment:         pragma Loop_Variant(Decreases => Given_vector'Last - count);
                                                             ^ vectormultiplication.adb:20:61:VC_OVERFLOW_CHECK" "GP_Shape:L_2_while__pragargs__sub" (Standard__integer.range_check_((( #"vectormultiplication.adb" 20 0 0# abstract ensures {true}(let _ = Vectormultiplication__constant_product__given_vector.given_vector in (
           ()))
           end ;
@@ -3347,7 +3637,7 @@ module Vectormultiplication__constant_product__subprogram_def
           end  in (
           ()))
           end ;
-          check {  (#"vectormultiplication.adb" 20 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_LOOP_VARIANT" "GP_Shape:L_2_while" "GP_Sloc:vectormultiplication.adb:20:10" "GP_Id:13" "comment:         pragma Loop_Variant(Decreases => Given_vector'Last - count);
+          check {  (#"vectormultiplication.adb" 20 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_LOOP_VARIANT" "GP_Shape:L_2_while" "GP_Sloc:vectormultiplication.adb:20:10" "GP_Id:17" "comment:         pragma Loop_Variant(Decreases => Given_vector'Last - count);
          ^ vectormultiplication.adb:20:10:VC_LOOP_VARIANT" (((Vectormultiplication__int_vector.last Vectormultiplication__constant_product__given_vector.given_vector) - Vectormultiplication__constant_product__count.count.int__content) < temp___210.int__content) )) } )
         done )))
        )))
@@ -3355,9 +3645,9 @@ module Vectormultiplication__constant_product__subprogram_def
     with
      Vectormultiplication__constant_product__L_2.L_2 -> ()
     end)) )) );
-   ( "GP_Sloc:vectormultiplication.adb:23:14" (#"vectormultiplication.adb" 23 0 0# ()) );
-   ( "GP_Sloc:vectormultiplication.adb:23:7" (#"vectormultiplication.adb" 23 0 0# ( #"vectormultiplication.adb" 23 0 0# vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content <- ( (Vectormultiplication__int_vector.of_array(Vectormultiplication__constant_product__result.result__.Array__Int__Standard__integer.map__content) ((Standard__integer__rep.to_rep(Vectormultiplication__constant_product__result.result____first))) ((Standard__integer__rep.to_rep(Vectormultiplication__constant_product__result.result____last)))) );
-   #"vectormultiplication.adb" 23 0 0# raise Return__exc )) );
+   ( "GP_Sloc:vectormultiplication.adb:25:14" (#"vectormultiplication.adb" 25 0 0# ()) );
+   ( "GP_Sloc:vectormultiplication.adb:25:7" (#"vectormultiplication.adb" 25 0 0# ( #"vectormultiplication.adb" 25 0 0# vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content <- ( (Vectormultiplication__int_vector.of_array(Vectormultiplication__constant_product__result.result__.Array__Int__Standard__integer.map__content) ((Standard__integer__rep.to_rep(Vectormultiplication__constant_product__result.result____first))) ((Standard__integer__rep.to_rep(Vectormultiplication__constant_product__result.result____last)))) );
+   #"vectormultiplication.adb" 25 0 0# raise Return__exc )) );
     raise Return__exc )
   with
    Return__exc -> ()
@@ -3371,15 +3661,15 @@ module Vectormultiplication__constant_product__subprogram_def
     ()))
     end ;
    (Vectormultiplication__int_vector.last(vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content)) ))))) then (
-     abstract ensures {true}(let _ = ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Vectormultiplication__int_vector.to_array(vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content))) ((  assert {  (#"vectormultiplication.ads" 18 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:vectormultiplication.ads:18:44" "GP_Id:14" "comment:                  Constant_Product'Result (J) <= Integer'Last)
-                                           ^ vectormultiplication.ads:18:44:VC_INDEX_CHECK" "GP_Shape:pragargs__and__and__and__forall__cmp__ixdcomp" ( ((Vectormultiplication__int_vector.first vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content) <= j) /\ (j <= (Vectormultiplication__int_vector.last vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content)) ) )) };
+     abstract ensures {true}(let _ = ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Vectormultiplication__int_vector.to_array(vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content))) ((  assert {  (#"vectormultiplication.ads" 22 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:vectormultiplication.ads:22:44" "GP_Id:18" "comment:                  Constant_Product'Result (J) <= Integer'Last)
+                                           ^ vectormultiplication.ads:22:44:VC_INDEX_CHECK" "GP_Shape:pragargs__and__and__and__forall__cmp__ixdcomp" ( ((Vectormultiplication__int_vector.first vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content) <= j) /\ (j <= (Vectormultiplication__int_vector.last vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content)) ) )) };
     j ))))) <= 2147483647) in (
      ()))
      end ))))
   ;
    (any bool
   requires { true} 
-  ensures { ( (result = True) <-> (forall j   "model" "model_trace:2642" "name:J"  : int.
+  ensures { ( (result = True) <-> (forall j   "model" "model_trace:2734" "name:J"  : int.
    ( ( ((Vectormultiplication__int_vector.first vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content) <= j) /\ (j <= (Vectormultiplication__int_vector.last vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content)) ) -> ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content) j)) <= 2147483647) )) )} 
   ) )) (( (let j =  (any int
   ) in (
@@ -3390,16 +3680,16 @@ module Vectormultiplication__constant_product__subprogram_def
     ()))
     end ;
    (Vectormultiplication__int_vector.last(vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content)) ))))) then (
-     abstract ensures {true}(let _ = ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Vectormultiplication__int_vector.to_array(vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content))) ((  assert {  (#"vectormultiplication.ads" 20 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__and__and__and__forall__cmp__ixdcomp" "GP_Sloc:vectormultiplication.ads:20:40" "GP_Id:15" "comment:              Constant_Product'Result (J) >= Integer'First)
-                                       ^ vectormultiplication.ads:20:40:VC_INDEX_CHECK" ( ((Vectormultiplication__int_vector.first vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content) <= j) /\ (j <= (Vectormultiplication__int_vector.last vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content)) ) )) };
-    j ))))) >= ( -2147483648 )) in (
+     abstract ensures {true}(let _ = ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Vectormultiplication__int_vector.to_array(vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content))) ((  assert {  (#"vectormultiplication.ads" 24 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__and__and__and__forall__cmp__ixdcomp" "GP_Sloc:vectormultiplication.ads:24:40" "GP_Id:19" "comment:              Constant_Product'Result (J) > Integer'First)
+                                       ^ vectormultiplication.ads:24:40:VC_INDEX_CHECK" ( ((Vectormultiplication__int_vector.first vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content) <= j) /\ (j <= (Vectormultiplication__int_vector.last vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content)) ) )) };
+    j ))))) > ( -2147483648 )) in (
      ()))
      end ))))
   ;
    (any bool
   requires { true} 
-  ensures { ( (result = True) <-> (forall j   "model" "name:J" "model_trace:2665"  : int.
-   ( ( ((Vectormultiplication__int_vector.first vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content) <= j) /\ (j <= (Vectormultiplication__int_vector.last vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content)) ) -> ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content) j)) >= ( -2147483648 )) )) )} 
+  ensures { ( (result = True) <-> (forall j   "model" "name:J" "model_trace:2757"  : int.
+   ( ( ((Vectormultiplication__int_vector.first vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content) <= j) /\ (j <= (Vectormultiplication__int_vector.last vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content)) ) -> ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content) j)) > ( -2147483648 )) )) )} 
   ) )))) (( (let j =  (any int
   ) in (
    (if ((Boolean.andb(((  abstract ensures {true}(let _ = vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content in (
@@ -3409,20 +3699,29 @@ module Vectormultiplication__constant_product__subprogram_def
     ()))
     end ;
    (Vectormultiplication__int_vector.last(vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content)) ))))) then (
-     abstract ensures {true}(let _ = ((#"vectormultiplication.ads" 22 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:vectormultiplication.ads:22:43" "GP_Shape:pragargs__and__and__forall__cmp__div" "GP_Id:19" "comment:              Constant_Product'Result (J) / Given_vector (J) = Given_constant)
-                                          ^ vectormultiplication.ads:22:43:VC_OVERFLOW_CHECK" (Standard__integer.range_check_((#"vectormultiplication.ads" 22 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:vectormultiplication.ads:22:43" "GP_Reason:VC_DIVISION_CHECK" "GP_Id:18" "comment:              Constant_Product'Result (J) / Given_vector (J) = Given_constant)
-                                          ^ vectormultiplication.ads:22:43:VC_DIVISION_CHECK" "GP_Shape:pragargs__and__and__forall__cmp__div" (Int_Division.div_((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Vectormultiplication__int_vector.to_array(vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content))) (( #"vectormultiplication.ads" 22 0 0# assert { #"vectormultiplication.ads" 22 0 0# (#"vectormultiplication.ads" 22 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:vectormultiplication.ads:22:40" "GP_Id:16" "comment:              Constant_Product'Result (J) / Given_vector (J) = Given_constant)
-                                       ^ vectormultiplication.ads:22:40:VC_INDEX_CHECK" "GP_Shape:pragargs__and__and__forall__cmp__div__ixdcomp" ( ((Vectormultiplication__int_vector.first vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content) <= j) /\ (j <= (Vectormultiplication__int_vector.last vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content)) ) )) };
-    j )))))) ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Vectormultiplication__int_vector.to_array(Vectormultiplication__constant_product__given_vector.given_vector))) ((  assert {  (#"vectormultiplication.ads" 22 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__and__and__forall__cmp__div__ixdcomp" "GP_Sloc:vectormultiplication.ads:22:59" "GP_Id:17" "comment:              Constant_Product'Result (J) / Given_vector (J) = Given_constant)
-                                                          ^ vectormultiplication.ads:22:59:VC_INDEX_CHECK" ( ((Vectormultiplication__int_vector.first Vectormultiplication__constant_product__given_vector.given_vector) <= j) /\ (j <= (Vectormultiplication__int_vector.last Vectormultiplication__constant_product__given_vector.given_vector)) ) )) };
-    j ))))))) )))) )) = Vectormultiplication__constant_product__given_constant.given_constant) in (
+     abstract ensures {true}(let _ = ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Vectormultiplication__int_vector.to_array(vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content))) ((  assert {  (#"vectormultiplication.ads" 26 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:vectormultiplication.ads:26:40" "GP_Id:20" "comment:              Constant_Product'Result (J) = Given_constant * Given_vector (Given_vector'First + (J - Constant_Product'Result'First)))
+                                       ^ vectormultiplication.ads:26:40:VC_INDEX_CHECK" "GP_Shape:pragargs__and__and__forall__cmp__ixdcomp" ( ((Vectormultiplication__int_vector.first vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content) <= j) /\ (j <= (Vectormultiplication__int_vector.last vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content)) ) )) };
+    j ))))) = (#"vectormultiplication.ads" 26 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:vectormultiplication.ads:26:60" "GP_Id:24" "comment:              Constant_Product'Result (J) = Given_constant * Given_vector (Given_vector'First + (J - Constant_Product'Result'First)))
+                                                           ^ vectormultiplication.ads:26:60:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__and__and__forall__cmp__mult" (Standard__integer.range_check_((Vectormultiplication__constant_product__given_constant.given_constant * (Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Vectormultiplication__int_vector.to_array(Vectormultiplication__constant_product__given_vector.given_vector))) ((let temp___212 = (#"vectormultiplication.ads" 26 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:vectormultiplication.ads:26:95" "GP_Id:22" "comment:              Constant_Product'Result (J) = Given_constant * Given_vector (Given_vector'First + (J - Constant_Product'Result'First)))
+                                                                                              ^ vectormultiplication.ads:26:95:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__and__and__forall__cmp__mult__ixdcomp__add" (Standard__integer.range_check_((( #"vectormultiplication.ads" 26 0 0# abstract ensures {true}(let _ = Vectormultiplication__constant_product__given_vector.given_vector in (
+     ()))
+     end ;
+    (Vectormultiplication__int_vector.first(Vectormultiplication__constant_product__given_vector.given_vector)) ) + (#"vectormultiplication.ads" 26 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:vectormultiplication.ads:26:100" "GP_Id:21" "comment:              Constant_Product'Result (J) = Given_constant * Given_vector (Given_vector'First + (J - Constant_Product'Result'First)))
+                                                                                                   ^ vectormultiplication.ads:26:100:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__and__and__forall__cmp__mult__ixdcomp__add__sub" (Standard__integer.range_check_((j - ( #"vectormultiplication.ads" 26 0 0# abstract ensures {true}(let _ = vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content in (
+     ()))
+     end ;
+    (Vectormultiplication__int_vector.first(vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content)) )))) ))))) )) in (
+     (  assert {  (#"vectormultiplication.ads" 26 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:vectormultiplication.ads:26:95" "GP_Shape:pragargs__and__and__forall__cmp__mult__ixdcomp__add" "GP_Id:23" "comment:              Constant_Product'Result (J) = Given_constant * Given_vector (Given_vector'First + (J - Constant_Product'Result'First)))
+                                                                                              ^ vectormultiplication.ads:26:95:VC_INDEX_CHECK" ( ((Vectormultiplication__int_vector.first Vectormultiplication__constant_product__given_vector.given_vector) <= temp___212) /\ (temp___212 <= (Vectormultiplication__int_vector.last Vectormultiplication__constant_product__given_vector.given_vector)) ) )) };
+     temp___212 )))
+    ))))))) ))) in (
      ()))
      end ))))
   ;
    (any bool
   requires { true} 
-  ensures { ( (result = True) <-> (forall j   "model" "name:J" "model_trace:2688"  : int.
-   ( ( ((Vectormultiplication__int_vector.first vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content) <= j) /\ (j <= (Vectormultiplication__int_vector.last vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content)) ) -> ((Int_Division.div (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content) j)) (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array Vectormultiplication__constant_product__given_vector.given_vector) j))) = Vectormultiplication__constant_product__given_constant.given_constant) )) )} 
+  ensures { ( (result = True) <-> (forall j   "model" "name:J" "model_trace:2780"  : int.
+   ( ( ((Vectormultiplication__int_vector.first vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content) <= j) /\ (j <= (Vectormultiplication__int_vector.last vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content)) ) -> ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content) j)) = (Vectormultiplication__constant_product__given_constant.given_constant * (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Vectormultiplication__int_vector.to_array Vectormultiplication__constant_product__given_vector.given_vector) ((Vectormultiplication__int_vector.first Vectormultiplication__constant_product__given_vector.given_vector) + (j - (Vectormultiplication__int_vector.first vectormultiplication__constant_product__result.Vectormultiplication__int_vector.int_vector__content))))))) )) )} 
   ) )))) (((  abstract ensures {true}(let _ = Vectormultiplication__constant_product__given_vector.given_vector in (
    ()))
    end ;

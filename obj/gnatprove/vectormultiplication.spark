@@ -34,146 +34,6 @@
   "flow": [
     {
       "file": "vectormultiplication.adb",
-      "line": 17,
-      "col": 25,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "VectorMultiplication.Constant_Product",
-        "sloc": [
-          {
-            "file": "vectormultiplication.ads",
-            "line": 14
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "vectormultiplication__flow__34.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "vectormultiplication.adb",
-      "line": 17,
-      "col": 25,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "VectorMultiplication.Constant_Product",
-        "sloc": [
-          {
-            "file": "vectormultiplication.ads",
-            "line": 14
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "vectormultiplication__flow__35.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "vectormultiplication.adb",
-      "line": 18,
-      "col": 16,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "VectorMultiplication.Constant_Product",
-        "sloc": [
-          {
-            "file": "vectormultiplication.ads",
-            "line": 14
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "vectormultiplication__flow__36.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "vectormultiplication.adb",
-      "line": 19,
-      "col": 10,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "VectorMultiplication.Constant_Product",
-        "sloc": [
-          {
-            "file": "vectormultiplication.ads",
-            "line": 14
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "vectormultiplication__flow__37.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "vectormultiplication.adb",
-      "line": 20,
-      "col": 10,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "VectorMultiplication.Constant_Product",
-        "sloc": [
-          {
-            "file": "vectormultiplication.ads",
-            "line": 14
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "vectormultiplication__flow__38.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "vectormultiplication.adb",
-      "line": 16,
-      "col": 40,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "VectorMultiplication.Constant_Product",
-        "sloc": [
-          {
-            "file": "vectormultiplication.ads",
-            "line": 14
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "vectormultiplication__flow__39.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "vectormultiplication.adb",
-      "line": 23,
-      "col": 7,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "VectorMultiplication.Constant_Product",
-        "sloc": [
-          {
-            "file": "vectormultiplication.ads",
-            "line": 14
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "vectormultiplication__flow__40.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "vectormultiplication.adb",
       "line": 7,
       "col": 17,
       "rule": "UNINITIALIZED",
@@ -189,7 +49,7 @@
       },
       "check_tree": {
       },
-      "tracefile": "vectormultiplication__flow__83.trace",
+      "tracefile": "vectormultiplication__flow__46.trace",
       "how_proved": "flow"
     },
     {
@@ -209,16 +69,216 @@
       },
       "check_tree": {
       },
-      "tracefile": "vectormultiplication__flow__84.trace",
+      "tracefile": "vectormultiplication__flow__47.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "vectormultiplication.adb",
+      "line": 17,
+      "col": 25,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "VectorMultiplication.Constant_Product",
+        "sloc": [
+          {
+            "file": "vectormultiplication.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "vectormultiplication__flow__87.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "vectormultiplication.adb",
+      "line": 17,
+      "col": 25,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "VectorMultiplication.Constant_Product",
+        "sloc": [
+          {
+            "file": "vectormultiplication.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "vectormultiplication__flow__88.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "vectormultiplication.adb",
+      "line": 18,
+      "col": 16,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "VectorMultiplication.Constant_Product",
+        "sloc": [
+          {
+            "file": "vectormultiplication.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "vectormultiplication__flow__89.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "vectormultiplication.adb",
+      "line": 19,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "VectorMultiplication.Constant_Product",
+        "sloc": [
+          {
+            "file": "vectormultiplication.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "vectormultiplication__flow__90.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "vectormultiplication.adb",
+      "line": 20,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "VectorMultiplication.Constant_Product",
+        "sloc": [
+          {
+            "file": "vectormultiplication.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "vectormultiplication__flow__91.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "vectormultiplication.adb",
+      "line": 21,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "VectorMultiplication.Constant_Product",
+        "sloc": [
+          {
+            "file": "vectormultiplication.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "vectormultiplication__flow__92.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "vectormultiplication.adb",
+      "line": 21,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "VectorMultiplication.Constant_Product",
+        "sloc": [
+          {
+            "file": "vectormultiplication.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "vectormultiplication__flow__93.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "vectormultiplication.adb",
+      "line": 23,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "VectorMultiplication.Constant_Product",
+        "sloc": [
+          {
+            "file": "vectormultiplication.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "vectormultiplication__flow__94.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "vectormultiplication.adb",
+      "line": 16,
+      "col": 40,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "VectorMultiplication.Constant_Product",
+        "sloc": [
+          {
+            "file": "vectormultiplication.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "vectormultiplication__flow__95.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "vectormultiplication.adb",
+      "line": 25,
+      "col": 7,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "VectorMultiplication.Constant_Product",
+        "sloc": [
+          {
+            "file": "vectormultiplication.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "vectormultiplication__flow__96.trace",
       "how_proved": "flow"
     }
   ],
   "proof": [
     {
       "file": "vectormultiplication.ads",
-      "line": 22,
-      "col": 59,
-      "rule": "VC_INDEX_CHECK",
+      "line": 20,
+      "col": 94,
+      "rule": "VC_DIVISION_CHECK",
       "severity": "info",
       "entity": {
         "name": "VectorMultiplication.Constant_Product",
@@ -234,236 +294,48 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 82,
-              "time": 9.00000000000000E-02
+              "steps": 19,
+              "time": 5.00000000000000E-02
             }
           },
           "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 82,
-              "time": 6.00000000000000E-02
-            }
-          },
-          "transformations": {
+            "split_disj": [
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                  "CVC4_CE": {
+                    "result": "Unknown (none)",
+                    "steps": 152,
+                    "time": 0
+                  }
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              }
+            ]
           }
         }
       ],
       "check_file": "vectormultiplication.ads",
-      "check_line": 22,
-      "check_col": 59,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 2,
-          "max_steps": 1,
-          "max_time": 9.00000035762787E-02
-        }
-      }
-    },
-    {
-      "file": "vectormultiplication.adb",
-      "line": 21,
-      "col": 51,
-      "rule": "VC_OVERFLOW_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "VectorMultiplication.Constant_Product",
-        "sloc": [
-          {
-            "file": "vectormultiplication.ads",
-            "line": 14
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 21,
-              "time": 8.00000000000000E-02
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "vectormultiplication.adb",
-      "check_line": 21,
-      "check_col": 51,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 7.99999982118607E-02
-        }
-      }
-    },
-    {
-      "file": "vectormultiplication.adb",
-      "line": 18,
-      "col": 25,
-      "rule": "VC_OVERFLOW_CHECK",
-      "severity": "medium",
-      "entity": {
-        "name": "VectorMultiplication.Constant_Product",
-        "sloc": [
-          {
-            "file": "vectormultiplication.ads",
-            "line": 14
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 36,
-              "time": 8.00000000000000E-02
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Unknown (other)",
-              "steps": 118,
-              "time": 6.00000000000000E-02
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 118,
-              "time": 8.00000000000000E-02
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "vectormultiplication.adb",
-      "check_line": 18,
-      "check_col": 25,
-      "tracefile": "vectormultiplication.adb_18_25_overflow_check.trace",
-      "cntexmp": {
-        "vectormultiplication.adb": {
-          "13": [
-            {
-              "name": "result",
-              "value": "(2147483647 => 0, others => 2147483647)",
-              "kind": "variable"
-            },
-            {
-              "name": "result'First",
-              "value": "2147483647",
-              "kind": "variable"
-            },
-            {
-              "name": "result'Last",
-              "value": "2147483647",
-              "kind": "variable"
-            }
-          ],
-          "16": [
-            {
-              "name": "count",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "result",
-              "value": "(others => 0)",
-              "kind": "variable"
-            }
-          ],
-          "17": [
-            {
-              "name": "result",
-              "value": "(others => 0)",
-              "kind": "variable"
-            }
-          ],
-          "18": [
-            {
-              "name": "count",
-              "value": "2147483647",
-              "kind": "variable"
-            }
-          ]
-        },
-        "vectormultiplication.ads": {
-          "14": [
-            {
-              "name": "Given_constant",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Given_vector",
-              "value": "(2147483647 => 0, others => 2147483647)",
-              "kind": "variable"
-            },
-            {
-              "name": "Given_vector'First",
-              "value": "2147483647",
-              "kind": "variable"
-            },
-            {
-              "name": "Given_vector'Last",
-              "value": "2147483647",
-              "kind": "variable"
-            }
-          ]
-        }
-      },
-      "msg_id": 0,
-      "how_proved": "prover"
-    },
-    {
-      "file": "vectormultiplication.adb",
-      "line": 20,
-      "col": 61,
-      "rule": "VC_OVERFLOW_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "VectorMultiplication.Constant_Product",
-        "sloc": [
-          {
-            "file": "vectormultiplication.ads",
-            "line": 14
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 30,
-              "time": 6.00000000000000E-02
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "vectormultiplication.adb",
       "check_line": 20,
-      "check_col": 61,
+      "check_col": 94,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 5.99999986588955E-02
+          "max_time": 5.00000007450581E-02
         }
       }
     },
@@ -488,7 +360,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 6.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -503,7 +375,600 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "vectormultiplication.ads",
+      "line": 24,
+      "col": 40,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VectorMultiplication.Constant_Product",
+        "sloc": [
+          {
+            "file": "vectormultiplication.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "vectormultiplication.ads",
+      "check_line": 24,
+      "check_col": 40,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "vectormultiplication.ads",
+      "line": 22,
+      "col": 44,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VectorMultiplication.Constant_Product",
+        "sloc": [
+          {
+            "file": "vectormultiplication.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "vectormultiplication.ads",
+      "check_line": 22,
+      "check_col": 44,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "vectormultiplication.adb",
+      "line": 21,
+      "col": 67,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VectorMultiplication.Constant_Product",
+        "sloc": [
+          {
+            "file": "vectormultiplication.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 6.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "vectormultiplication.adb",
+      "check_line": 21,
+      "check_col": 67,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
           "max_time": 5.99999986588955E-02
+        }
+      }
+    },
+    {
+      "file": "vectormultiplication.adb",
+      "line": 18,
+      "col": 25,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VectorMultiplication.Constant_Product",
+        "sloc": [
+          {
+            "file": "vectormultiplication.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 8.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "vectormultiplication.adb",
+      "check_line": 18,
+      "check_col": 25,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 7.99999982118607E-02
+        }
+      }
+    },
+    {
+      "file": "vectormultiplication.ads",
+      "line": 26,
+      "col": 40,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VectorMultiplication.Constant_Product",
+        "sloc": [
+          {
+            "file": "vectormultiplication.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "vectormultiplication.ads",
+      "check_line": 26,
+      "check_col": 40,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "vectormultiplication.adb",
+      "line": 23,
+      "col": 81,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VectorMultiplication.Constant_Product",
+        "sloc": [
+          {
+            "file": "vectormultiplication.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "vectormultiplication.adb",
+      "check_line": 23,
+      "check_col": 81,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "vectormultiplication.adb",
+      "line": 23,
+      "col": 32,
+      "rule": "VC_LOOP_INVARIANT_PRESERV",
+      "severity": "info",
+      "entity": {
+        "name": "VectorMultiplication.Constant_Product",
+        "sloc": [
+          {
+            "file": "vectormultiplication.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 9.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "vectormultiplication.adb",
+      "check_line": 23,
+      "check_col": 32,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 9.00000035762787E-02
+        }
+      }
+    },
+    {
+      "file": "vectormultiplication.ads",
+      "line": 19,
+      "col": 66,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VectorMultiplication.Constant_Product",
+        "sloc": [
+          {
+            "file": "vectormultiplication.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "vectormultiplication.ads",
+      "check_line": 19,
+      "check_col": 66,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 5.00000007450581E-02
+        }
+      }
+    },
+    {
+      "file": "vectormultiplication.ads",
+      "line": 17,
+      "col": 51,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VectorMultiplication.Constant_Product",
+        "sloc": [
+          {
+            "file": "vectormultiplication.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 13,
+              "time": 6.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "vectormultiplication.ads",
+      "check_line": 17,
+      "check_col": 51,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 5.99999986588955E-02
+        }
+      }
+    },
+    {
+      "file": "vectormultiplication.adb",
+      "line": 23,
+      "col": 32,
+      "rule": "VC_LOOP_INVARIANT_INIT",
+      "severity": "info",
+      "entity": {
+        "name": "VectorMultiplication.Constant_Product",
+        "sloc": [
+          {
+            "file": "vectormultiplication.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 6.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "vectormultiplication.adb",
+      "check_line": 23,
+      "check_col": 32,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 5.99999986588955E-02
+        }
+      }
+    },
+    {
+      "file": "vectormultiplication.adb",
+      "line": 22,
+      "col": 53,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VectorMultiplication.Constant_Product",
+        "sloc": [
+          {
+            "file": "vectormultiplication.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 263,
+              "time": 1.10000000000000E-01
+            }
+          },
+          "transformations": {
+            "split_disj": [
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                  "CVC4_CE": {
+                    "result": "Unknown (none)",
+                    "steps": 274,
+                    "time": 0
+                  }
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "check_file": "vectormultiplication.adb",
+      "check_line": 22,
+      "check_col": 53,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.09999999403954E-01
+        }
+      }
+    },
+    {
+      "file": "vectormultiplication.adb",
+      "line": 22,
+      "col": 50,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VectorMultiplication.Constant_Product",
+        "sloc": [
+          {
+            "file": "vectormultiplication.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "vectormultiplication.adb",
+      "check_line": 22,
+      "check_col": 50,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -528,7 +993,12 @@
             "CVC4": {
               "result": "Unknown (other)",
               "steps": 114,
-              "time": 5.00000000000000E-02
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (other)",
+              "steps": 114,
+              "time": 0
             }
           },
           "transformations": {
@@ -538,13 +1008,8 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Unknown (other)",
-              "steps": 114,
-              "time": 5.00000000000000E-02
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 114,
-              "time": 6.00000000000000E-02
+              "steps": 105,
+              "time": 0
             }
           },
           "transformations": {
@@ -579,22 +1044,22 @@
           "7": [
             {
               "name": "I",
-              "value": "-1",
+              "value": "2",
               "kind": "variable"
             },
             {
               "name": "Second_vector",
-              "value": "(0 => 0, others => -1)",
+              "value": "(0 => 1, others => 2)",
               "kind": "variable"
             },
             {
               "name": "Second_vector'First",
-              "value": "0",
+              "value": "1",
               "kind": "variable"
             },
             {
               "name": "Second_vector'Last",
-              "value": "0",
+              "value": "1",
               "kind": "variable"
             },
             {
@@ -608,39 +1073,181 @@
           "5": [
             {
               "name": "First_vector",
-              "value": "(others => -1)",
+              "value": "(others => 2)",
               "kind": "variable"
             },
             {
               "name": "First_vector'First",
-              "value": "-1",
+              "value": "2",
               "kind": "variable"
             },
             {
               "name": "First_vector'Last",
-              "value": "-1",
+              "value": "2",
               "kind": "variable"
             },
             {
               "name": "Second_vector",
-              "value": "(0 => 0, others => -1)",
+              "value": "(0 => 1, others => 2)",
               "kind": "variable"
             },
             {
               "name": "Second_vector'First",
-              "value": "0",
+              "value": "1",
               "kind": "variable"
             },
             {
               "name": "Second_vector'Last",
-              "value": "0",
+              "value": "1",
               "kind": "variable"
             }
           ]
         }
       },
-      "msg_id": 1,
+      "msg_id": 0,
       "how_proved": "prover"
+    },
+    {
+      "file": "vectormultiplication.adb",
+      "line": 22,
+      "col": 79,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VectorMultiplication.Constant_Product",
+        "sloc": [
+          {
+            "file": "vectormultiplication.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "vectormultiplication.adb",
+      "check_line": 22,
+      "check_col": 79,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 5.00000007450581E-02
+        }
+      }
+    },
+    {
+      "file": "vectormultiplication.ads",
+      "line": 20,
+      "col": 134,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VectorMultiplication.Constant_Product",
+        "sloc": [
+          {
+            "file": "vectormultiplication.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "vectormultiplication.ads",
+      "check_line": 20,
+      "check_col": 134,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "vectormultiplication.ads",
+      "line": 26,
+      "col": 100,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VectorMultiplication.Constant_Product",
+        "sloc": [
+          {
+            "file": "vectormultiplication.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 100,
+              "time": 8.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "vectormultiplication.ads",
+      "check_line": 26,
+      "check_col": 100,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 7.99999982118607E-02
+        }
+      }
     },
     {
       "file": "vectormultiplication.adb",
@@ -663,7 +1270,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 6.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -678,15 +1285,15 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 5.99999986588955E-02
+          "max_time": 0.00000000000000E+00
         }
       }
     },
     {
       "file": "vectormultiplication.adb",
-      "line": 21,
-      "col": 86,
-      "rule": "VC_RANGE_CHECK",
+      "line": 20,
+      "col": 61,
+      "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
       "entity": {
         "name": "VectorMultiplication.Constant_Product",
@@ -702,8 +1309,8 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 22,
-              "time": 6.00000000000000E-02
+              "steps": 21,
+              "time": 0
             }
           },
           "transformations": {
@@ -711,175 +1318,22 @@
         }
       ],
       "check_file": "vectormultiplication.adb",
-      "check_line": 21,
-      "check_col": 86,
+      "check_line": 20,
+      "check_col": 61,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 5.99999986588955E-02
+          "max_time": 0.00000000000000E+00
         }
       }
     },
     {
       "file": "vectormultiplication.ads",
-      "line": 22,
-      "col": 43,
-      "rule": "VC_DIVISION_CHECK",
-      "severity": "medium",
-      "entity": {
-        "name": "VectorMultiplication.Constant_Product",
-        "sloc": [
-          {
-            "file": "vectormultiplication.ads",
-            "line": 14
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Unknown (other)",
-              "steps": 181,
-              "time": 8.00000000000000E-02
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 205,
-              "time": 9.00000000000000E-02
-            }
-          },
-          "transformations": {
-            "split_disj": [
-              {
-                "proof_attempts": {
-                  "CVC4_CE": {
-                    "result": "Unknown (other)",
-                    "steps": 152,
-                    "time": 8.00000000000000E-02
-                  }
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              }
-            ]
-          }
-        }
-      ],
-      "check_file": "vectormultiplication.ads",
-      "check_line": 22,
-      "check_col": 43,
-      "tracefile": "vectormultiplication.ads_22_43_division_check.trace",
-      "cntexmp": {
-        "vectormultiplication.adb": {
-          "13": [
-            {
-              "name": "result",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "result'First",
-              "value": "1",
-              "kind": "variable"
-            },
-            {
-              "name": "result'Last",
-              "value": "2",
-              "kind": "variable"
-            }
-          ],
-          "16": [
-            {
-              "name": "count",
-              "value": "3",
-              "kind": "variable"
-            },
-            {
-              "name": "result",
-              "value": "(others => 1)",
-              "kind": "variable"
-            }
-          ],
-          "17": [
-            {
-              "name": "result",
-              "value": "(others => 2)",
-              "kind": "variable"
-            }
-          ],
-          "18": [
-            {
-              "name": "count",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "23": [
-            {
-              "name": "Constant_Product'First",
-              "value": "1",
-              "kind": "variable"
-            },
-            {
-              "name": "Constant_Product'Last",
-              "value": "2",
-              "kind": "variable"
-            },
-            {
-              "name": "Constant_Product'Result",
-              "value": "(others => 1)",
-              "kind": "variable"
-            }
-          ]
-        },
-        "vectormultiplication.ads": {
-          "14": [
-            {
-              "name": "Given_constant",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Given_vector",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "Given_vector'First",
-              "value": "1",
-              "kind": "variable"
-            },
-            {
-              "name": "Given_vector'Last",
-              "value": "2",
-              "kind": "variable"
-            }
-          ]
-        }
-      },
-      "msg_id": 2,
-      "how_proved": "prover"
-    },
-    {
-      "file": "vectormultiplication.ads",
-      "line": 20,
-      "col": 40,
-      "rule": "VC_INDEX_CHECK",
+      "line": 26,
+      "col": 60,
+      "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
       "entity": {
         "name": "VectorMultiplication.Constant_Product",
@@ -895,19 +1349,8 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 5,
-              "time": 5.00000000000000E-02
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 5.00000000000000E-02
+              "steps": 329,
+              "time": 1.60000000000000E-01
             }
           },
           "transformations": {
@@ -915,14 +1358,14 @@
         }
       ],
       "check_file": "vectormultiplication.ads",
-      "check_line": 20,
-      "check_col": 40,
+      "check_line": 26,
+      "check_col": 60,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
-          "count": 2,
+          "count": 1,
           "max_steps": 1,
-          "max_time": 5.00000007450581E-02
+          "max_time": 1.59999996423721E-01
         }
       }
     },
@@ -947,7 +1390,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 14,
-              "time": 5.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -958,7 +1401,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 14,
-              "time": 5.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -973,7 +1416,7 @@
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 5.00000007450581E-02
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -998,7 +1441,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 14,
-              "time": 6.00000000000000E-02
+              "time": 8.00000000000000E-02
             }
           },
           "transformations": {
@@ -1009,7 +1452,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 14,
-              "time": 5.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -1031,7 +1474,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 5.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -1046,7 +1489,7 @@
         "CVC4": {
           "count": 4,
           "max_steps": 1,
-          "max_time": 5.99999986588955E-02
+          "max_time": 7.99999982118607E-02
         }
       }
     },
@@ -1055,7 +1498,7 @@
       "line": 17,
       "col": 49,
       "rule": "VC_OVERFLOW_CHECK",
-      "severity": "medium",
+      "severity": "info",
       "entity": {
         "name": "VectorMultiplication.Constant_Product",
         "sloc": [
@@ -1069,9 +1512,9 @@
         {
           "proof_attempts": {
             "CVC4": {
-              "result": "Unknown (other)",
-              "steps": 1725,
-              "time": 1.90000000000000E-01
+              "result": "Valid",
+              "steps": 1935,
+              "time": 2.30000000000000E-01
             }
           },
           "transformations": {
@@ -1080,14 +1523,9 @@
         {
           "proof_attempts": {
             "CVC4": {
-              "result": "Unknown (other)",
-              "steps": 425,
-              "time": 8.00000000000000E-02
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 425,
-              "time": 9.00000000000000E-02
+              "result": "Valid",
+              "steps": 1094,
+              "time": 1.30000000000000E-01
             }
           },
           "transformations": {
@@ -1097,79 +1535,20 @@
       "check_file": "vectormultiplication.adb",
       "check_line": 17,
       "check_col": 49,
-      "tracefile": "vectormultiplication.adb_17_49_overflow_check.trace",
-      "cntexmp": {
-        "vectormultiplication.adb": {
-          "13": [
-            {
-              "name": "result",
-              "value": "(2 => 2, others => 2)",
-              "kind": "variable"
-            },
-            {
-              "name": "result'First",
-              "value": "2",
-              "kind": "variable"
-            },
-            {
-              "name": "result'Last",
-              "value": "2",
-              "kind": "variable"
-            }
-          ],
-          "16": [
-            {
-              "name": "count",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "result",
-              "value": "(others => 2)",
-              "kind": "variable"
-            }
-          ],
-          "17": [
-            {
-              "name": "result",
-              "value": "(others => 2)",
-              "kind": "variable"
-            }
-          ]
-        },
-        "vectormultiplication.ads": {
-          "14": [
-            {
-              "name": "Given_constant",
-              "value": "-2",
-              "kind": "variable"
-            },
-            {
-              "name": "Given_vector",
-              "value": "(2 => 2, others => 2)",
-              "kind": "variable"
-            },
-            {
-              "name": "Given_vector'First",
-              "value": "2",
-              "kind": "variable"
-            },
-            {
-              "name": "Given_vector'Last",
-              "value": "2",
-              "kind": "variable"
-            }
-          ]
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 2.30000004172325E-01
         }
-      },
-      "msg_id": 3,
-      "how_proved": "prover"
+      }
     },
     {
       "file": "vectormultiplication.ads",
-      "line": 18,
-      "col": 44,
-      "rule": "VC_INDEX_CHECK",
+      "line": 20,
+      "col": 95,
+      "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
       "entity": {
         "name": "VectorMultiplication.Constant_Product",
@@ -1185,19 +1564,8 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 5,
+              "steps": 21,
               "time": 6.00000000000000E-02
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 5.00000000000000E-02
             }
           },
           "transformations": {
@@ -1205,22 +1573,22 @@
         }
       ],
       "check_file": "vectormultiplication.ads",
-      "check_line": 18,
-      "check_col": 44,
+      "check_line": 20,
+      "check_col": 95,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
-          "count": 2,
+          "count": 1,
           "max_steps": 1,
           "max_time": 5.99999986588955E-02
         }
       }
     },
     {
-      "file": "vectormultiplication.ads",
-      "line": 22,
-      "col": 40,
-      "rule": "VC_INDEX_CHECK",
+      "file": "vectormultiplication.adb",
+      "line": 21,
+      "col": 32,
+      "rule": "VC_LOOP_INVARIANT_PRESERV",
       "severity": "info",
       "entity": {
         "name": "VectorMultiplication.Constant_Product",
@@ -1236,34 +1604,23 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 5,
-              "time": 5.00000000000000E-02
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 6.00000000000000E-02
+              "steps": 3331,
+              "time": 3.30000000000000E-01
             }
           },
           "transformations": {
           }
         }
       ],
-      "check_file": "vectormultiplication.ads",
-      "check_line": 22,
-      "check_col": 40,
+      "check_file": "vectormultiplication.adb",
+      "check_line": 21,
+      "check_col": 32,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
-          "count": 2,
+          "count": 1,
           "max_steps": 1,
-          "max_time": 5.99999986588955E-02
+          "max_time": 3.30000013113022E-01
         }
       }
     },
@@ -1287,13 +1644,13 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Unknown (other)",
-              "steps": 857,
-              "time": 1.70000000000000E-01
+              "steps": 825,
+              "time": 1.10000000000000E-01
             },
             "CVC4_CE": {
               "result": "Unknown (other)",
-              "steps": 857,
-              "time": 1.30000000000000E-01
+              "steps": 825,
+              "time": 0
             }
           },
           "transformations": {
@@ -1337,46 +1694,86 @@
           "5": [
             {
               "name": "First_vector",
-              "value": "(-2 => -2, 0 => 2, others => 2)",
+              "value": "(0 => -2, 2 => -2, others => 2)",
               "kind": "variable"
             },
             {
               "name": "First_vector'First",
-              "value": "-2",
+              "value": "2",
               "kind": "variable"
             },
             {
               "name": "First_vector'Last",
-              "value": "-2",
+              "value": "2",
               "kind": "variable"
             },
             {
               "name": "Second_vector",
-              "value": "(-2 => 2, 0 => 2, others => -2)",
+              "value": "(0 => -2, 2 => 2, others => -2)",
               "kind": "variable"
             },
             {
               "name": "Second_vector'First",
-              "value": "-2",
+              "value": "2",
               "kind": "variable"
             },
             {
               "name": "Second_vector'Last",
-              "value": "-2",
+              "value": "2",
               "kind": "variable"
             }
           ]
         }
       },
-      "msg_id": 4,
+      "msg_id": 1,
       "how_proved": "prover"
+    },
+    {
+      "file": "vectormultiplication.ads",
+      "line": 20,
+      "col": 117,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VectorMultiplication.Constant_Product",
+        "sloc": [
+          {
+            "file": "vectormultiplication.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 114,
+              "time": 6.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "vectormultiplication.ads",
+      "check_line": 20,
+      "check_col": 117,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 5.99999986588955E-02
+        }
+      }
     },
     {
       "file": "vectormultiplication.adb",
       "line": 17,
       "col": 42,
       "rule": "VC_INDEX_CHECK",
-      "severity": "medium",
+      "severity": "info",
       "entity": {
         "name": "VectorMultiplication.Constant_Product",
         "sloc": [
@@ -1392,23 +1789,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 5.00000000000000E-02
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Unknown (other)",
-              "steps": 120,
               "time": 6.00000000000000E-02
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 120,
-              "time": 8.00000000000000E-02
             }
           },
           "transformations": {
@@ -1419,7 +1800,18 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 3.00000000000000E-02
+              "time": 6.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 5.00000000000000E-02
             }
           },
           "transformations": {
@@ -1440,107 +1832,21 @@
       "check_file": "vectormultiplication.adb",
       "check_line": 17,
       "check_col": 42,
-      "tracefile": "vectormultiplication.adb_17_42_index_check.trace",
-      "cntexmp": {
-        "vectormultiplication.adb": {
-          "13": [
-            {
-              "name": "result",
-              "value": "(1 => 0, others => 2)",
-              "kind": "variable"
-            },
-            {
-              "name": "result'First",
-              "value": "1",
-              "kind": "variable"
-            },
-            {
-              "name": "result'Last",
-              "value": "2",
-              "kind": "variable"
-            }
-          ],
-          "16": [
-            {
-              "name": "count",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "result",
-              "value": "(others => 1)",
-              "kind": "variable"
-            }
-          ],
-          "17": [
-            {
-              "name": "Given_vector",
-              "value": "(1 => 0, others => 2)",
-              "kind": "variable"
-            },
-            {
-              "name": "Given_vector'First",
-              "value": "1",
-              "kind": "variable"
-            },
-            {
-              "name": "Given_vector'Last",
-              "value": "2",
-              "kind": "variable"
-            },
-            {
-              "name": "count",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "result",
-              "value": "(others => 1)",
-              "kind": "variable"
-            }
-          ],
-          "18": [
-            {
-              "name": "count",
-              "value": "0",
-              "kind": "variable"
-            }
-          ]
-        },
-        "vectormultiplication.ads": {
-          "14": [
-            {
-              "name": "Given_constant",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Given_vector",
-              "value": "(1 => 0, others => 2)",
-              "kind": "variable"
-            },
-            {
-              "name": "Given_vector'First",
-              "value": "1",
-              "kind": "variable"
-            },
-            {
-              "name": "Given_vector'Last",
-              "value": "2",
-              "kind": "variable"
-            }
-          ]
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 4,
+          "max_steps": 1,
+          "max_time": 5.99999986588955E-02
         }
-      },
-      "msg_id": 5,
-      "how_proved": "prover"
+      }
     },
     {
-      "file": "vectormultiplication.ads",
-      "line": 22,
-      "col": 43,
-      "rule": "VC_OVERFLOW_CHECK",
-      "severity": "medium",
+      "file": "vectormultiplication.adb",
+      "line": 21,
+      "col": 32,
+      "rule": "VC_LOOP_INVARIANT_INIT",
+      "severity": "info",
       "entity": {
         "name": "VectorMultiplication.Constant_Product",
         "sloc": [
@@ -1554,25 +1860,66 @@
         {
           "proof_attempts": {
             "CVC4": {
-              "result": "Unknown (other)",
-              "steps": 320,
+              "result": "Valid",
+              "steps": 2130,
+              "time": 2.70000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "vectormultiplication.adb",
+      "check_line": 21,
+      "check_col": 32,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.70000010728836E-01
+        }
+      }
+    },
+    {
+      "file": "vectormultiplication.ads",
+      "line": 21,
+      "col": 16,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "VectorMultiplication.Constant_Product",
+        "sloc": [
+          {
+            "file": "vectormultiplication.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 142,
               "time": 1.10000000000000E-01
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 300,
-              "time": 1.30000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 450,
+              "time": 1.10000000000000E-01
             }
           },
           "transformations": {
             "split_disj": [
               {
                 "proof_attempts": {
-                  "CVC4_CE": {
-                    "result": "Unknown (other)",
-                    "steps": 274,
-                    "time": 1.30000000000000E-01
-                  }
                 },
                 "transformations": {
                 }
@@ -1591,108 +1938,47 @@
               }
             ]
           }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 2099,
+              "time": 2.70000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 99,
+              "time": 1.30000000000000E-01
+            }
+          },
+          "transformations": {
+          }
         }
       ],
       "check_file": "vectormultiplication.ads",
-      "check_line": 22,
-      "check_col": 43,
-      "tracefile": "vectormultiplication.ads_22_43_overflow_check.trace",
-      "cntexmp": {
-        "vectormultiplication.adb": {
-          "13": [
-            {
-              "name": "result",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "result'First",
-              "value": "1",
-              "kind": "variable"
-            },
-            {
-              "name": "result'Last",
-              "value": "2",
-              "kind": "variable"
-            }
-          ],
-          "16": [
-            {
-              "name": "count",
-              "value": "3",
-              "kind": "variable"
-            },
-            {
-              "name": "result",
-              "value": "(1 => -1, others => 1)",
-              "kind": "variable"
-            }
-          ],
-          "17": [
-            {
-              "name": "result",
-              "value": "(others => 2)",
-              "kind": "variable"
-            }
-          ],
-          "18": [
-            {
-              "name": "count",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "23": [
-            {
-              "name": "Constant_Product'First",
-              "value": "1",
-              "kind": "variable"
-            },
-            {
-              "name": "Constant_Product'Last",
-              "value": "2",
-              "kind": "variable"
-            },
-            {
-              "name": "Constant_Product'Result",
-              "value": "(1 => -1, others => 1)",
-              "kind": "variable"
-            }
-          ]
-        },
-        "vectormultiplication.ads": {
-          "14": [
-            {
-              "name": "Given_constant",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Given_vector",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "Given_vector'First",
-              "value": "1",
-              "kind": "variable"
-            },
-            {
-              "name": "Given_vector'Last",
-              "value": "2",
-              "kind": "variable"
-            }
-          ]
+      "check_line": 21,
+      "check_col": 16,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 4,
+          "max_steps": 1,
+          "max_time": 2.70000010728836E-01
         }
-      },
-      "msg_id": 6,
-      "how_proved": "prover"
+      }
     },
     {
-      "file": "vectormultiplication.adb",
-      "line": 21,
-      "col": 32,
-      "rule": "VC_LOOP_INVARIANT_PRESERV",
+      "file": "vectormultiplication.ads",
+      "line": 17,
+      "col": 65,
+      "rule": "VC_RANGE_CHECK",
       "severity": "info",
       "entity": {
         "name": "VectorMultiplication.Constant_Product",
@@ -1708,23 +1994,114 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 5,
-              "time": 3.00000000000000E-02
+              "steps": 13,
+              "time": 0
             }
           },
           "transformations": {
           }
         }
       ],
-      "check_file": "vectormultiplication.adb",
-      "check_line": 21,
-      "check_col": 32,
+      "check_file": "vectormultiplication.ads",
+      "check_line": 17,
+      "check_col": 65,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 2.99999993294477E-02
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "vectormultiplication.ads",
+      "line": 26,
+      "col": 95,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VectorMultiplication.Constant_Product",
+        "sloc": [
+          {
+            "file": "vectormultiplication.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 100,
+              "time": 1.10000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "vectormultiplication.ads",
+      "check_line": 26,
+      "check_col": 95,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.09999999403954E-01
+        }
+      }
+    },
+    {
+      "file": "vectormultiplication.ads",
+      "line": 26,
+      "col": 95,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VectorMultiplication.Constant_Product",
+        "sloc": [
+          {
+            "file": "vectormultiplication.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 100,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 6.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "vectormultiplication.ads",
+      "check_line": 26,
+      "check_col": 95,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 5.99999986588955E-02
         }
       }
     },
@@ -1748,13 +2125,13 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Unknown (other)",
-              "steps": 537,
-              "time": 6.00000000000000E-02
+              "steps": 575,
+              "time": 0
             },
             "CVC4_CE": {
               "result": "Unknown (other)",
-              "steps": 537,
-              "time": 9.00000000000000E-02
+              "steps": 575,
+              "time": 0
             }
           },
           "transformations": {
@@ -1798,394 +2175,38 @@
           "5": [
             {
               "name": "First_vector",
-              "value": "(-1 => -1, 0 => 1, others => 1)",
+              "value": "(0 => -1, 1 => -1, others => 1)",
               "kind": "variable"
             },
             {
               "name": "First_vector'First",
-              "value": "-1",
+              "value": "1",
               "kind": "variable"
             },
             {
               "name": "First_vector'Last",
-              "value": "-1",
+              "value": "1",
               "kind": "variable"
             },
             {
               "name": "Second_vector",
-              "value": "(-1 => 1, 0 => 1, others => -1)",
+              "value": "(0 => -1, 1 => 1, others => -1)",
               "kind": "variable"
             },
             {
               "name": "Second_vector'First",
-              "value": "-1",
+              "value": "1",
               "kind": "variable"
             },
             {
               "name": "Second_vector'Last",
-              "value": "-1",
-              "kind": "variable"
-            }
-          ]
-        }
-      },
-      "msg_id": 7,
-      "how_proved": "prover"
-    },
-    {
-      "file": "vectormultiplication.adb",
-      "line": 21,
-      "col": 32,
-      "rule": "VC_LOOP_INVARIANT_INIT",
-      "severity": "medium",
-      "entity": {
-        "name": "VectorMultiplication.Constant_Product",
-        "sloc": [
-          {
-            "file": "vectormultiplication.ads",
-            "line": 14
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Unknown (other)",
-              "steps": 159,
-              "time": 6.00000000000000E-02
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 159,
-              "time": 9.00000000000000E-02
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "vectormultiplication.adb",
-      "check_line": 21,
-      "check_col": 32,
-      "tracefile": "vectormultiplication.adb_21_32_loop_invariant_init.trace",
-      "cntexmp": {
-        "vectormultiplication.adb": {
-          "13": [
-            {
-              "name": "result",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "result'First",
-              "value": "1",
-              "kind": "variable"
-            },
-            {
-              "name": "result'Last",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "16": [
-            {
-              "name": "count",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "result",
-              "value": "(others => 1)",
-              "kind": "variable"
-            }
-          ],
-          "17": [
-            {
-              "name": "result",
-              "value": "(others => 1)",
-              "kind": "variable"
-            }
-          ],
-          "18": [
-            {
-              "name": "count",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "21": [
-            {
-              "name": "Given_vector",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "Given_vector'First",
-              "value": "1",
-              "kind": "variable"
-            },
-            {
-              "name": "Given_vector'Last",
-              "value": "1",
-              "kind": "variable"
-            }
-          ]
-        },
-        "vectormultiplication.ads": {
-          "14": [
-            {
-              "name": "Given_constant",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Given_vector",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "Given_vector'First",
-              "value": "1",
-              "kind": "variable"
-            },
-            {
-              "name": "Given_vector'Last",
               "value": "1",
               "kind": "variable"
             }
           ]
         }
       },
-      "msg_id": 8,
-      "how_proved": "prover"
-    },
-    {
-      "file": "vectormultiplication.ads",
-      "line": 22,
-      "col": 15,
-      "rule": "VC_POSTCONDITION",
-      "severity": "medium",
-      "entity": {
-        "name": "VectorMultiplication.Constant_Product",
-        "sloc": [
-          {
-            "file": "vectormultiplication.ads",
-            "line": 14
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 120,
-              "time": 8.00000000000000E-02
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Unknown (other)",
-              "steps": 320,
-              "time": 1.10000000000000E-01
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 313,
-              "time": 1.30000000000000E-01
-            }
-          },
-          "transformations": {
-            "split_disj": [
-              {
-                "proof_attempts": {
-                  "CVC4_CE": {
-                    "result": "Unknown (other)",
-                    "steps": 274,
-                    "time": 9.00000000000000E-02
-                  }
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              }
-            ]
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 79,
-              "time": 9.00000000000000E-02
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 79,
-              "time": 8.00000000000000E-02
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "vectormultiplication.ads",
-      "check_line": 17,
-      "check_col": 16,
-      "tracefile": "vectormultiplication.ads_17_16_postcondition.trace",
-      "cntexmp": {
-        "vectormultiplication.adb": {
-          "13": [
-            {
-              "name": "result",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "result'First",
-              "value": "1",
-              "kind": "variable"
-            },
-            {
-              "name": "result'Last",
-              "value": "2",
-              "kind": "variable"
-            }
-          ],
-          "16": [
-            {
-              "name": "count",
-              "value": "3",
-              "kind": "variable"
-            },
-            {
-              "name": "result",
-              "value": "(1 => -1, others => 2)",
-              "kind": "variable"
-            }
-          ],
-          "17": [
-            {
-              "name": "result",
-              "value": "(others => 1)",
-              "kind": "variable"
-            }
-          ],
-          "18": [
-            {
-              "name": "count",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "23": [
-            {
-              "name": "Constant_Product'First",
-              "value": "1",
-              "kind": "variable"
-            },
-            {
-              "name": "Constant_Product'Last",
-              "value": "2",
-              "kind": "variable"
-            },
-            {
-              "name": "Constant_Product'Result",
-              "value": "(1 => -1, others => 2)",
-              "kind": "variable"
-            }
-          ]
-        },
-        "vectormultiplication.ads": {
-          "14": [
-            {
-              "name": "Given_constant",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Given_vector",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "Given_vector'First",
-              "value": "1",
-              "kind": "variable"
-            },
-            {
-              "name": "Given_vector'Last",
-              "value": "2",
-              "kind": "variable"
-            }
-          ],
-          "22": [
-            {
-              "name": "Constant_Product'First",
-              "value": "1",
-              "kind": "variable"
-            },
-            {
-              "name": "Constant_Product'Last",
-              "value": "2",
-              "kind": "variable"
-            },
-            {
-              "name": "Constant_Product'Result",
-              "value": "(1 => -1, others => 2)",
-              "kind": "variable"
-            },
-            {
-              "name": "Given_constant",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Given_vector",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "Given_vector'First",
-              "value": "1",
-              "kind": "variable"
-            },
-            {
-              "name": "Given_vector'Last",
-              "value": "2",
-              "kind": "variable"
-            },
-            {
-              "name": "J",
-              "value": "1",
-              "kind": "variable"
-            }
-          ]
-        }
-      },
-      "msg_id": 9,
+      "msg_id": 2,
       "how_proved": "prover"
     }
   ],
@@ -2226,7 +2247,39 @@
       "assumptions": [
       ],
       "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "VectorMultiplication.Constant_Product",
+          "sloc": [
+            {
+              "file": "vectormultiplication.ads",
+              "line": 14
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
         "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "VectorMultiplication.Constant_Product",
+          "sloc": [
+            {
+              "file": "vectormultiplication.ads",
+              "line": 14
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
         "arg": {
           "name": "VectorMultiplication.Constant_Product",
           "sloc": [
@@ -2240,14 +2293,14 @@
     }
   ],
   "timings": {
-    "marking": 3.49867012118921E-04,
-    "globals (basic)": 1.44639998325147E-04,
-    "globals/properties (advanced)": 5.07733027916402E-04,
-    "flow analysis": 4.10154322162271E-03,
+    "marking": 3.75892996089533E-04,
+    "globals (basic)": 1.72800006112084E-04,
+    "globals/properties (advanced)": 7.26185971871018E-04,
+    "flow analysis": 4.90068877115846E-03,
     "codepeer results": 5.97300004301360E-06,
-    "init_why_sections": 2.32532998779789E-04,
-    "translation of standard": 4.77311620488763E-03,
-    "translation of compilation unit": 9.78004466742277E-03,
-    "proof": 5.73666763305664E+00
+    "init_why_sections": 2.90986994514242E-04,
+    "translation of standard": 5.20063517615199E-03,
+    "translation of compilation unit": 1.66459586471319E-02,
+    "proof": 3.65906596183777E+00
   }
 }

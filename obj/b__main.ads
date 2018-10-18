@@ -263,9 +263,9 @@ package ada_main is
    pragma Export (C, u00112, "system__finalization_rootS");
    u00113 : constant Version_32 := 16#cf3f1b90#;
    pragma Export (C, u00113, "system__file_control_blockS");
-   u00114 : constant Version_32 := 16#23f67e56#;
+   u00114 : constant Version_32 := 16#77870d87#;
    pragma Export (C, u00114, "stringextractionB");
-   u00115 : constant Version_32 := 16#e0bffb36#;
+   u00115 : constant Version_32 := 16#14b5f199#;
    pragma Export (C, u00115, "stringextractionS");
    u00116 : constant Version_32 := 16#fd83e873#;
    pragma Export (C, u00116, "system__concat_2B");
@@ -275,7 +275,7 @@ package ada_main is
    pragma Export (C, u00118, "system__img_charB");
    u00119 : constant Version_32 := 16#ae94d9df#;
    pragma Export (C, u00119, "system__img_charS");
-   u00120 : constant Version_32 := 16#e427dd01#;
+   u00120 : constant Version_32 := 16#102dd7ae#;
    pragma Export (C, u00120, "teststringB");
    u00121 : constant Version_32 := 16#dd66044c#;
    pragma Export (C, u00121, "assertionsB");

@@ -43,6 +43,15 @@ package StringExtraction with SPARK_Mode => On is
       (for some K in Given_String'Range => char = Given_string(K));
 
 
+   --function Number_Of_Matches_Rec(Given_String: in String; char: in Character) return Natural
+   --  with
+   --    Post => Number_Of_Matches_Rec'Result <= Given_String'Length;
+
+   --function Number_Of_Matches(Given_String: in String; char: in Character) return Natural is
+   --  (Number_Of_Matches_Rec(Given_String, char))
+   --    with
+   --      Post => Number_Of_Matches'Result <= Given_String'Length;
+
     end StringExtraction;
 
 

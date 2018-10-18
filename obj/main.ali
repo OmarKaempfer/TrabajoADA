@@ -35,7 +35,7 @@ D assertions.ads	20180927103850 0573aace assertions%s
 D interfac.ads		20180524051736 5ab55268 interfaces%s
 D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
 D main.adb		20181017092650 810179f5 main%b
-D stringextraction.ads	20181017110724 e0bffb36 stringextraction%s
+D stringextraction.ads	20181017113354 14b5f199 stringextraction%s
 D system.ads		20180524051738 32a08138 system%s
 D s-conca2.ads		20180524051736 02a0d7d0 system.concat_2%s
 D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
@@ -64,7 +64,7 @@ X 11 main.adb
 9U11*Main 9b11 20l5 20t9
 10a4 stringprueba{string} 18r49
 X 12 stringextraction.ads
-1K9*StringExtraction 11|4w6 4r28 7w6 7r33 12|46e25
+1K9*StringExtraction 11|4w6 4r28 7w6 7r33 12|55e25
 7V13*Extract_Vowels{string} 11|14s39
 X 29 teststring.adb
 5U11*TestString 11|2w6 17s4

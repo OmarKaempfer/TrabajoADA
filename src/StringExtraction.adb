@@ -1,18 +1,23 @@
-package body StringExtraction with SPARK_Mode => Off is
+package body StringExtraction with SPARK_Mode => On is
 
 
 
    function Extract_Vowels (Given_string : in String) return String is
       result : String (Given_string'First .. Given_string'Last) := (others => Character'Val(0));
       result_index : Positive := Given_string'First;
+      vowels : Constant String :="AEIOUaeiouÁÉÍÓÚáéíóúÜü";
    begin
       for J in Given_string'Range loop
 
          if Is_Contained(Given_String(J), vowels) then
             result(result_index) := Given_string(J);
-            result_index := result_index + 1;
+
+            if result_index < result'Last then
+               result_index := result_index + 1;
+            end if;
          end if;
 
+         pragma Loop_Invariant(result_index in result'First .. result'Last + 1);
          pragma Loop_Invariant(result_index <= result'Last + 1);
          pragma Loop_Invariant(for all K in result'Range =>
                                  Is_Contained(result(K), vowels));
@@ -31,6 +36,7 @@ package body StringExtraction with SPARK_Mode => Off is
    function Extract_Consonants (Given_string : in String) return String is
       result : String (Given_string'First .. Given_string'Last) := (others => Character'Val(0));
       result_index : Positive := Given_string'First;
+      consonants : Constant String := "QWRTYPSDFGHJKLZXCVBNMqwrtypsdfghjklzxcvbnñm";
    begin
       for J in Given_string'Range loop
 
@@ -66,13 +72,15 @@ package body StringExtraction with SPARK_Mode => Off is
       return False;
    end Contains;
 
+   --function Number_Of_Matches_Rec(Given_String: in String; char: in Character) return Natural is
+   --begin
+     -- if Given_String'Length = 0 then
+       --  return 0;
+      --elsif Given_String(Given_String'Last) = char then
+        -- return Number_Of_Matches_Rec(Remove_Last()
+      --end if;
+
+   --end Number_Of_Matches_Rec;
+
 end StringExtraction;
-
-
-
-
-
-
-
-
 
