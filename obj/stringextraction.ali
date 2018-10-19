@@ -1,5 +1,10 @@
 V "GNAT Lib v2018"
 A -gnatA
+A -gnato
+A -g
+A -gnata
+A -fstack-check=specific
+A -gnat12
 A -mtune=generic
 A -march=x86-64
 P SS ZX
@@ -8,65 +13,72 @@ RN
 RV NO_IMPLICIT_CONDITIONALS
 RV NO_SECONDARY_STACK
 RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U stringextraction%b	stringextraction.adb	77870d87 NE OO PK
+U stringextraction%b	stringextraction.adb	bf287cd8 NE OO PK
 Z interfaces%s		interfac.ads		interfac.ali
+Z system.assertions%s	s-assert.adb		s-assert.ali
 Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 
-U stringextraction%s	stringextraction.ads	14b5f199 EE NE OO PK
+U stringextraction%s	stringextraction.ads	dcb333ee EE NE OO PK
 
+D ada.ads		20180524051736 76789da1 ada%s
+D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20180524051736 5ab55268 interfaces%s
-D stringextraction.ads	20181017113354 14b5f199 stringextraction%s
-D stringextraction.adb	20181017113318 6332fc1e stringextraction%b
+D stringextraction.ads	20181018225218 dcb333ee stringextraction%s
+D stringextraction.adb	20181018225914 639b4f36 stringextraction%b
 D system.ads		20180524051738 32a08138 system%s
+D s-assert.ads		20180524051738 cd8d2c94 system.assertions%s
+D s-exctab.ads		20180524051738 54135002 system.exception_table%s
 D s-parame.ads		20180524051738 48ec542b system.parameters%s
 D s-secsta.ads		20180524051738 20bbe636 system.secondary_stack%s
+D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
 D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
-X 2 stringextraction.ads
-1K9*StringExtraction 55l9 55e25 3|1b14 74l5 74t21
-3N4*Max_String_Length 9r38 21r38 34r38
-4a4*vowels{string} 14r54 17r59 3|11r43 18r58 20r69
-5a4*consonants{string} 26r54 29r63 3|37r43 44r58 46r69
-7V13*Extract_Vowels{string} 7>29 12r16 15r53 16r31 17r33 3|5b13 27l8 27t22
-7a29 Given_string{string} 9r15 10r17 11r19 12r48 13r31 14r37 15r36 3|5b29
-. 6r24 6r46 7r34 9r16 11r26 12r37 19r45 20r52 22r51
-13i26 J{integer} 14r50 15r49
-16i26 J{integer} 17r55
-19V13*Extract_Consonants{string} 19>33 24r16 27r53 28r31 29r33 3|31b13 53l8
-. 53t26
-19a33 Given_string{string} 21r15 22r17 23r19 24r52 25r31 26r37 27r36 3|31b33
-. 32r24 32r46 33r34 35r16 37r26 38r37 45r45 46r52 48r51
+X 4 stringextraction.ads
+1K9*StringExtraction 45l9 45e25 5|1b14 104l5 104t21
+3N4*Max_String_Length 11r38 21r38 34r38
+4a4*vowels{string} 16r54 5|17r43 40r72 46r64 48r66 51r68 56r44
+5a4*consonants{string} 26r54 29r63 5|72r43 79r58 81r69
+6A9*Custom_String(character)<integer>
+8V13*Extract_Vowels{string} 8>29 10r20 14r16 17r53 5|3b13 62l8 62t22
+8a29 Given_string{string} 10r46 11r15 12r17 14r48 15r31 16r37 17r36 5|3b29
+. 4r24 4r46 10r10 15r16 17r26 18r37 38r60 43r65 50r45 51r51 52r51
+15i26 J{integer} 16r50 17r49
+19V13*Extract_Consonants{string} 19>33 24r16 27r53 28r31 29r33 5|66b13 88l8
+. 88t26
+19a33 Given_string{string} 21r15 22r17 23r19 24r52 25r31 26r37 27r36 5|66b33
+. 67r24 67r46 68r34 70r16 72r26 73r37 80r45 81r52 83r51
 25i26 J{integer} 26r50 27r49
 28i26 J{integer} 29r59
-32V13*Contains{boolean} 32>23 32>48 38r21 40r21 3|57b13 67l8 67t16
-32a23 Given_String{string} 34r15 35r35 36r27 3|57b22 59r16 60r13 63r26 64r15
-32e48 char{character} 36r45 3|57b47 60r31 64r34
+32V13*Contains{boolean} 32>23 32>48 38r21 40r21 5|92b13 102l8 102t16
+32a23 Given_String{string} 34r15 35r35 36r27 5|92b22 94r16 95r13 98r26 99r15
+32e48 char{character} 36r45 5|92b47 95r31 99r34
 35i30 J{integer} 36r40
-42V13*Is_Contained{boolean} 14s24 15s23 17s20 26s24 27s23 29s20 42>27 42>47
-. 3|11s13 18s34 20s39 22s38 37s13 44s34 46s39 48s38
+42V13*Is_Contained{boolean} 16s24 17s23 26s24 27s23 29s20 42>27 42>47 5|17s13
+. 40s35 43s41 46s40 48s42 51s38 52s38 56s10 72s13 79s34 81s39 83s38
 42e27 char{character} 43r44
 42a47 Given_String{string} 43r22 43r51
 43i17 K{integer} 43r64
-46V13*Number_Of_Matches_Rec{natural} 46>35 46>60 48r16 51s7 3|69b13 72l8
-. 72t29
-46a35 Given_String{string} 48r48 3|69b35
-46e60 char{character} 3|69b60
-50V13*Number_Of_Matches{natural} 50>31 50>56 53r18
-50a31 Given_String{string} 51r29 53r46
-50e56 char{character} 51r43
-X 3 stringextraction.adb
-6a7 result{string} 12m13 16r48 17r45 18r47 22r68 25r14 25r21
-7i7 result_index{positive} 12r20 13m13 13r29 16r32 25r37
-9i11 J{integer} 11r39 12r50 19r67
-17i40 K{integer} 18r54
-19i40 K{integer} 20r65 22r64
-32a7 result{string} 38m13 42r48 43r45 44r47 48r68 51r14 51r21
-33i7 result_index{positive} 38r20 39m13 39r29 42r32 51r37
-35i11 J{integer} 37r39 38r50 45r67
-43i40 K{integer} 44r54
-45i40 K{integer} 46r65 48r64
-59i11 J{integer} 60r26 63r48
-63i21 K{integer} 64r28
+X 5 stringextraction.adb
+4a7 result{string} 5r34 18m13 24r31 31r48 32r50 38r35 40r48 41r45 42r39 43r54
+. 44r45 45r38 46r53 47r45 48r55 49r40 52r68 52r75 56r23 56r30 57r17 60r14
+. 60r21
+5i7 result_index{positive} 7r36 18r20 22r31 24r16 25m16 25r32 31r32 33r32
+. 34r50 60r37
+7i7 previous_index{positive} 22m13 32r32 34r32 35r32 38r42 40r55 52r91
+8b7 match_found{boolean} 21m13 28m13 37r35 39r35
+15i11 J{integer} 17r39 18r50 33r48 35r50 38r73 50r67
+41i40 K{integer} 42r46 43r61
+44i40 K{integer} 45r45 46r60
+47i40 K{integer} 48r62 49r47
+50i40 K{integer} 51r64 52r64
+67a7 result{string} 73m13 77r48 78r45 79r47 83r68 86r14 86r21
+68i7 result_index{positive} 73r20 74m13 74r29 77r32 86r37
+70i11 J{integer} 72r39 73r50 80r67
+78i40 K{integer} 79r54
+80i40 K{integer} 81r65 83r64
+94i11 J{integer} 95r26 98r48
+98i21 K{integer} 99r28
 

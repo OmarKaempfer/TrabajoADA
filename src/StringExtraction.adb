@@ -1,33 +1,69 @@
 package body StringExtraction with SPARK_Mode => On is
 
-
-
    function Extract_Vowels (Given_string : in String) return String is
       result : String (Given_string'First .. Given_string'Last) := (others => Character'Val(0));
-      result_index : Positive := Given_string'First;
-      vowels : Constant String :="AEIOUaeiou¡…Õ”⁄·ÈÌÛ˙‹¸";
+      result_index : Positive := result'First;
+
+      previous_index : Positive := result_index;
+      match_found : Boolean with Ghost;
    begin
+      if Given_string'Length = 0 then
+         return "";
+      end if;
+
+
       for J in Given_string'Range loop
 
          if Is_Contained(Given_String(J), vowels) then
             result(result_index) := Given_string(J);
 
+
+            match_found := True;
+            previous_index := result_index;
+
             if result_index < result'Last then
                result_index := result_index + 1;
             end if;
+         else
+            match_found := False;
          end if;
 
-         pragma Loop_Invariant(result_index in result'First .. result'Last + 1);
-         pragma Loop_Invariant(result_index <= result'Last + 1);
+         pragma Loop_Invariant(result_index in result'Range);
+         pragma Loop_Invariant(previous_index in result'Range);
+         pragma Loop_Invariant(result_index <= J + 1);
+         pragma Loop_Invariant(previous_index <= result_index);
+         pragma Loop_Invariant(previous_index <= J);
+
+         pragma Loop_Invariant(if Is_Contained(Given_String(J), vowels) then
+                                  match_found);
+         pragma Loop_Invariant(if match_found then
+                                  result(previous_index) = Given_string(J));
+         pragma Loop_Invariant(if match_found then
+                                  Is_Contained(result(previous_index), vowels));
+         pragma Loop_Invariant(if match_found then
+                                  Is_Contained(Given_String(J), result));
+         pragma Loop_Invariant(if not match_found then
+                                  not Is_Contained(Given_string(J), result));
+
          pragma Loop_Invariant(for all K in result'Range =>
+                                  (if result(K) /= Character'Val(0) then
+                                        Is_Contained(result(K), Given_string)));
+         pragma Loop_Invariant(for all K in result'Range =>
+                                 (if result(K) /= Character'Val(0) then
+                                       Is_Contained(result(K), vowels)));
+         pragma Loop_Invariant(for all K in result'Range =>
+                                 (if not Is_Contained(result(K), vowels) then
+                                     result(K) = Character'Val(0)));
+         pragma Loop_Invariant(for all K in result'First .. result_index - 1 =>
                                  Is_Contained(result(K), vowels));
+         pragma Loop_Invariant(for all K in result'First .. result_index - 1 =>
+                                 Is_Contained(result(K), Given_string));
          pragma Loop_Invariant(for all K in Given_string'First .. J =>
-                                  (if Is_Contained(Given_string(K), vowels)
-                                   then
-                                     Is_Contained(Given_string(K), result)));
+                                  (if Is_Contained(Given_String(K), vowels) then
+                                  Is_Contained(Given_String(K), result)));
       end loop;
 
-      return result(result'First .. result_index - 1);
+      return result(result'First .. previous_index);
 
    end Extract_Vowels;
 
@@ -35,52 +71,70 @@ package body StringExtraction with SPARK_Mode => On is
 
    function Extract_Consonants (Given_string : in String) return String is
       result : String (Given_string'First .. Given_string'Last) := (others => Character'Val(0));
-      result_index : Positive := Given_string'First;
-      consonants : Constant String := "QWRTYPSDFGHJKLZXCVBNMqwrtypsdfghjklzxcvbnÒm";
+      result_index : Positive := result'First;
+
+      previous_index : Positive := result_index;
+      match_found : Boolean with Ghost;
    begin
+      if Given_string'Length = 0 then
+         return "";
+      end if;
+
+
       for J in Given_string'Range loop
 
          if Is_Contained(Given_String(J), consonants) then
             result(result_index) := Given_string(J);
-            result_index := result_index + 1;
+
+
+            match_found := True;
+            previous_index := result_index;
+
+            if result_index < result'Last then
+               result_index := result_index + 1;
+            end if;
+         else
+            match_found := False;
          end if;
 
-         pragma Loop_Invariant(result_index <= result'Last + 1);
+         pragma Loop_Invariant(result_index in result'Range);
+         pragma Loop_Invariant(previous_index in result'Range);
+         pragma Loop_Invariant(result_index <= J + 1);
+         pragma Loop_Invariant(previous_index <= result_index);
+         pragma Loop_Invariant(previous_index <= J);
+
+         pragma Loop_Invariant(if Is_Contained(Given_String(J), consonants) then
+                                  match_found);
+         pragma Loop_Invariant(if match_found then
+                                  result(previous_index) = Given_string(J));
+         pragma Loop_Invariant(if match_found then
+                                  Is_Contained(result(previous_index), consonants));
+         pragma Loop_Invariant(if match_found then
+                                  Is_Contained(Given_String(J), result));
+         pragma Loop_Invariant(if not match_found then
+                                  not Is_Contained(Given_string(J), result));
+
          pragma Loop_Invariant(for all K in result'Range =>
+                                  (if result(K) /= Character'Val(0) then
+                                        Is_Contained(result(K), Given_string)));
+         pragma Loop_Invariant(for all K in result'Range =>
+                                 (if result(K) /= Character'Val(0) then
+                                       Is_Contained(result(K), consonants)));
+         pragma Loop_Invariant(for all K in result'Range =>
+                                 (if not Is_Contained(result(K), consonants) then
+                                     result(K) = Character'Val(0)));
+         pragma Loop_Invariant(for all K in result'First .. result_index - 1 =>
                                  Is_Contained(result(K), consonants));
+         pragma Loop_Invariant(for all K in result'First .. result_index - 1 =>
+                                 Is_Contained(result(K), Given_string));
          pragma Loop_Invariant(for all K in Given_string'First .. J =>
-                                  (if Is_Contained(Given_string(K), consonants)
-                                   then
-                                     Is_Contained(Given_string(K), result)));
+                                  (if Is_Contained(Given_String(K), consonants) then
+                                  Is_Contained(Given_String(K), result)));
       end loop;
 
-      return result(result'First .. result_index - 1);
+      return result(result'First .. previous_index);
 
    end Extract_Consonants;
-
-
-
-   function Contains(Given_String: in String; char: in Character) return Boolean is
-   begin
-      for J in Given_String'Range loop
-         if Given_String(J) = char then return True;
-         end if;
-         pragma Loop_Invariant
-           (for all K in Given_String'First .. J =>
-              Given_String(K) /= char);
-      end loop;
-      return False;
-   end Contains;
-
-   --function Number_Of_Matches_Rec(Given_String: in String; char: in Character) return Natural is
-   --begin
-     -- if Given_String'Length = 0 then
-       --  return 0;
-      --elsif Given_String(Given_String'Last) = char then
-        -- return Number_Of_Matches_Rec(Remove_Last()
-      --end if;
-
-   --end Number_Of_Matches_Rec;
 
 end StringExtraction;
 

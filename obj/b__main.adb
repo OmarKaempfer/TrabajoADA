@@ -28,9 +28,10 @@ package body ada_main is
    E110 : Short_Integer; pragma Import (Ada, E110, "ada__finalization_E");
    E109 : Short_Integer; pragma Import (Ada, E109, "system__file_io_E");
    E006 : Short_Integer; pragma Import (Ada, E006, "ada__text_io_E");
-   E122 : Short_Integer; pragma Import (Ada, E122, "assertions_E");
+   E117 : Short_Integer; pragma Import (Ada, E117, "system__assertions_E");
+   E124 : Short_Integer; pragma Import (Ada, E124, "assertions_E");
    E115 : Short_Integer; pragma Import (Ada, E115, "stringextraction_E");
-   E125 : Short_Integer; pragma Import (Ada, E125, "vectormultiplication_E");
+   E127 : Short_Integer; pragma Import (Ada, E127, "vectormultiplication_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -202,10 +203,12 @@ package body ada_main is
       Ada.Text_Io'Elab_Spec;
       Ada.Text_Io'Elab_Body;
       E006 := E006 + 1;
+      System.Assertions'Elab_Spec;
+      E117 := E117 + 1;
       Assertions'Elab_Spec;
-      E122 := E122 + 1;
+      E124 := E124 + 1;
       E115 := E115 + 1;
-      E125 := E125 + 1;
+      E127 := E127 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
@@ -241,14 +244,14 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   F:\University\PR3\TrabajoADA\obj\assertions.o
-   --   F:\University\PR3\TrabajoADA\obj\StringExtraction.o
-   --   F:\University\PR3\TrabajoADA\obj\TestString.o
-   --   F:\University\PR3\TrabajoADA\obj\VectorMultiplication.o
-   --   F:\University\PR3\TrabajoADA\obj\TestVector.o
-   --   F:\University\PR3\TrabajoADA\obj\main.o
-   --   -LF:\University\PR3\TrabajoADA\obj\
-   --   -LF:\University\PR3\TrabajoADA\obj\
+   --   G:\University\PR3\TrabajoADA\obj\assertions.o
+   --   G:\University\PR3\TrabajoADA\obj\StringExtraction.o
+   --   G:\University\PR3\TrabajoADA\obj\TestString.o
+   --   G:\University\PR3\TrabajoADA\obj\VectorMultiplication.o
+   --   G:\University\PR3\TrabajoADA\obj\TestVector.o
+   --   G:\University\PR3\TrabajoADA\obj\main.o
+   --   -LG:\University\PR3\TrabajoADA\obj\
+   --   -LG:\University\PR3\TrabajoADA\obj\
    --   -LC:/gnat/2018/lib/gcc/x86_64-pc-mingw32/7.3.1/adalib/
    --   -static
    --   -lgnat

@@ -4,8 +4,9 @@ stringextraction.adb:9:35
 stringextraction.adb:11:10
 stringextraction.adb:12:20
 stringextraction.adb:12:34
-stringextraction.adb:16:32
 stringextraction.adb:17:32
-stringextraction.adb:18:34
+stringextraction.adb:18:32
 stringextraction.adb:19:32
-stringextraction.adb:22:38
+stringextraction.adb:20:34
+stringextraction.adb:21:32
+stringextraction.adb:24:38

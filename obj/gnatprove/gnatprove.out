@@ -1,19 +1,19 @@
 Summary of SPARK analysis
 =========================
 
-----------------------------------------------------------------------------------------------------------
-SPARK Analysis results        Total        Flow   Interval   CodePeer      Provers   Justified    Unproved
-----------------------------------------------------------------------------------------------------------
-Data Dependencies                 .           .          .          .            .           .           .
-Flow Dependencies                 .           .          .          .            .           .           .
-Initialization                   29          29          .          .            .           .           .
-Non-Aliasing                      .           .          .          .            .           .           .
-Run-time Checks                  57           .          .          .    52 (CVC4)           .           5
-Assertions                       22           .          .          .    18 (CVC4)           .           4
-Functional Contracts              5           .          .          .     3 (CVC4)           .           2
-LSP Verification                  .           .          .          .            .           .           .
-----------------------------------------------------------------------------------------------------------
-Total                           113    29 (26%)          .          .     73 (65%)           .    11 (10%)
+---------------------------------------------------------------------------------------------------------
+SPARK Analysis results        Total        Flow   Interval   CodePeer      Provers   Justified   Unproved
+---------------------------------------------------------------------------------------------------------
+Data Dependencies                 .           .          .          .            .           .          .
+Flow Dependencies                 .           .          .          .            .           .          .
+Initialization                   78          78          .          .            .           .          .
+Non-Aliasing                      .           .          .          .            .           .          .
+Run-time Checks                  79           .          .          .    76 (CVC4)           .          3
+Assertions                       70           .          .          .    68 (CVC4)           .          2
+Functional Contracts              4           .          .          .     2 (CVC4)           .          2
+LSP Verification                  .           .          .          .            .           .          .
+---------------------------------------------------------------------------------------------------------
+Total                           231    78 (34%)          .          .    146 (63%)           .     7 (3%)
 
 
 Analyzed 6 units
@@ -26,10 +26,10 @@ in unit main, 0 subprograms and packages out of 1 analyzed
   Main at main.adb:9 skipped
 in unit stringextraction, 5 subprograms and packages out of 5 analyzed
   StringExtraction at stringextraction.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  StringExtraction.Contains at stringextraction.ads:32 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (5 checks)
-  StringExtraction.Extract_Consonants at stringextraction.ads:19 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 16 checks out of 20 proved
-  StringExtraction.Extract_Vowels at stringextraction.ads:7 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 19 checks out of 23 proved
-  StringExtraction.Is_Contained at stringextraction.ads:42 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+  StringExtraction.Extract_Consonants at stringextraction.ads:20 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 56 checks out of 58 proved
+  StringExtraction.Extract_Vowels at stringextraction.ads:8 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 56 checks out of 58 proved
+  StringExtraction.Is_Contained at stringextraction.ads:33 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+  StringExtraction.Matches_Some_Char at stringextraction.ads:36 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
 in unit teststring, 0 subprograms and packages out of 1 analyzed
   TestString at teststring.adb:5 skipped
 in unit testvector, 0 subprograms and packages out of 1 analyzed

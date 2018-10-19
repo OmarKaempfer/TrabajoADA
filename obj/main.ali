@@ -1,6 +1,11 @@
 V "GNAT Lib v2018"
 M P W=b
 A -gnatA
+A -gnato
+A -g
+A -gnata
+A -fstack-check=specific
+A -gnat12
 A -mtune=generic
 A -march=x86-64
 P ZX
@@ -12,7 +17,7 @@ RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U main%b		main.adb		ae50e9ad NE OO SU
+U main%b		main.adb		cd80f514 NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W stringextraction%s	stringextraction.adb	stringextraction.ali
@@ -35,7 +40,7 @@ D assertions.ads	20180927103850 0573aace assertions%s
 D interfac.ads		20180524051736 5ab55268 interfaces%s
 D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
 D main.adb		20181017092650 810179f5 main%b
-D stringextraction.ads	20181017113354 14b5f199 stringextraction%s
+D stringextraction.ads	20181018225218 dcb333ee stringextraction%s
 D system.ads		20180524051738 32a08138 system%s
 D s-conca2.ads		20180524051736 02a0d7d0 system.concat_2%s
 D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
@@ -54,7 +59,7 @@ D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
 D teststring.adb	20181011110728 89f63fa3 teststring%b
 D testvector.adb	20181006125542 8c47846b testvector%b
-D vectormultiplication.ads  20181009092440 a2fd98ca vectormultiplication%s
+D vectormultiplication.ads  20181018112524 c12d8473 vectormultiplication%s
 X 1 ada.ads
 16K9*Ada 20e8 11|5r6 5r23 14r4 15r4 18r4
 X 6 a-textio.ads
@@ -64,12 +69,12 @@ X 11 main.adb
 9U11*Main 9b11 20l5 20t9
 10a4 stringprueba{string} 18r49
 X 12 stringextraction.ads
-1K9*StringExtraction 11|4w6 4r28 7w6 7r33 12|55e25
-7V13*Extract_Vowels{string} 11|14s39
+1K9*StringExtraction 11|4w6 4r28 7w6 7r33 12|45e25
+8V13*Extract_Vowels{string} 11|14s39
 X 29 teststring.adb
 5U11*TestString 11|2w6 17s4
 X 30 testvector.adb
 5U11*TestVector 11|1w6
 X 31 vectormultiplication.ads
-1K9*VectorMultiplication 11|3w6 3r32 31|25e25
+1K9*VectorMultiplication 11|3w6 3r32 31|29e25
 

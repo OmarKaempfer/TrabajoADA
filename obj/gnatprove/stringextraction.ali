@@ -12,67 +12,86 @@ P GP FX
 
 RN
 RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U stringextraction%b	stringextraction.adb	62d03aa2 OO PK
+U stringextraction%b	stringextraction.adb	a0a1597c OO PK
 
-U stringextraction%s	stringextraction.ads	e0bffb36 OO PK
+U stringextraction%s	stringextraction.ads	9ee82c14 OO PK
 
-D stringextraction.ads	20181018101200 e0bffb36 stringextraction%s
-D stringextraction.adb	20181018104916 826fc194 stringextraction%b
+D stringextraction.ads	20181019011524 9ee82c14 stringextraction%s
+D stringextraction.adb	20181019011524 3e497568 stringextraction%b
 D system.ads		20180524051738 32a08138 system%s
 X 1 stringextraction.ads
-1K9*StringExtraction 55l9 55e25 2|1b14 82l5 82t21
-3N4*Max_String_Length 9r38 21r38 34r38
-4a4*vowels{string} 14r54 17r59
-5a4*consonants{string} 26r54 29r63
-7V13*Extract_Vowels{string} 7>29 12r16 15r53 16r31 17r33 2|5b13 29l8 29t22
-7a29 Given_string{string} 9r15 10r17 11r19 12r48 13r31 14r37 15r36 2|5b29
-. 6r24 6r46 7r34 10r16 12r26 13r37 21r45 22r52 24r51
-13i26 J{integer} 14r50 15r49
-16i26 J{integer} 17r55
-19V13*Extract_Consonants{string} 19>33 24r16 27r53 28r31 29r33 2|33b13 56l8
-. 56t26
-19a33 Given_string{string} 21r15 22r17 23r19 24r52 25r31 26r37 27r36 2|33b33
-. 34r24 34r46 35r34 38r16 40r26 41r37 48r45 49r52 51r51
-25i26 J{integer} 26r50 27r49
-28i26 J{integer} 29r59
-32V13*Contains{boolean} 32>23 32>48 38r21 40r21 2|60b13 70l8 70t16
-32a23 Given_String{string} 34r15 35r35 36r27 2|60b22 62r16 63r13 66r26 67r15
-32e48 char{character} 36r45 2|60b47 63r31 67r34
-35i30 J{integer} 36r40
-42V13*Is_Contained{boolean} 14s24 15s23 17s20 26s24 27s23 29s20 42>27 42>47
-. 2|12s13 20s34 22s39 24s38 40s13 47s34 49s39 51s38
-42e27 char{character} 43r44
-42a47 Given_String{string} 43r22 43r51
-43i17 K{integer} 43r64
+1K9*StringExtraction 41l9 41e25 2|1b14 139l5 139t21
+3N4*Max_String_Length 11r38 23r38
+4a4*vowels{string} 2|17r43 37r65 42r72 53r64 55r66 58r58 62r69
+5a4*consonants{string} 2|86r43 106r65 111r72 122r64 124r66 127r58 131r69
+6A9*Custom_String(character)<integer>
+8V13*Extract_Vowels{string} 8>29 10r20 16r16 17r31 18r33 2|3b13 68l8 68t22
+8a29 Given_string{string} 10r46 11r15 12r17 13r31 14r20 16r48 18r59 2|3b29
+. 4r24 4r46 10r10 15r16 17r26 18r37 37r48 40r60 44r48 46r52 50r65 60r58 61r45
+. 62r52 63r48
+13i26 J{integer} 14r33
+17i26 J{integer} 18r55
+20V13*Extract_Consonants{string} 20>33 22r20 28r16 29r31 30r33 2|72b13 137l8
+. 137t26
+20a33 Given_string{string} 22r50 23r15 24r17 25r31 26r20 28r52 30r63 2|72b33
+. 73r24 73r46 79r10 84r16 86r26 87r37 106r48 109r60 113r48 115r52 119r65
+. 129r58 130r45 131r52 132r48
+25i26 J{integer} 26r33
+29i26 J{integer} 30r59
+33V13*Is_Contained{boolean} 18s20 30s20 33>27 33>47 38s10 2|17s13 37s35 42s35
+. 44s35 46s39 50s41 53s40 55s42 58s34 60s34 62s39 63s35 86s13 106s35 111s35
+. 113s35 115s39 119s41 122s40 124s42 127s34 129s34 131s39 132s35
+33e27 char{character} 34r44
+33a47 Given_String{string} 34r22 34r51
+34i17 K{integer} 34r64
+36V13*Matches_Some_Char{boolean} 36>32 36>57
+36a32 Given_String{string} 37r21 38r23
+36a57 Reference_String{string} 38r40
+37i16 K{integer} 38r36
 X 2 stringextraction.adb
-6a7 result{string} 13m13 17r48 17r64 18r48 19r45 20r47 24r68 27r14 27r21
-7i7 result_index{positive} 13r20 14m13 14r29 17r32 18r32 27r37
-8a7 vowels{string} 12r43 20r58 22r69
-10i11 J{integer} 12r39 13r50 21r67
-19i40 K{integer} 20r54
-21i40 K{integer} 22r65 24r64
-34a7 result{string} 41m13 45r48 46r45 47r47 51r68 54r14 54r21
-35i7 result_index{positive} 41r20 42m13 42r29 45r32 54r37
-36a7 consonants{string} 40r43 47r58 49r69
-38i11 J{integer} 40r39 41r50 48r67
-46i40 K{integer} 47r54
-48i40 K{integer} 49r65 51r64
-62i11 J{integer} 63r26 66r48
-66i21 K{integer} 67r28
+4a7 result{string} 5r34 18m13 24r31 31r48 32r50 40r35 42r48 44r65 46r69 48r45
+. 49r39 50r54 51r45 52r38 53r53 54r45 55r55 56r38 57r45 58r47 59r45 60r47
+. 63r65 66r14 66r21
+5i7 result_index{positive} 7r36 18r20 22r31 24r16 25m16 25r32 31r32 33r32
+. 34r50 57r61 59r61
+7i7 previous_index{positive} 22m13 32r32 34r32 35r32 40r42 42r55 66r37
+8b7 match_found{boolean} 21m13 28m13 38r35 39r35 41r35 43r35 45r39
+15i11 J{integer} 17r39 18r50 33r48 35r50 37r61 40r73 44r61 46r65 61r67
+48i40 K{integer} 49r46 50r61
+51i40 K{integer} 52r45 53r60
+54i40 K{integer} 55r62 56r45
+57i40 K{integer} 58r54
+59i40 K{integer} 60r54
+61i40 K{integer} 62r65 63r61
+73a7 result{string} 74r34 87m13 93r31 100r48 101r50 109r35 111r48 113r65
+. 115r69 117r45 118r39 119r54 120r45 121r38 122r53 123r45 124r55 125r38 126r45
+. 127r47 128r45 129r47 132r65 135r14 135r21
+74i7 result_index{positive} 76r36 87r20 91r31 93r16 94m16 94r32 100r32 102r32
+. 103r50 126r61 128r61
+76i7 previous_index{positive} 91m13 101r32 103r32 104r32 109r42 111r55 135r37
+77b7 match_found{boolean} 90m13 97m13 107r35 108r35 110r35 112r35 114r39
+84i11 J{integer} 86r39 87r50 102r48 104r50 106r61 109r73 113r61 115r65 130r67
+117i40 K{integer} 118r46 119r61
+120i40 K{integer} 121r45 122r60
+123i40 K{integer} 124r62 125r45
+126i40 K{integer} 127r54
+128i40 K{integer} 129r54
+130i40 K{integer} 131r65 132r61
 
 QQ SPARKVERSION 2018 (20180523)
 GG EK_DIRECT_CALLS stringextraction__extract_vowels 1 stringextraction__is_contained
 GG EK_GLOBALS stringextraction__extract_vowels local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
 GG EK_DIRECT_CALLS stringextraction__extract_consonants 1 stringextraction__is_contained
 GG EK_GLOBALS stringextraction__extract_consonants local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
-GG EK_DIRECT_CALLS stringextraction__contains 0
-GG EK_GLOBALS stringextraction__contains local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
 GG EK_DIRECT_CALLS stringextraction__is_contained 0
 GG EK_GLOBALS stringextraction__is_contained local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS stringextraction__matches_some_char 1 stringextraction__is_contained
+GG EK_GLOBALS stringextraction__matches_some_char local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
 GG EK_DIRECT_CALLS stringextraction 0
 GG EK_GLOBALS stringextraction local FALSE E_PACKAGE TRUE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 initializes 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
 GG EK_END_MARKER

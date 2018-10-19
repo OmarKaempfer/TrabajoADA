@@ -1,6 +1,11 @@
 V "GNAT Lib v2018"
 M P W=b
 A -gnatA
+A -gnato
+A -g
+A -gnata
+A -fstack-check=specific
+A -gnat12
 A -mtune=generic
 A -march=x86-64
 P ZX
@@ -13,7 +18,7 @@ RV NO_SECONDARY_STACK
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U testvector%b		testvector.adb		a3d40535 NE OO SU
+U testvector%b		testvector.adb		c004198c NE OO SU
 W ada%s			ada.ads			ada.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
@@ -45,7 +50,7 @@ D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
 D testvector.adb	20181006125542 8c47846b testvector%b
-D vectormultiplication.ads  20181009092442 a2fd98ca vectormultiplication%s
+D vectormultiplication.ads  20181018112524 c12d8473 vectormultiplication%s
 X 1 ada.ads
 16K9*Ada 20e8 24|1r6 1r23
 X 6 a-textio.ads
@@ -67,7 +72,7 @@ X 24 testvector.adb
 18U14 Test_1 18b14 32l8 32t14 51s4
 36U14 Test_2 36b14 47l8 47t14 52s4
 X 25 vectormultiplication.ads
-1K9*VectorMultiplication 24|3w6 3r37 25|25e25
+1K9*VectorMultiplication 24|3w6 3r37 25|29e25
 3A9*Int_Vector(integer)<integer> 24|9r18 10r18 11r18 12r18 13r18
 5V13*Scalar_Product{integer} 24|20s20 21s20 22s20 23s20 24s20 25s20 26s20
 14V13*Constant_Product{3A9} 24|38s20 39s20 40s20 41s20

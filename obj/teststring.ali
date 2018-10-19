@@ -1,6 +1,11 @@
 V "GNAT Lib v2018"
 M P W=b
 A -gnatA
+A -gnato
+A -g
+A -gnata
+A -fstack-check=specific
+A -gnat12
 A -mtune=generic
 A -march=x86-64
 P ZX
@@ -13,7 +18,7 @@ RV NO_SECONDARY_STACK
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U teststring%b		teststring.adb		102dd7ae NE OO SU
+U teststring%b		teststring.adb		d82b15d9 NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W assertions%s		assertions.adb		assertions.ali
@@ -30,7 +35,7 @@ D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
 D assertions.ads	20180927103850 0573aace assertions%s
 D interfac.ads		20180524051736 5ab55268 interfaces%s
 D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
-D stringextraction.ads	20181017113354 14b5f199 stringextraction%s
+D stringextraction.ads	20181018225218 dcb333ee stringextraction%s
 D system.ads		20180524051738 32a08138 system%s
 D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
 D s-exctab.ads		20180524051738 54135002 system.exception_table%s
@@ -56,8 +61,8 @@ X 8 assertions.ads
 10U14*Assert_True 25|21s7 22s7 23s7 24s7 25s7 26s7 27s7 39s7 40s7 41s7 42s7
 . 43s7 44s7 45s7
 X 11 stringextraction.ads
-1K9*StringExtraction 55e25 25|3w6 3r33
-7V13*Extract_Vowels{string} 25|21s20 22s20 23s20 24s20 25s20 26s20 27s20
+1K9*StringExtraction 45e25 25|3w6 3r33
+8V13*Extract_Vowels{string} 25|21s20 22s20 23s20 24s20 25s20 26s20 27s20
 19V13*Extract_Consonants{string} 25|39s20 40s20 41s20 42s20 43s20 44s20 45s20
 X 25 teststring.adb
 5U11*TestString 5b11 57l5 57t15
