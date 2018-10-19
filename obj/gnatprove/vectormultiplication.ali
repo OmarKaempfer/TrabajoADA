@@ -17,35 +17,40 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U vectormultiplication%b  vectormultiplication.adb  373b4eaa OO PK
+U vectormultiplication%b  vectormultiplication.adb  60bb7e6a OO PK
 
-U vectormultiplication%s  vectormultiplication.ads  c12d8473 OO PK
+U vectormultiplication%s  vectormultiplication.ads  1aa3a683 OO PK
 
 D system.ads		20180524051738 32a08138 system%s
-D vectormultiplication.ads  20181018112524 c12d8473 vectormultiplication%s
-D vectormultiplication.adb  20181018112138 f616cad9 vectormultiplication%b
+D vectormultiplication.ads  20181019205500 1aa3a683 vectormultiplication%s
+D vectormultiplication.adb  20181019205500 7a18d8e9 vectormultiplication%b
 X 2 vectormultiplication.ads
-1K9*VectorMultiplication 29l5 29e25 3|1b14 28l5 28t25
-3A9*Int_Vector(integer)<integer> 5r62 14r49 14r97 3|3r62 12r49 12r97 13r16
-5V13*Scalar_Product{integer} 5>29 5>43 10r16 11r12 3|3b13 10l8 10t22
-5a29 First_vector{3A9} 7r15 8r12 3|3b29 6r16 7r29
-5a43 Second_vector{3A9} 7r37 9r12 3|3b43 7r48
-14V13*Constant_Product{3A9} 14>31 14>61 21r30 22r19 23r26 24r15 25r26 26r15
-. 26r102 27r34 3|12b13 26l8 26t24
-14a31 Given_vector{3A9} 16r15 17r17 17r53 19r31 19r53 20r60 20r121 26r62
-. 26r76 27r12 3|12b31 13r30 14r26 16r22 17r28 20r43 22r37 23r41 23r63
-14i61 Given_constant{integer} 18r17 20r21 20r99 26r45 3|12b61 17r51 22r55
-19i26 L{integer} 19r66
-20i55 K{integer} 20r134
-21i25 J{integer} 22r44
-23i21 J{integer} 24r40
-25i21 J{integer} 26r40 26r98
+1K9*VectorMultiplication 35l5 35e25 3|1b14 42l5 42t25
+3I12*Element{positive} 5r61
+4A9*Int_Vector(integer)<integer> 17r49 17r97 3|27r49 27r97 28r16
+5A9*Scalar_Pr_Vector(3I12)<integer> 8r62 3|3r62
+8V13*Scalar_Product{natural} 8>29 8>43 12r16 3|3b13 25l8 25t22
+8a29 First_vector{5A9} 10r15 11r17 12r41 13r8 14r8 3|3b29 7r16 9r20 13r25
+. 16r25 16r70 19r25 20r19 20r64
+8a43 Second_vector{5A9} 10r37 12r59 13r26 14r26 3|3b43 9r38 13r43 16r47 16r88
+. 19r47 20r41 20r82
+17V13*Constant_Product{4A9} 17>31 17>61 27r30 28r19 29r26 30r15 31r26 32r15
+. 33r34 3|27b13 41l8 41t24
+17a31 Given_vector{4A9} 19r15 20r17 20r53 22r31 22r53 24r34 25r62 32r62 33r12
+. 3|27b31 28r30 29r26 31r22 32r28 35r43 37r37 38r41 38r63
+17i61 Given_constant{integer} 21r17 23r21 25r40 32r45 3|27b61 32r51 37r55
+22i26 L{integer} 22r66
+24i29 K{integer} 25r75
+27i25 J{integer} 28r44
+29i21 J{integer} 30r40
+31i21 J{integer} 32r40 32r75
 X 3 vectormultiplication.adb
-4i7 result{integer} 7m10 7r20 9r14
-6i11 I{integer} 7r43 7r63
-13a7 result{2|3A9} 17m10 21r45 22r72 25r14
-14i7 count{integer} 16r13 17r18 17r42 18m10 18r19 19r43 20r63 21r61 23r32
-21i40 K{integer} 22r50 22r79
+4i7 result{natural} 9m10 9r58 13r16 16r16 19r16 23r11
+7i11 J{integer} 9r33 9r53 12r16 13r38 13r58 15r16 16r38 16r61 16r83 16r102
+. 18r16 19r38 19r61 20r32 20r55 20r77 20r96
+28a7 result{2|4A9} 32m10 36r45 37r72 40r14
+29i7 count{integer} 31r13 32r18 32r42 33m10 33r19 34r43 35r63 36r61 38r32
+36i40 K{integer} 37r50 37r79
 
 QQ SPARKVERSION 2018 (20180523)
 GG EK_DIRECT_CALLS vectormultiplication__scalar_product 0

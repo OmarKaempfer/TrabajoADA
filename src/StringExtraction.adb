@@ -63,6 +63,11 @@ package body StringExtraction with SPARK_Mode => On is
                                   Is_Contained(Given_String(K), result)));
       end loop;
 
+      if not Is_Contained(result(previous_index), vowels) then
+         return "";
+      end if;
+
+
       return result(result'First .. previous_index);
 
    end Extract_Vowels;
@@ -131,6 +136,10 @@ package body StringExtraction with SPARK_Mode => On is
                                   (if Is_Contained(Given_String(K), consonants) then
                                   Is_Contained(Given_String(K), result)));
       end loop;
+
+      if not Is_Contained(result(previous_index), consonants) then
+         return "";
+      end if;
 
       return result(result'First .. previous_index);
 

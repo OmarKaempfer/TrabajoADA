@@ -11,19 +11,19 @@ procedure TestVector is
    V2 : constant Int_Vector := (-1,2,3);
    V3 : constant Int_Vector := (1,-2,3);
    V4 : constant Int_Vector := (1,2,-3);
+   SPV0 : constant Scalar_Pr_Vector := (1,1,1);
+   SPV1 : constant Scalar_Pr_Vector := (Element'Last,Element'Last,Element'Last);
+   SPV2 : constant Scalar_Pr_Vector := (50,50,50);
 
 
    -- Scalar_Product ###########################################################
 
    procedure Test_1 is
    begin
-      Assert_True (Scalar_Product(V0,V1) = 0, "Test_1: Scalar Product");
-      Assert_True (Scalar_Product(V1,V2) = 12, "Test_2: Scalar Product");
-      Assert_True (Scalar_Product(V1,V3) = 6, "Test_3: Scalar Product");
-      Assert_True (Scalar_Product(V1,V4) = -4, "Test_4: Scalar Product");
-      Assert_True (Scalar_Product(V2,V3) = 4, "Test_5: Scalar Product");
-      Assert_True (Scalar_Product(V2,V4) = -6, "Test_6: Scalar Product");
-      Assert_True (Scalar_Product(V3,V4) = -12, "Test_7: Scalar Product");
+      Assert_True (Scalar_Product(SPV0,SPV1) = 300, "Test_1: Scalar Product");
+      Assert_True (Scalar_Product(SPV1,SPV2) = 15000, "Test_2: Scalar Product");
+      Assert_True (Scalar_Product(SPV1,SPV1) = 30000, "Test_3: Scalar Product");
+      Assert_True (Scalar_Product(SPV0,SPV0) = 3, "Test_4: Scalar Product");
    exception
       when Assertion_Error =>
          Put_Line (Msg1 & " Failed (assertion)");

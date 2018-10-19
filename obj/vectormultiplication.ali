@@ -17,11 +17,11 @@ RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U vectormultiplication%b  vectormultiplication.adb  373b4eaa NE OO PK
+U vectormultiplication%b  vectormultiplication.adb  7396395d NE OO PK
 Z system.assertions%s	s-assert.adb		s-assert.ali
 Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 
-U vectormultiplication%s  vectormultiplication.ads  c12d8473 EE NE OO PK
+U vectormultiplication%s  vectormultiplication.ads  5391dc5c EE NE OO PK
 
 D ada.ads		20180524051736 76789da1 ada%s
 D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
@@ -32,28 +32,42 @@ D s-parame.ads		20180524051738 48ec542b system.parameters%s
 D s-secsta.ads		20180524051738 20bbe636 system.secondary_stack%s
 D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
 D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
-D vectormultiplication.ads  20181018112524 c12d8473 vectormultiplication%s
-D vectormultiplication.adb  20181018112138 f616cad9 vectormultiplication%b
+D vectormultiplication.ads  20181019201014 5391dc5c vectormultiplication%s
+D vectormultiplication.adb  20181019201134 2007e501 vectormultiplication%b
 X 10 vectormultiplication.ads
-1K9*VectorMultiplication 29l5 29e25 11|1b14 28l5 28t25
-3A9*Int_Vector(integer)<integer> 5r62 14r49 14r97 11|3r62 12r49 12r97 13r16
-5V13*Scalar_Product{integer} 5>29 5>43 10r16 11r12 11|3b13 10l8 10t22
-5a29 First_vector{3A9} 7r15 8r12 11|3b29 6r16 7r29
-5a43 Second_vector{3A9} 7r37 9r12 11|3b43 7r48
-14V13*Constant_Product{3A9} 14>31 14>61 21r30 22r19 23r26 24r15 25r26 26r15
-. 26r102 27r34 11|12b13 26l8 26t24
-14a31 Given_vector{3A9} 16r15 17r17 17r53 19r31 19r53 20r60 20r121 26r62
-. 26r76 27r12 11|12b31 13r30 14r26 16r22 17r28 20r43 22r37 23r41 23r63
-14i61 Given_constant{integer} 18r17 20r21 20r99 26r45 11|12b61 17r51 22r55
-19i26 L{integer} 19r66
-20i55 K{integer} 20r134
-21i25 J{integer} 22r44
-23i21 J{integer} 24r40
-25i21 J{integer} 26r40 26r98
+1K9*VectorMultiplication 47l5 47e25 11|1b14 51l5 51t25
+3I12*Element{positive} 5r61 11|12r55 12r70
+4A9*Int_Vector(integer)<integer> 15r49 15r97 34r76 11|19r49 19r97 20r16 35r76
+5A9*Scalar_Pr_Vector(3I12)<integer> 8r62 11|3r62
+8V13*Scalar_Product{natural} 8>29 8>43 10r16 11|3b13 17l8 17t22
+8a29 First_vector{5A9} 10r41 11r8 12r8 11|3b29 7r16 9r20 12r28
+8a43 Second_vector{5A9} 10r59 11r26 12r26 11|3b43 9r38
+15V13*Constant_Product{4A9} 15>31 15>61 25r30 26r19 27r26 28r15 29r26 30r15
+. 31r34 11|19b13 33l8 33t24
+15a31 Given_vector{4A9} 17r15 18r17 18r53 20r31 20r53 22r34 23r62 30r62 31r12
+. 11|19b31 20r30 21r26 23r22 24r28 27r43 29r37 30r41 30r63
+15i61 Given_constant{integer} 19r17 21r21 23r40 30r45 11|19b61 24r51 29r55
+20i26 L{integer} 20r66
+22i29 K{integer} 23r75
+25i25 J{integer} 26r44
+27i21 J{integer} 28r40
+29i21 J{integer} 30r40 30r75
+34V13*Does_overflow_scalar_product{boolean} 34>43 34>57 11|35b13 49l8 49t36
+34a43 First_vector{4A9} 36r15 38r31 39r20 45r20 45r33 11|35b43 40r27 40r40
+. 41r28 41r41 42r27 42r40
+34a57 Second_vector{4A9} 37r17 40r31 41r20 42r31 43r16 44r34 45r60 11|35b57
+. 40r62 40r76 41r67 41r81 42r66 42r80
+38i26 K{integer} 39r33
+40i26 K{integer} 41r34
+42i26 K{integer} 43r30 44r48 45r55
 X 11 vectormultiplication.adb
-4i7 result{integer} 7m10 7r20 9r14
-6i11 I{integer} 7r43 7r63
-13a7 result{10|3A9} 17m10 21r45 22r72 25r14
-14i7 count{integer} 16r13 17r18 17r42 18m10 18r19 19r43 20r63 21r61 23r32
-21i40 K{integer} 22r50 22r79
+4i7 result{natural} 9m10 9r58 12r13 15r11
+7i11 J{integer} 9r33 9r53 12r24
+20a7 result{10|4A9} 24m10 28r45 29r72 32r14
+21i7 count{integer} 23r13 24r18 24r42 25m10 25r19 26r43 27r63 28r61 30r32
+28i40 K{integer} 29r50 29r79
+36i7 first_product{integer} 40m10 44r24 44r85 45r18 45r78 47r12 47r90 48r18
+. 48r95
+37i7 second_product{integer} 41m10 44r52 45r45 47r28 47r106 48r34 48r111
+38i7 third_product{integer} 42m10 47r57 48r62
 

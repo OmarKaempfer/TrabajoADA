@@ -3,7 +3,11 @@ stringextraction.adb:5:40
 stringextraction.adb:10:7
 stringextraction.adb:15:35
 stringextraction.adb:17:10
-stringextraction.adb:28:25
+stringextraction.adb:18:20
+stringextraction.adb:18:34
+stringextraction.adb:21:25
+stringextraction.adb:22:28
+stringextraction.adb:24:13
 stringextraction.adb:31:32
 stringextraction.adb:32:32
 stringextraction.adb:33:32
@@ -32,7 +36,9 @@ stringextraction.adb:60:34
 stringextraction.adb:61:32
 stringextraction.adb:63:35
 stringextraction.adb:66:7
-stringextraction.adb:66:14
-stringextraction.adb:66:37
+stringextraction.adb:66:34
+stringextraction.adb:71:7
+stringextraction.adb:71:14
+stringextraction.adb:71:37
 stringextraction.ads:16:16
 stringextraction.ads:18:20

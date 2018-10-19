@@ -3,6 +3,11 @@ M P W=b
 A -x
 A ada
 A -gnatA
+A -gnato
+A -g
+A -gnata
+A -fstack-check
+A -gnat12
 A -gnatc
 P GP FX
 
@@ -14,7 +19,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U testvector%b		testvector.adb		a3d40535 OO SU
+U testvector%b		testvector.adb		6af8457d OO SU
 W ada%s			ada.ads			ada.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W assertions%s		assertions.adb		assertions.ali
@@ -33,8 +38,8 @@ D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
 D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
 D s-parame.ads		20180524051738 48ec542b system.parameters%s
 D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
-D testvector.adb	20181006125542 8c47846b testvector%b
-D vectormultiplication.ads  20181009092442 a2fd98ca vectormultiplication%s
+D testvector.adb	20181019202700 fd35fa6a testvector%b
+D vectormultiplication.ads  20181019205500 1aa3a683 vectormultiplication%s
 X 1 ada.ads
 16K9*Ada 20e8 13|1r6 1r23
 X 4 a-textio.ads
@@ -43,23 +48,28 @@ X 4 a-textio.ads
 X 5 assertions.ads
 1K9*Assertions 15e15 13|2w6 2r23
 2X4*Assertion_Error 13|28r12 43r12
-10U14*Assert_True 13|20s7 21s7 22s7 23s7 24s7 25s7 26s7 38s7 39s7 40s7 41s7
+10U14*Assert_True 13|23s7 24s7 25s7 26s7 38s7 39s7 40s7 41s7
 X 13 testvector.adb
 5U11*TestVector 5b11 53l5 53t15
 7a4 Msg1{string} 29r20 31r20
 8a4 Msg2{string} 44r20 46r20
-9a4 V0{14|3A9} 20r35 38r37
-10a4 V1{14|3A9} 20r38 21r35 22r35 23r35 39r37 40r37
-11a4 V2{14|3A9} 21r38 24r35 25r35
-12a4 V3{14|3A9} 22r38 24r38 26r35 41r37
-13a4 V4{14|3A9} 23r38 25r38 26r38
-18U14 Test_1 32l8 32t14 51s4
+9a4 V0{14|4A9} 38r37
+10a4 V1{14|4A9} 39r37 40r37
+11a4 V2{14|4A9}
+12a4 V3{14|4A9} 41r37
+13a4 V4{14|4A9}
+14a4 SPV0{14|5A9} 23r35 26r35 26r40
+15a4 SPV1{14|5A9} 23r40 24r35 25r35 25r40
+16a4 SPV2{14|5A9} 24r40
+21U14 Test_1 32l8 32t14 51s4
 36U14 Test_2 47l8 47t14 52s4
 X 14 vectormultiplication.ads
-1K9*VectorMultiplication 13|3w6 3r37 14|25e25
-3A9*Int_Vector(integer)<integer> 13|9r18 10r18 11r18 12r18 13r18
-5V13*Scalar_Product{integer} 13|20s20 21s20 22s20 23s20 24s20 25s20 26s20
-14V13*Constant_Product{3A9} 13|38s20 39s20 40s20 41s20
+1K9*VectorMultiplication 13|3w6 3r37 14|35e25
+3I12*Element{positive} 13|15r41 15r54 15r67
+4A9*Int_Vector(integer)<integer> 13|9r18 10r18 11r18 12r18 13r18
+5A9*Scalar_Pr_Vector(3I12)<integer> 13|14r20 15r20 16r20
+8V13*Scalar_Product{natural} 13|23s20 24s20 25s20 26s20
+17V13*Constant_Product{4A9} 13|38s20 39s20 40s20 41s20
 
 QQ SPARKVERSION 2018 (20180523)
 GG EK_DIRECT_CALLS testvector__test_1 0

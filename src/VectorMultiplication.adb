@@ -1,12 +1,27 @@
 package body VectorMultiplication with SPARK_Mode => On is
 
-   function Scalar_Product (First_vector, Second_vector : in Int_Vector) return Integer is
-      result : Integer := 0;
+   function Scalar_Product (First_vector, Second_vector : in Scalar_Pr_Vector) return Natural is
+      result : Natural := 0;
    begin
-      for I in First_vector'Range loop
-         result := result + First_vector (I) * Second_vector (I);
+
+      for J in First_vector'Range loop
+
+         result := First_vector(J) * Second_vector (J) + result;
+
+         pragma Loop_Invariant
+           (if J = 1 then
+               result = First_vector(J) * Second_vector (J));
+         pragma Loop_Invariant
+           (if J = 2 then
+               result = First_vector(J - 1) * Second_vector(J - 1) + First_vector(J) * Second_vector(J));
+         pragma Loop_Invariant
+           (if J = 3 then
+               result = First_vector(J - 2) * Second_vector(J - 2)
+                + First_vector(J - 1) * Second_vector(J - 1) + First_vector(J) * Second_vector(J));
       end loop;
-      return result;
+
+   return result;
+
    end Scalar_Product;
 
    function Constant_Product (Given_vector : in Int_Vector; Given_constant : in Integer) return Int_Vector is
@@ -24,5 +39,4 @@ package body VectorMultiplication with SPARK_Mode => On is
       end loop;
       return result;
    end Constant_Product;
-
 end VectorMultiplication;

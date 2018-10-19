@@ -1,3 +1,0 @@
-vectormultiplication.adb:7:27: medium: overflow check might fail (e.g. when result = 0)[#2]
-vectormultiplication.adb:7:46: medium: overflow check might fail (e.g. when result = 0)[#1]
-vectormultiplication.adb:7:63: medium: array index check might fail (e.g. when I = 2 and Second_vector = (0 => 1, others => 2) and Second_vector'First = 1 and Second_vector'Last = 1 and result = 0)[#0]

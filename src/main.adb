@@ -7,14 +7,10 @@ with Ada.Text_IO; use Ada.Text_IO;
 with StringExtraction;      use StringExtraction;
 
 procedure Main is
-   stringprueba : String := "";
 begin
 
 
-   Ada.Text_IO.Put_Line(Integer'Image(Extract_Vowels("asasadediffofgggu")'Length));
-   Ada.Text_IO.Put_Line(Character'Image(Character'Val(0)) & "sads");
-   --TestVector;
-   TestString;
-   Ada.Text_IO.Put_Line("Size " & Integer'image(stringprueba'Length));
+   TestVector;
+   --TestString;
    --Put_Line(Substract_Vowels("Esto es una prueba"));
 end Main;

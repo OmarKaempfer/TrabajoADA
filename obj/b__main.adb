@@ -29,9 +29,9 @@ package body ada_main is
    E109 : Short_Integer; pragma Import (Ada, E109, "system__file_io_E");
    E006 : Short_Integer; pragma Import (Ada, E006, "ada__text_io_E");
    E117 : Short_Integer; pragma Import (Ada, E117, "system__assertions_E");
-   E124 : Short_Integer; pragma Import (Ada, E124, "assertions_E");
+   E120 : Short_Integer; pragma Import (Ada, E120, "assertions_E");
    E115 : Short_Integer; pragma Import (Ada, E115, "stringextraction_E");
-   E127 : Short_Integer; pragma Import (Ada, E127, "vectormultiplication_E");
+   E123 : Short_Integer; pragma Import (Ada, E123, "vectormultiplication_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -206,9 +206,9 @@ package body ada_main is
       System.Assertions'Elab_Spec;
       E117 := E117 + 1;
       Assertions'Elab_Spec;
-      E124 := E124 + 1;
+      E120 := E120 + 1;
       E115 := E115 + 1;
-      E127 := E127 + 1;
+      E123 := E123 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
