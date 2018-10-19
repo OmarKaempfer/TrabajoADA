@@ -1,5 +1,24 @@
 package body StringExtraction with SPARK_Mode => On is
 
+   function Intersection_str (First_string, Second_string : in String) return String is
+      result : String := First_string;
+   begin
+      for J in result'Range loop
+
+         if First_string(J) /= Second_string(J) then
+            result(J) := Character'Val(0);
+         end if;
+
+         pragma Loop_Invariant(for all K in result'First .. J =>
+                          (if First_string(K) = Second_string(K) then
+                              result(K) = First_string(K)
+                           else
+                              result(K) = Character'Val(0)));
+      end loop;
+
+      return result;
+   end Intersection_str;
+
    function Extract_Vowels (Given_string : in String) return String is
       result : String (Given_string'First .. Given_string'Last) := (others => Character'Val(0));
       result_index : Positive := result'First;

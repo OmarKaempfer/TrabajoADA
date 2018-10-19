@@ -29,6 +29,20 @@ package StringExtraction with SPARK_Mode => On is
        and then (for all J in Extract_Consonants'Result'Range =>
                    Is_Contained(Extract_Consonants'Result(J), Given_string));
 
+   function Intersection_str (First_string, Second_string : in String) return String
+     with
+       Pre => First_string'Length = Second_string'Length
+       and then First_string'First = Second_string'First
+       and then (for all J in First_string'Range =>
+                   First_string(J) /= Character'Val(0))
+       and then (for all J in Second_string'Range =>
+                   Second_string(J) /= Character'Val(0)),
+       Post => (for all J in Intersection_str'Result'Range =>
+         (if Intersection_str'Result(J) /= Character'Val(0) then
+             Intersection_str'Result(J) = First_string(J)
+          and then
+             Intersection_str'Result(J) = Second_string(J)));
+
 
    function Is_Contained (char: in Character; Given_String: in String) return Boolean is
       (for some K in Given_String'Range => char = Given_string(K));

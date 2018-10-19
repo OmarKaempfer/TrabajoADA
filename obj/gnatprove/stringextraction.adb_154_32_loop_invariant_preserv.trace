@@ -8,6 +8,8 @@ stringextraction.adb:111:34
 stringextraction.adb:114:25
 stringextraction.adb:115:28
 stringextraction.adb:117:13
+stringextraction.adb:118:29
+stringextraction.adb:118:45
 stringextraction.adb:124:32
 stringextraction.adb:125:32
 stringextraction.adb:126:32
@@ -35,10 +37,3 @@ stringextraction.adb:152:32
 stringextraction.adb:153:34
 stringextraction.adb:154:32
 stringextraction.adb:156:35
-stringextraction.adb:159:7
-stringextraction.adb:159:34
-stringextraction.adb:163:7
-stringextraction.adb:163:14
-stringextraction.adb:163:37
-stringextraction.ads:28:16
-stringextraction.ads:30:20
