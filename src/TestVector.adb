@@ -11,6 +11,8 @@ procedure TestVector is
    V2 : constant Int_Vector := (-1,2,3);
    V3 : constant Int_Vector := (1,-2,3);
    V4 : constant Int_Vector := (1,2,-3);
+   V5 : constant Int_Vector := (Integer'Last, Integer'Last, Integer'Last);
+   V6 : constant Int_Vector := (Integer'First + 1, Integer'First + 1, Integer'First + 1);
    SPV0 : constant Scalar_Pr_Vector := (1,1,1);
    SPV1 : constant Scalar_Pr_Vector := (Element'Last,Element'Last,Element'Last);
    SPV2 : constant Scalar_Pr_Vector := (50,50,50);
@@ -38,7 +40,11 @@ procedure TestVector is
       Assert_True (Constant_Product(V0,1) = (0,0,0), "Test_1: Constant Product");
       Assert_True (Constant_Product(V1,0) = (0,0,0), "Test_2: Constant Product");
       Assert_True (Constant_Product(V1,1) = (1,2,3), "Test_3: Constant Product");
-      Assert_True (Constant_Product(V3,-2) = (-2,4,-6), "Test_6: Constant Product");
+      Assert_True (Constant_Product(V3,-2) = (-2,4,-6), "Test_4: Constant Product");
+      Assert_True (Constant_Product(V3,-2) = (-2,4,-6), "Test_5: Constant Product");
+      Assert_True (Constant_Product(V5,1) = V5, "Test_6: Constant Product");
+      Assert_True (Constant_Product(V3,-2) = (-2,4,-6), "Test_7: Constant Product");
+      Assert_True (Constant_Product(V6,1) = V6, "Test_8: Constant Product");
    exception
       when Assertion_Error =>
          Put_Line (Msg2 & " Failed (assertion)");

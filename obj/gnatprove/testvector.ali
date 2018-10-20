@@ -19,7 +19,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U testvector%b		testvector.adb		6af8457d OO SU
+U testvector%b		testvector.adb		c720e31a OO SU
 W ada%s			ada.ads			ada.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W assertions%s		assertions.adb		assertions.ali
@@ -38,38 +38,42 @@ D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
 D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
 D s-parame.ads		20180524051738 48ec542b system.parameters%s
 D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
-D testvector.adb	20181019202700 fd35fa6a testvector%b
+D testvector.adb	20181020142328 50ed5c0d testvector%b
 D vectormultiplication.ads  20181019205500 1aa3a683 vectormultiplication%s
 X 1 ada.ads
 16K9*Ada 20e8 13|1r6 1r23
 X 4 a-textio.ads
 49K13*Text_IO 471e16 13|1w10 1r27
-263U14*Put_Line 13|29s10 31s10 44s10 46s10 50s4
+263U14*Put_Line 13|31s10 33s10 50s10 52s10 56s4
 X 5 assertions.ads
 1K9*Assertions 15e15 13|2w6 2r23
-2X4*Assertion_Error 13|28r12 43r12
-10U14*Assert_True 13|23s7 24s7 25s7 26s7 38s7 39s7 40s7 41s7
+2X4*Assertion_Error 13|30r12 49r12
+10U14*Assert_True 13|25s7 26s7 27s7 28s7 40s7 41s7 42s7 43s7 44s7 45s7 46s7
+. 47s7
 X 13 testvector.adb
-5U11*TestVector 5b11 53l5 53t15
-7a4 Msg1{string} 29r20 31r20
-8a4 Msg2{string} 44r20 46r20
-9a4 V0{14|4A9} 38r37
-10a4 V1{14|4A9} 39r37 40r37
+5U11*TestVector 5b11 59l5 59t15
+7a4 Msg1{string} 31r20 33r20
+8a4 Msg2{string} 50r20 52r20
+9a4 V0{14|4A9} 40r37
+10a4 V1{14|4A9} 41r37 42r37
 11a4 V2{14|4A9}
-12a4 V3{14|4A9} 41r37
+12a4 V3{14|4A9} 43r37 44r37 46r37
 13a4 V4{14|4A9}
-14a4 SPV0{14|5A9} 23r35 26r35 26r40
-15a4 SPV1{14|5A9} 23r40 24r35 25r35 25r40
-16a4 SPV2{14|5A9} 24r40
-21U14 Test_1 32l8 32t14 51s4
-36U14 Test_2 47l8 47t14 52s4
+14a4 V5{14|4A9} 45r37 45r45
+15a4 V6{14|4A9} 47r37 47r45
+16a4 SPV0{14|5A9} 25r35 28r35 28r40
+17a4 SPV1{14|5A9} 25r40 26r35 27r35 27r40
+18a4 SPV2{14|5A9} 26r40
+23U14 Test_1 34l8 34t14 57s4
+38U14 Test_2 53l8 53t14 58s4
 X 14 vectormultiplication.ads
 1K9*VectorMultiplication 13|3w6 3r37 14|35e25
-3I12*Element{positive} 13|15r41 15r54 15r67
-4A9*Int_Vector(integer)<integer> 13|9r18 10r18 11r18 12r18 13r18
-5A9*Scalar_Pr_Vector(3I12)<integer> 13|14r20 15r20 16r20
-8V13*Scalar_Product{natural} 13|23s20 24s20 25s20 26s20
-17V13*Constant_Product{4A9} 13|38s20 39s20 40s20 41s20
+3I12*Element{positive} 13|17r41 17r54 17r67
+4A9*Int_Vector(integer)<integer> 13|9r18 10r18 11r18 12r18 13r18 14r18 15r18
+5A9*Scalar_Pr_Vector(3I12)<integer> 13|16r20 17r20 18r20
+8V13*Scalar_Product{natural} 13|25s20 26s20 27s20 28s20
+17V13*Constant_Product{4A9} 13|40s20 41s20 42s20 43s20 44s20 45s20 46s20
+. 47s20
 
 QQ SPARKVERSION 2018 (20180523)
 GG EK_DIRECT_CALLS testvector__test_1 0

@@ -11,6 +11,5 @@ begin
 
 
    TestVector;
-   --TestString;
-   --Put_Line(Substract_Vowels("Esto es una prueba"));
+   TestString;
 end Main;

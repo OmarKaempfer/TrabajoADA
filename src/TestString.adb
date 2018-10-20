@@ -12,7 +12,11 @@ procedure TestString is
    S3 : constant String := "ü yGFgheTEoJHWIns";
    S4 : constant String := "123456789";
    S5 : constant String := "aeiou";
-
+   S6 : constant String := "abidu";
+   S7 : constant String (1 .. 5) := (1 => 'a', 3 => 'i', 5 => 'u', others => Character'Val(0));
+   S8 : constant String (1 .. 18) := (3 => 't', 9 => 'u', 10 => 'n', 13 => 'p', 14 => 'r', 15 => 'u', others => Character'Val(0));
+   S9 : constant String := "bbbbb";
+   S10 : constant String(1 .. 5) := (others => Character'Val(0));
 
    -- Vowels ###################################################################
 
@@ -50,8 +54,26 @@ procedure TestString is
          Put_Line (Msg2 & " Failed (exception)");
    end Test_2;
 
+   -- Intersection_str ###############################################################
+
+   procedure Test_3 is
+   begin
+      Assert_True (Intersection_str(S5, S6) = S7, "Test_1: Intersection_str");
+      Assert_True (Intersection_str(S1, S2) = S8, "Test_2: Intersection_str");
+      Assert_True (Intersection_str(S0, S0) = S0, "Test_3: Intersection_str");
+      Assert_True (Intersection_str(S0, S0) = S0, "Test_4: Intersection_str");
+      Assert_True (Intersection_str(S5, S9) = S10, "Test_5: Intersection_str");
+   exception
+      when Assertion_Error =>
+         Put_Line (Msg2 & " Failed (assertion)");
+      when others =>
+         Put_Line (Msg2 & " Failed (exception)");
+   end Test_3;
+
 begin
    Put_Line ("********************* Test_String");
    Test_1;
    Test_2;
+   Test_3;
+
 end TestString;

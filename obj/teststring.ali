@@ -18,8 +18,9 @@ RV NO_SECONDARY_STACK
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U teststring%b		teststring.adb		9a700a23 NE OO SU
+U teststring%b		teststring.adb		5bcb940b NE OO SU
 W ada%s			ada.ads			ada.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W assertions%s		assertions.adb		assertions.ali
 W stringextraction%s	stringextraction.adb	stringextraction.ali
@@ -35,7 +36,7 @@ D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
 D assertions.ads	20180927103850 0573aace assertions%s
 D interfac.ads		20180524051736 5ab55268 interfaces%s
 D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
-D stringextraction.ads	20181019011524 9ee82c14 stringextraction%s
+D stringextraction.ads	20181019221418 392bbca0 stringextraction%s
 D system.ads		20180524051738 32a08138 system%s
 D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
 D s-exctab.ads		20180524051738 54135002 system.exception_table%s
@@ -49,32 +50,39 @@ D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
 D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
-D teststring.adb	20181011110728 89f63fa3 teststring%b
+D teststring.adb	20181020143732 ef8e313f teststring%b
 X 1 ada.ads
 16K9*Ada 20e8 25|1r6 1r23
 X 6 a-textio.ads
 49K13*Text_IO 471e16 25|1w10 1r27
-263U14*Put_Line 25|30s10 32s10 48s10 50s10 54s4
+263U14*Put_Line 25|34s10 36s10 52s10 54s10 68s10 70s10 74s4
 X 8 assertions.ads
 1K9*Assertions 15e15 25|2w6 2r23
-2X4*Assertion_Error 25|29r12 47r12
-10U14*Assert_True 25|21s7 22s7 23s7 24s7 25s7 26s7 27s7 39s7 40s7 41s7 42s7
-. 43s7 44s7 45s7
+2X4*Assertion_Error 25|33r12 51r12 67r12
+10U14*Assert_True 25|25s7 26s7 27s7 28s7 29s7 30s7 31s7 43s7 44s7 45s7 46s7
+. 47s7 48s7 49s7 61s7 62s7 63s7 64s7 65s7
 X 11 stringextraction.ads
-1K9*StringExtraction 41e25 25|3w6 3r33
-8V13*Extract_Vowels{string} 25|21s20 22s20 23s20 24s20 25s20 26s20 27s20
-20V13*Extract_Consonants{string} 25|39s20 40s20 41s20 42s20 43s20 44s20 45s20
+1K9*StringExtraction 55e25 25|3w6 3r33
+8V13*Extract_Vowels{string} 25|25s20 26s20 27s20 28s20 29s20 30s20 31s20
+20V13*Extract_Consonants{string} 25|43s20 44s20 45s20 46s20 47s20 48s20 49s20
+32V13*Intersection_str{string} 25|61s20 62s20 63s20 64s20 65s20
 X 25 teststring.adb
-5U11*TestString 5b11 57l5 57t15
-6a4 Msg1{string} 30r20 32r20
-7a4 Msg2{string} 48r20 50r20
+5U11*TestString 5b11 79l5 79t15
+6a4 Msg1{string} 34r20 36r20
+7a4 Msg2{string} 52r20 54r20 68r20 70r20
 8a4 Msg3{string}
-9a4 S0{string} 21r35 39r39
-10a4 S1{string} 22r35 40r39
-11a4 S2{string} 23r35 25r40 41r39 43r44
-12a4 S3{string} 24r35 25r35 42r39 43r39
-13a4 S4{string} 26r35 44r39
-14a4 S5{string} 27r35 45r39
-19U14 Test_1 19b14 33l8 33t14 55s4
-37U14 Test_2 37b14 51l8 51t14 56s4
+9a4 S0{string} 25r35 43r39 63r37 63r41 63r47 64r37 64r41 64r47
+10a4 S1{string} 26r35 44r39 62r37
+11a4 S2{string} 27r35 29r40 45r39 47r44 62r41
+12a4 S3{string} 28r35 29r35 46r39 47r39
+13a4 S4{string} 30r35 48r39
+14a4 S5{string} 31r35 49r39 61r37 65r37
+15a4 S6{string} 61r41
+16a4 S7{string} 61r47
+17a4 S8{string} 62r47
+18a4 S9{string} 65r41
+19a4 S10{string} 65r47
+23U14 Test_1 23b14 37l8 37t14 75s4
+41U14 Test_2 41b14 55l8 55t14 76s4
+59U14 Test_3 59b14 71l8 71t14 77s4
 
